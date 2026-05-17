@@ -1,5 +1,9 @@
 {
     "chat.tools.terminal.autoApprove": {
-        "pip": true
+        "pip": true,
+        "/^cd /home/tomoya/git/vuln-tools-feed && python -m pytest tests/test_storage\\.py -v 2>&1 \\| head -20$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
     }
 }

@@ -1,0 +1,367 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "SCA Tools Feed - Syft",
+  "feed_url": "https://tmyymmt.github.io/sca-tools-feed/feeds/syft.json",
+  "items": [
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.44.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.44.0",
+      "title": "[Syft] v1.44.0",
+      "content_text": "### Added Features\n\n- Add support for linux-riscv64 [[#4757](https://github.com/anchore/syft/pull/4757) @luhenry]\n\n### Bug Fixes\n\n- Yarn lockfile cataloguing does not handle aliases [[#4833](https://github.com/anchore/syft/issues/4833) [#4836](https://github.com/anchore/syft/pull/4836) @cyphercodes]\n- Some snippet files are saved in the previous test directory [[#4829](https://github.com/anchore/syft/issues/4829) [#4830](https://github.com/anchore/syft/pull/4830) @witchcraze]\n- empty rockspec causes index out of range [[#4824](https://github.com/anchore/syft/issues/4824) [#4827](https://github.com/anchore/syft/pull/4827) @aki1770-del]\n- PE cataloger shows asp.net core ref assemblies using fileversion build stamp instead of productversion [[#4813](https://github.com/anchore/syft/issues/4813) [#4814](https://github.com/anchore/syft/pull/4814) @rezmoss]\n- Syft safeCopy silently swallows archive decompression errors [[#4806](https://github.com/anchore/syft/issues/4806) [#4807](https://github.com/anchore/syft/pull/4807) @SAY-5]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.43.0...v1.44.0)**\n\n",
+      "date_published": "2026-05-01T17:17:31Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.44.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.43.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.43.0",
+      "title": "[Syft] v1.43.0",
+      "content_text": "### Added Features\n\n- added deno bin classifiers [[#4677](https://github.com/anchore/syft/pull/4677) @rezmoss]\n- Support haskell old versions [[#3237](https://github.com/anchore/syft/issues/3237) [#4793](https://github.com/anchore/syft/pull/4793) @witchcraze]\n- Add support for OpenLDAP binary detection [[#4768](https://github.com/anchore/syft/issues/4768) [#4755](https://github.com/anchore/syft/pull/4755) @nadimz]\n- Support erlang ols versions [[#3235](https://github.com/anchore/syft/issues/3235) [#4766](https://github.com/anchore/syft/pull/4766) @witchcraze]\n\n### Bug Fixes\n\n- improve redhat-release parsing fallback for RHEL clones [[#4808](https://github.com/anchore/syft/pull/4808) @westonsteimel]\n- fix format string in search results struct [[#4775](https://github.com/anchore/syft/pull/4775) @willmurphyscode]\n- prevent infinite recursion in Document.UnmarshalJSON with encoding/json/v2 [[#4748](https://github.com/anchore/syft/pull/4748) @benja-M-1]\n- Syft can not complete scanning golang image [[#4686](https://github.com/anchore/syft/issues/4686)]\n- javascript-package-cataloger drops entire package.json when authors/contributors/maintainers is a single string [[#4778](https://github.com/anchore/syft/issues/4778) [#4779](https://github.com/anchore/syft/pull/4779) @yoav-orca]\n- pnpm lock file cataloger produces unstable output [[#4648](https://github.com/anchore/syft/issues/4648) [#4765](https://github.com/anchore/syft/pull/4765) @lawrence3699]\n- Linux Kernel bzImage and zImage not cataloged by linux-kernel-cataloger [[#4769](https://github.com/anchore/syft/issues/4769) [#4751](https://github.com/anchore/syft/pull/4751) @nadimz]\n- Support istio binary (pilot-discovery, pilot-agent) alpha,beta,rc,dev version [[#4546](https://github.com/anchore/syft/issues/4546) [#4645](https://github.com/anchore/syft/pull/4645) @witchcraze]\n- Scanning mounted ISO: duplicate entries [[#4759](https://github.com/anchore/syft/issues/4759)]\n\n### Additional Changes\n\n- update CPE dictionary index [[#4767](https://github.com/anchore/syft/pull/4767) @anchore-oss-update-bot]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.42.4...v1.43.0)**\n\n",
+      "date_published": "2026-04-22T15:59:57Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.43.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.42.4",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.42.4",
+      "title": "[Syft] v1.42.4",
+      "content_text": "### Bug Fixes\n\n- Similar Packages Should Be Aggregated [[#1162](https://github.com/anchore/syft/issues/1162)]\n- Support arangodb binary recent version [[#4571](https://github.com/anchore/syft/issues/4571) [#4662](https://github.com/anchore/syft/pull/4662) @witchcraze]\n- Support go binary various versions [[#4687](https://github.com/anchore/syft/issues/4687) [#4694](https://github.com/anchore/syft/pull/4694) @kzantow]\n\n### Additional Changes\n\n- update CPE dictionary index [[#4745](https://github.com/anchore/syft/pull/4745) @anchore-oss-update-bot]\n- update CPE dictionary index [[#4726](https://github.com/anchore/syft/pull/4726) @anchore-oss-update-bot]\n- Add a trust boundary section [[#4716](https://github.com/anchore/syft/pull/4716) @joshbressers]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.42.3...v1.42.4)**\n\n",
+      "date_published": "2026-04-08T20:46:59Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.42.4"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.42.3",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.42.3",
+      "title": "[Syft] v1.42.3",
+      "content_text": "### Bug Fixes\n\n- Missing secondary evidence for .NET dependency in ghcr.io/open-telemetry/demo:2.0.0-accounting image [[#4652](https://github.com/anchore/syft/issues/4652)]\n\n### Additional Changes\n\n- bump github.com/buger/jsonsparser to v1.1.2 [[#4680](https://github.com/anchore/syft/pull/4680) @willmurphyscode]\n- centralize temp files and prefer streaming IO [[#4668](https://github.com/anchore/syft/pull/4668) @willmurphyscode]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.42.2...v1.42.3)**\n\n",
+      "date_published": "2026-03-19T17:08:34Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.42.3"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.42.2",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.42.2",
+      "title": "[Syft] v1.42.2",
+      "content_text": "### Bug Fixes\n\n- [BUG] Incorrect Maven PURL generation: `Automatic-Module-Name` should not be used as Maven groupId [[#4611](https://github.com/anchore/syft/issues/4611) [#4642](https://github.com/anchore/syft/pull/4642) @xnox]\n- Checksum is 0 for spdx files [[#2307](https://github.com/anchore/syft/issues/2307) [#4620](https://github.com/anchore/syft/pull/4620) @ppalucha]\n- Support grafana binary various versions [[#4559](https://github.com/anchore/syft/issues/4559) [#4635](https://github.com/anchore/syft/pull/4635) @witchcraze]\n\n### Additional Changes\n\n- migrate fixtures to testdata [[#4651](https://github.com/anchore/syft/pull/4651) @wagoodman]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.42.1...v1.42.2)**\n\n",
+      "date_published": "2026-03-09T18:34:26Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.42.2"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.42.1",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.42.1",
+      "title": "[Syft] v1.42.1",
+      "content_text": "### Bug Fixes\n\n- Use redhat as namespace for hummingbird rpms [[#4615](https://github.com/anchore/syft/pull/4615) @scoheb]\n- False Positive: Emacs snap package version CVE-2024-39331 [[#4485](https://github.com/anchore/syft/issues/4485)]\n\n### Additional Changes\n\n- call cleanup on tmpfile and replace some io.ReadAlls with streams [[#4629](https://github.com/anchore/syft/pull/4629) @willmurphyscode]\n- bumps go mod version to 1.25; ci takes latest patch [[#4628](https://github.com/anchore/syft/pull/4628) @spiffcs]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.42.0...v1.42.1)**\n\n",
+      "date_published": "2026-02-18T17:50:45Z",
+      "tags": [
+        "security"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.42.1"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.42.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.42.0",
+      "title": "[Syft] v1.42.0",
+      "content_text": "### Added Features\n\n- Add support for scanning GGUF models from OCI registries [[#4335](https://github.com/anchore/syft/pull/4335) @spiffcs]\n- yarn lockfile scan doesnt catch dev dependencies [[#4548](https://github.com/anchore/syft/issues/4548) [#4549](https://github.com/anchore/syft/pull/4549) @rezmoss]\n\n### Additional Changes\n\n- CPE detection for APK libavif to use aomedia vendor [[#4597](https://github.com/anchore/syft/pull/4597) @naag]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.41.2...v1.42.0)**\n\n",
+      "date_published": "2026-02-10T17:39:42Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.42.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.41.2",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.41.2",
+      "title": "[Syft] v1.41.2",
+      "content_text": "### Bug Fixes\n\n- further improve go binary classifier, including windows [[#4593](https://github.com/anchore/syft/pull/4593) @kzantow]\n- Wrong format in license [[#4233](https://github.com/anchore/syft/issues/4233) [#4588](https://github.com/anchore/syft/pull/4588) @spiffcs]\n- Cannot detect installation of Qt6 [[#4467](https://github.com/anchore/syft/issues/4467) [#4550](https://github.com/anchore/syft/pull/4550) @rezmoss]\n- bug: Syft mis-identifies binary as deb inside a snap [[#4486](https://github.com/anchore/syft/issues/4486) [#4500](https://github.com/anchore/syft/pull/4500) @popey]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.41.1...v1.41.2)**\n\n",
+      "date_published": "2026-02-03T18:13:54Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.41.2"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.41.1",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.41.1",
+      "title": "[Syft] v1.41.1",
+      "content_text": "### Bug Fixes\n\n- [Bug Report] Missing some dependencies on cyclonedx formatted SBOM using syft [[#4562](https://github.com/anchore/syft/issues/4562) [#4573](https://github.com/anchore/syft/pull/4573) @spiffcs]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.41.0...v1.41.1)**\n\n",
+      "date_published": "2026-01-29T21:01:42Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.41.1"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.41.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.41.0",
+      "title": "[Syft] v1.41.0",
+      "content_text": "### Added Features\n\n- detect Debian version from /etc/debian_version [[#4569](https://github.com/anchore/syft/pull/4569) @kzantow]\n\n### Bug Fixes\n\n- correctly report supporting evidence for binary packages [[#4558](https://github.com/anchore/syft/pull/4558) @kzantow]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.40.1...v1.41.0)**\n\n",
+      "date_published": "2026-01-27T11:07:53Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.41.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.40.1",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.40.1",
+      "title": "[Syft] v1.40.1",
+      "content_text": "> [!Important]\r\n> This release bumps github.com/containerd/containerd to v2, which will cause compiler errors if used alongside other dependencies that use v1 of containerd. See https://github.com/anchore/stereoscope/pull/495 for a detailed discussion.\r\n\r\n### Bug Fixes\r\n\r\n- mongodb binary not detected manual/source install [[#4540](https://github.com/anchore/syft/issues/4540) [#4541](https://github.com/anchore/syft/pull/4541) @rezmoss]\r\n\r\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.40.0...v1.40.1)**\r\n\r\n",
+      "date_published": "2026-01-15T21:50:55Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.40.1"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.40.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.40.0",
+      "title": "[Syft] v1.40.0",
+      "content_text": "### Added Features\n\n- Exclude development or test dependencies for PNPM Package type [[#4430](https://github.com/anchore/syft/issues/4430) [#4487](https://github.com/anchore/syft/pull/4487) @rezmoss]\n- Catalog istio binary (pilot-discovery, pilot-agent) [[#4508](https://github.com/anchore/syft/issues/4508) [#4521](https://github.com/anchore/syft/pull/4521) @witchcraze]\n- Catalog envoy binary [[#4506](https://github.com/anchore/syft/issues/4506) [#4530](https://github.com/anchore/syft/pull/4530) @witchcraze]\n- Catalog grafana binary [[#4505](https://github.com/anchore/syft/issues/4505) [#4516](https://github.com/anchore/syft/pull/4516) @witchcraze]\n- Add a binary classifier for valkey [[#3400](https://github.com/anchore/syft/issues/3400) [#4509](https://github.com/anchore/syft/pull/4509) @witchcraze]\n\n### Bug Fixes\n\n- old bitnami images without spdx files arent getting picked up correctly in the catalog [[#4529](https://github.com/anchore/syft/issues/4529) [#4532](https://github.com/anchore/syft/pull/4532) @rezmoss]\n- wrong traefik rc versions at binary detection [[#3535](https://github.com/anchore/syft/issues/3535) [#4499](https://github.com/anchore/syft/pull/4499) @rezmoss]\n- FromPOSIX() in internals\\windows\\path.go assumes that all Windows root paths must have a colon terminator [[#4070](https://github.com/anchore/syft/issues/4070) [#4075](https://github.com/anchore/syft/pull/4075) @luissantosHCIT]\n- binary cataloger is picking up the go version instead of the actual binary version in traefik experimental images [[#4498](https://github.com/anchore/syft/issues/4498) [#4499](https://github.com/anchore/syft/pull/4499) @rezmoss]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.39.0...v1.40.0)**\n\n",
+      "date_published": "2026-01-08T12:49:55Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.40.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.39.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.39.0",
+      "title": "[Syft] v1.39.0",
+      "content_text": "### Added Features\n\n- add support for Gemfile.next.lock [[#4457](https://github.com/anchore/syft/pull/4457) @HatiCode]\n- Command output to give more information on what catalogers look for and what they can find [[#4155](https://github.com/anchore/syft/issues/4155) [#4317](https://github.com/anchore/syft/pull/4317) @wagoodman]\n- Support reading lzma compressed `.go.buildinfo` sections with upx [[#4411](https://github.com/anchore/syft/issues/4411) [#4480](https://github.com/anchore/syft/pull/4480) @wagoodman]\n- Specify specific snap revision to pull [[#4389](https://github.com/anchore/syft/issues/4389) [#4439](https://github.com/anchore/syft/pull/4439) @VictorHuu]\n- Cannot detect embedded deps.json metadata in single-file .NET binaries [[#4344](https://github.com/anchore/syft/issues/4344) [#4375](https://github.com/anchore/syft/pull/4375) @rezmoss]\n- ELF note cataloger does not pick up OS field, but should [[#4384](https://github.com/anchore/syft/issues/4384) [#4438](https://github.com/anchore/syft/pull/4438) @VictorHuu]\n\n### Bug Fixes\n\n- remove debug print statement in dependency parser [[#4412](https://github.com/anchore/syft/pull/4412) @cgreeno]\n- dotnet-deps cataloger should skip project references with type \"project\" when building the sbom [[#4423](https://github.com/anchore/syft/issues/4423) [#4436](https://github.com/anchore/syft/pull/4436) @rezmoss]\n- File digests not computed when using `--base-path` [[#4410](https://github.com/anchore/syft/issues/4410) [#4478](https://github.com/anchore/syft/pull/4478) @wagoodman]\n- Syft should not define subpaths by default in PURLs [[#4394](https://github.com/anchore/syft/issues/4394) [#4395](https://github.com/anchore/syft/pull/4395) @rezmoss]\n- go: valid purl but incorrect name [[#1737](https://github.com/anchore/syft/issues/1737) [#4395](https://github.com/anchore/syft/pull/4395) @rezmoss]\n- Incorrect Go module PURL generation when module path contains /vN (e.g. /v5) [[#4316](https://github.com/anchore/syft/issues/4316) [#4395](https://github.com/anchore/syft/pull/4395) @rezmoss]\n- Failing to convert npm repository information correctly to SPDX [[#4362](https://github.com/anchore/syft/issues/4362) [#4390](https://github.com/anchore/syft/pull/4390) @kendrickm]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.38.2...v1.39.0)**\n\n",
+      "date_published": "2025-12-22T21:15:15Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.39.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.38.2",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.38.2",
+      "title": "[Syft] v1.38.2",
+      "content_text": "### Bug Fixes\r\n\r\n- drop cpe from gguf [[#4383](https://github.com/anchore/syft/pull/4383) @spiffcs]\r\n- emit lua rockspec dependencies in metadata [[#4376](https://github.com/anchore/syft/pull/4376) @willmurphyscode]\r\n- Invalid SBOMs are created when GO replace directive is used [[#4415](https://github.com/anchore/syft/issues/4415) [#4419](https://github.com/anchore/syft/pull/4419) @VictorHuu]\r\n- Incorrect CPE for Vercel's Next js [[#4443](https://github.com/anchore/syft/issues/4443) [#4450](https://github.com/anchore/syft/pull/4450) @willmurphyscode]\r\n- v1.38.0 generates empty sbom for tgz sources [[#4416](https://github.com/anchore/syft/issues/4416) [#4421](https://github.com/anchore/syft/pull/4421) @VictorHuu]\r\n- Syft: The dependency graph does not include all Requires-Dist relationships defined in the package’s METADATA file [[#4401](https://github.com/anchore/syft/issues/4401) [#4408](https://github.com/anchore/syft/pull/4408) @willmurphyscode]\r\n\r\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.38.0...v1.38.2)**\r\n\r\n",
+      "date_published": "2025-12-09T22:02:23Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.38.2"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.38.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.38.0",
+      "title": "[Syft] v1.38.0",
+      "content_text": "### Added Features\n\n- add support for cataloging GGUF models [[#4184](https://github.com/anchore/syft/issues/4184) [#4279](https://github.com/anchore/syft/pull/4279) @spiffcs]\n- Support scanning a list of CPEs [[#3890](https://github.com/anchore/syft/issues/3890) [#4207](https://github.com/anchore/syft/pull/4207) @chovanecadam]\n- Syft does not detect Elixir binary on system [[#4333](https://github.com/anchore/syft/issues/4333) [#4334](https://github.com/anchore/syft/pull/4334) @rezmoss]\n\n### Bug Fixes\n\n- Support `extras` statements in Python PDM cataloger [[#4352](https://github.com/anchore/syft/pull/4352) @wagoodman]\n- Preserve --from argument order [[#4350](https://github.com/anchore/syft/pull/4350) @wagoodman]\n- SBOM generated by Syft 1.28 contains license elements missing `id` or `name` (causing CycloneDX parser error) [[#4363](https://github.com/anchore/syft/issues/4363)]\n- empty PURL output in dependency snapshot format breaks sbom-action [[#4311](https://github.com/anchore/syft/issues/4311)]\n- Interface includes constraint elements, can only be used in type parameters [[#4346](https://github.com/anchore/syft/issues/4346)]\n- Upgrade github.com/nwaples/rardecode@v1.1.3 to 2.2.1 [[#4338](https://github.com/anchore/syft/issues/4338)]\n- Upgrade to Golang 1.25.4 [[#4341](https://github.com/anchore/syft/issues/4341)]\n\n### Additional Changes\n\n- migrate syft to use mholt/archives instead of anchore fork [[#4029](https://github.com/anchore/syft/pull/4029) @Rupikz]\n- Add license enrichment from pypi to python packages [[#4295](https://github.com/anchore/syft/pull/4295) @timols]\n- license file search [[#4327](https://github.com/anchore/syft/pull/4327) @kzantow]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.37.0...v1.38.0)**\n\n",
+      "date_published": "2025-11-17T17:55:51Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.38.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.37.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.37.0",
+      "title": "[Syft] v1.37.0",
+      "content_text": "### Added Features\n\n- Refactor fileresolver to not require base path [[#4298](https://github.com/anchore/syft/pull/4298) @Rupikz]\n- Describe cataloger capabilities via test observations [[#4318](https://github.com/anchore/syft/pull/4318) @wagoodman]\n- Support Java resource adapter extension .far as a Java archive [[#4183](https://github.com/anchore/syft/issues/4183) [#4193](https://github.com/anchore/syft/pull/4193) @kyounghunJang]\n- Add Java resource adapter extension \".rar\" as supported Java archive [[#4136](https://github.com/anchore/syft/issues/4136) [#4137](https://github.com/anchore/syft/pull/4137) @thomassui]\n\n### Bug Fixes\n\n- fix empty PURL Github format [[#4312](https://github.com/anchore/syft/pull/4312) @rezmoss]\n- Canonicalize Ghostscript CPE/PURL for ghostscript packages from PE Binaries [[#4308](https://github.com/anchore/syft/pull/4308) @kdt523]\n- Respect \"rpmmod\" PURL qualifier [[#4314](https://github.com/anchore/syft/pull/4314) @willmurphyscode]\n- fix dpkg packages that are in `deinstalled` state should not be in SBOM [[#3063](https://github.com/anchore/syft/issues/3063) [#4231](https://github.com/anchore/syft/pull/4231) @rkirk-nos]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.36.0...v1.37.0)**\n\n",
+      "date_published": "2025-11-03T18:26:45Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.37.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.36.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.36.0",
+      "title": "[Syft] v1.36.0",
+      "content_text": "### Added Features\n\n- Add the ability to fetch remote licenses for pnpm-lock.yaml files [[#4286](https://github.com/anchore/syft/pull/4286) @timols]\n- support universal (fat) mach-o binary files [[#4278](https://github.com/anchore/syft/pull/4278) @JoeyShapiro]\n- pdm support [[#2709](https://github.com/anchore/syft/issues/2709) [#4234](https://github.com/anchore/syft/pull/4234) @paulslaby]\n\n### Bug Fixes\n\n- Remove duplicate image source providers [[#4289](https://github.com/anchore/syft/pull/4289) @Rupikz]\n- syft can't extract go module information from executables on Windows [[#4271](https://github.com/anchore/syft/issues/4271) [#4285](https://github.com/anchore/syft/pull/4285) @JoeyShapiro]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.34.2...v1.35.0)**\n\n",
+      "date_published": "2025-10-22T20:21:18Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.36.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.34.2",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.34.2",
+      "title": "[Syft] v1.34.2",
+      "content_text": "### Bug Fixes\n\n- Extract zip archive with multiple entries [[#4283](https://github.com/anchore/syft/pull/4283) @Rupikz]\n- panic while resolving maven properties in archive parser [[#4288](https://github.com/anchore/syft/issues/4288) [#4290](https://github.com/anchore/syft/pull/4290) @kzantow]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.34.1...v1.34.2)**\n\n",
+      "date_published": "2025-10-16T12:33:01Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.34.2"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.34.1",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.34.1",
+      "title": "[Syft] v1.34.1",
+      "content_text": "### Added Features\r\n\r\n- feat: enhance setup.py parser to handle unquoted dependencies [[#4255](https://github.com/anchore/syft/pull/4255) @HalaAli198]\r\n- feat: support for identifying ffmpeg/libav libraries [[#4227](https://github.com/anchore/syft/pull/4227) @popey]\r\n- feat: PNPM latest lockfile (version 9.0) [[#3927](https://github.com/anchore/syft/issues/3927) [#4256](https://github.com/anchore/syft/pull/4256) @bernardoamc]\r\n- Add Windows ARM64 releases [[#4179](https://github.com/anchore/syft/issues/4179) [#4237](https://github.com/anchore/syft/pull/4237) @compnerd]\r\n\r\n### Bug Fixes\r\n\r\n- fix: SBOM CPE mismatch for Qt5 causes Grype to miss CVE matches [[#4036](https://github.com/anchore/syft/issues/4036) [#4093](https://github.com/anchore/syft/pull/4093) @hawkaii]\r\n- fix: use of manifest files present in Snap packages when generating SBOMs [[#4147](https://github.com/anchore/syft/issues/4147) [#4151](https://github.com/anchore/syft/pull/4151) @popey]\r\n- fix: Pom xml only archive parser [[#4272](https://github.com/anchore/syft/pull/4272) @douglasclarke]\r\n\r\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.33.0...v1.34.1)**\r\n\r\n",
+      "date_published": "2025-10-15T15:43:12Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.34.1"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.33.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.33.0",
+      "title": "[Syft] v1.33.0",
+      "content_text": "### Added Features\n\n- Modify RpmDBEntry to include modularityLabel for cyclonedx [[#4212](https://github.com/anchore/syft/pull/4212) @sfc-gh-rmaj]\n- Add locations onto packages read from Java native image SBOMs [[#4186](https://github.com/anchore/syft/pull/4186) @rudsberg]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.32.0...v1.33.0)**\n\n",
+      "date_published": "2025-09-15T20:50:31Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.33.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.32.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.32.0",
+      "title": "[Syft] v1.32.0",
+      "content_text": "### Added Features\r\n\r\n- Catalog entire build list for Go projects, not just packages listed in go.mod [[#432](https://github.com/anchore/syft/issues/432) [#4127](https://github.com/anchore/syft/pull/4127) @spiffcs]\r\n- package.json authors keyword parsing [[#2250](https://github.com/anchore/syft/issues/2250) [#4003](https://github.com/anchore/syft/pull/4003) @popey]\r\n- Conda ecosystem support (basic) [[#4002](https://github.com/anchore/syft/pull/4002)@SimeonStoykovQC]\r\n\r\n### Bug Fixes\r\n\r\n- When scanning the FFmpeg binary with Syft a new package is now added [[#3988](https://github.com/anchore/syft/issues/3988) [#3994](https://github.com/anchore/syft/pull/3994) @popey]\r\n- Warn loudly if SQLite driver is not present when needed [[#3234](https://github.com/anchore/syft/issues/3234) [#4150](https://github.com/anchore/syft/pull/4150) @kzantow]\r\n\r\n### Additional Changes\r\n\r\n- Update dependencies to use go.yaml.in/yaml [[#4157](https://github.com/anchore/syft/pull/4157) @n-bes]\r\n\r\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.31.0...v1.32.0)**\r\n\r\n",
+      "date_published": "2025-08-26T21:59:31Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.32.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.31.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.31.0",
+      "title": "[Syft] v1.31.0",
+      "content_text": "### Added Features\n\n- Option to set `PackageSupplier` in root of SPDX document generated by CLI [[#3098](https://github.com/anchore/syft/issues/3098) [#4131](https://github.com/anchore/syft/pull/4131) @spiffcs]\n\n### Bug Fixes\n\n- closed reader during java binary detection [[#4129](https://github.com/anchore/syft/pull/4129) @kzantow]\n- support multiple letters in openssl patch version [[#4106](https://github.com/anchore/syft/pull/4106) @honigbot]\n- Can not have license ID [[#1964](https://github.com/anchore/syft/issues/1964) [#4132](https://github.com/anchore/syft/pull/4132) @spiffcs]\n- Syft sometimes reports URL for license value when scanning JARs with a URL in `Bundle-License` field of manifest [[#3186](https://github.com/anchore/syft/issues/3186)]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.30.0...v1.31.0)**\n\n",
+      "date_published": "2025-08-13T15:04:57Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.31.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.30.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.30.0",
+      "title": "[Syft] v1.30.0",
+      "content_text": "### Added Features\r\n\r\n- add binary classifier for hashicorp vault [[#4121](https://github.com/anchore/syft/pull/4121) @willmurphyscode]\r\n\r\n### Bug Fixes\r\n\r\n- fix: update nondeterministic Java archive cataloging and improve groupID [[#3521](https://github.com/anchore/syft/issues/3521) [#4118](https://github.com/anchore/syft/pull/4118) @kzantow]\r\n\r\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.29.1...v1.30.0)**\r\n\r\n",
+      "date_published": "2025-08-08T18:32:55Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.30.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.29.1",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.29.1",
+      "title": "[Syft] v1.29.1",
+      "content_text": "### Bug Fixes\n\n- Missing license information for tzdata [[#4102](https://github.com/anchore/syft/issues/4102)]\n- Improve JVM Scan Accuracy for JDK and JRE Detection [[#4071](https://github.com/anchore/syft/issues/4071) [#4046](https://github.com/anchore/syft/pull/4046) @kzantow]\n- Azul JDK classified as Oracle JRE [[#3893](https://github.com/anchore/syft/issues/3893) [#4046](https://github.com/anchore/syft/pull/4046) @kzantow]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.29.0...v1.29.1)**\n\n",
+      "date_published": "2025-07-30T18:28:38Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.29.1"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.29.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.29.0",
+      "title": "[Syft] v1.29.0",
+      "content_text": "### Added Features\n\n- Catalog python `uv.lock` files [[#3268](https://github.com/anchore/syft/issues/3268) [#3763](https://github.com/anchore/syft/pull/3763) @jkugler]\n\n### Additional Changes\n\n- Pkg Metadata type unmarshal bug [[#4043](https://github.com/anchore/syft/pull/4043) @houdini91]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.28.0...v1.29.0)**\n\n",
+      "date_published": "2025-07-21T19:49:39Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.29.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.28.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.28.0",
+      "title": "[Syft] v1.28.0",
+      "content_text": "### Added Features\n\n- add native support for snap packages [[#1088](https://github.com/anchore/syft/issues/1088) [#3929](https://github.com/anchore/syft/pull/3929) @wagoodman]\n\n### Additional Changes\n\n- upgrade tablewriter dependency to use new API [[#3990](https://github.com/anchore/syft/pull/3990) @cpanato]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.27.1...v1.28.0)**\n\n",
+      "date_published": "2025-07-02T16:35:53Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.28.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.27.1",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.27.1",
+      "title": "[Syft] v1.27.1",
+      "content_text": "### Bug Fixes\n\n- Allow decoding of enterprise-modified anchorectl json files [[#3997](https://github.com/anchore/syft/pull/3997) @wagoodman]\n- Allow decoding of anchorectl json files [[#3973](https://github.com/anchore/syft/pull/3973) @wagoodman]\n\n### Additional Changes\n\n- provide separate nonroot image [[#3998](https://github.com/anchore/syft/pull/3998) @kzantow]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.27.0...v1.27.1)**\n\n",
+      "date_published": "2025-06-12T13:51:06Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.27.1"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.27.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.27.0",
+      "title": "[Syft] v1.27.0",
+      "content_text": "### Added Features\r\n\r\n- add syft schema version to version command [[#3949](https://github.com/anchore/syft/pull/3949) @spiffcs]\r\n\r\n### Bug Fixes\r\n\r\n- Remove CPE product candidates for phf, prometheus, hyper and Rust crates [[#3967](https://github.com/anchore/syft/pull/3967) @jayvdb]\r\n- Remove CPE product candidates for opentelemetry and redis Rust crates [[#3962](https://github.com/anchore/syft/pull/3962) @jayvdb]\r\n- Harden Container Runtime with Non-Root User [[#3941](https://github.com/anchore/syft/pull/3941) @MikeTheCyberGuy]\r\n- terraform provider lock entries should not require constraints [[#3934](https://github.com/anchore/syft/pull/3934) @ghouscht]\r\n- sbom cataloger returning upstream package [[#3662](https://github.com/anchore/syft/issues/3662) [#3981](https://github.com/anchore/syft/pull/3981) @kzantow]\r\n- Syft missing md5 sums and list data for dpkg packages under `status.d/` [[#3912](https://github.com/anchore/syft/issues/3912)]\r\n- Failure to detect dependency relationships between Python packages [[#3958](https://github.com/anchore/syft/issues/3958) [#3965](https://github.com/anchore/syft/pull/3965) @christoph-blessing]\r\n- Heavy memory consumption when directory scanning deb source [[#3928](https://github.com/anchore/syft/issues/3928) [#3953](https://github.com/anchore/syft/pull/3953) @kzantow]\r\n- In versions 1.25.0 and later, graalvm-native-image-cataloger adds 3-6 hours to Syft [[#3942](https://github.com/anchore/syft/issues/3942) [#3944](https://github.com/anchore/syft/pull/3944) @kzantow]\r\n- Syft incorrectly reports multiple APKs as parents of symlinked files [[#3847](https://github.com/anchore/syft/issues/3847) [#3923](https://github.com/anchore/syft/pull/3923) @luhring]\r\n\r\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.26.1...v1.27.0)**\r\n\r\nA HUGE thank you to @rezmoss for his help identifying and solving an issue causing excessive time and memory consumption with large numbers of symlinks! ❤️ ",
+      "date_published": "2025-06-09T18:45:20Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.27.0"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.26.1",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.26.1",
+      "title": "[Syft] v1.26.1",
+      "content_text": "### Bug Fixes\n\n- Dotnet deps binary cataloger hangs [[#3919](https://github.com/anchore/syft/issues/3919) [#3930](https://github.com/anchore/syft/pull/3930) @kzantow]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.26.0...v1.26.1)**\n\n",
+      "date_published": "2025-05-22T12:45:40Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.26.1"
+    },
+    {
+      "id": "https://github.com/anchore/syft/releases/tag/v1.26.0",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.26.0",
+      "title": "[Syft] v1.26.0",
+      "content_text": "### Added Features\n\n- Read version resources from non-.NET DLLs and executables [[#3842](https://github.com/anchore/syft/issues/3842) [#3911](https://github.com/anchore/syft/pull/3911) @wagoodman]\n\n### Bug Fixes\n\n- `pkg.JavaArchive.PomProperties` is being populated even though no `pom.properties` file was present for analysis [[#3922](https://github.com/anchore/syft/pull/3922) @wagoodman]\n- syft 1.24.0 debug container - wget fails TLS [[#3891](https://github.com/anchore/syft/issues/3891) [#3915](https://github.com/anchore/syft/pull/3915) @spiffcs]\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.25.1...v1.26.0)**\n\n",
+      "date_published": "2025-05-20T21:35:14Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "syft",
+      "_version": "v1.26.0"
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "SCA Tools Feed - Dependency-Check",
+  "feed_url": "https://tmyymmt.github.io/sca-tools-feed/feeds/dependency-check.json",
+  "items": [
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v12.1.0",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v12.1.0",
+      "title": "[Dependency-Check] Version 12.1.0",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-02-17T10:14:26Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v12.1.0"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.2",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.2",
+      "title": "[Dependency-Check] Version 12.0.2",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-02-14T10:52:52Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v12.0.2"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.1",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.1",
+      "title": "[Dependency-Check] Version 12.0.1",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:09:45Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v12.0.1"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.0",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.0",
+      "title": "[Dependency-Check] Version 12.0.0",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:09:24Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v12.0.0"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v11.1.1",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v11.1.1",
+      "title": "[Dependency-Check] Version 11.1.1",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:09:02Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v11.1.1"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v11.1.0",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v11.1.0",
+      "title": "[Dependency-Check] Version 11.1.0",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:08:40Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v11.1.0"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v11.0.0",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v11.0.0",
+      "title": "[Dependency-Check] Version 11.0.0",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:08:18Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v11.0.0"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.4",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.4",
+      "title": "[Dependency-Check] Version 10.0.4",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:07:58Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v10.0.4"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.3",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.3",
+      "title": "[Dependency-Check] Version 10.0.3",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:07:38Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v10.0.3"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.2",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.2",
+      "title": "[Dependency-Check] Version 10.0.2",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:07:17Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v10.0.2"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.1",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.1",
+      "title": "[Dependency-Check] Version 10.0.1",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:06:56Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v10.0.1"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.0",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.0",
+      "title": "[Dependency-Check] Version 10.0.0",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:06:35Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v10.0.0"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.2.0",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.2.0",
+      "title": "[Dependency-Check] Version 9.2.0",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:06:13Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.2.0"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.1.0",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.1.0",
+      "title": "[Dependency-Check] Version 9.1.0",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:05:51Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.1.0"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.10",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.10",
+      "title": "[Dependency-Check] Version 9.0.10",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:05:29Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.10"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.9",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.9",
+      "title": "[Dependency-Check] Version 9.0.9",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:05:07Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.9"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.8",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.8",
+      "title": "[Dependency-Check] Version 9.0.8",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:04:42Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.8"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.7",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.7",
+      "title": "[Dependency-Check] Version 9.0.7",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:04:20Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.7"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.6",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.6",
+      "title": "[Dependency-Check] Version 9.0.6",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:04:00Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.6"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.5",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.5",
+      "title": "[Dependency-Check] Version 9.0.5",
+      "content_text": "Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.",
+      "date_published": "2025-01-24T13:03:39Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.5"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.4",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.4",
+      "title": "[Dependency-Check] Version 9.0.4",
+      "content_text": "- fix: utilize maven proxy if present (#6255)\n- fix: allow api key in cli to be quoted (#6253)\n- fix: use correct maven plugin reporting plugin (#6244)\n- fix: correct trailing comma in JSON report (#6245)\n\nSee the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/74?closed=1).",
+      "date_published": "2025-01-24T13:03:17Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.4"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.3",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.3",
+      "title": "[Dependency-Check] Version 9.0.3",
+      "content_text": "- fix: use Java properties for proxy configuration (#6238)\n- docs: update proxy configuration documentation (#6237)\n- docs: add documentation on caching (#6204)\n- docs: Clarify H2 database caching strategy (#6220)\n- docs: Update list of supported report formats (#6224)\n- docs: example 5 with new nvdDatafeedUrl parameter (#6215)\n- fix: prevent NPEs (#6232 and #6206)\n- fix: check valid for hours for NVD API (#6225)\n- fix: correct NVD cache last checked logic (#6218)\n- fix: nvd datafeed should process current year (#6213)\n- fix: correct references to cvssv2 and cvssv3 fields in json and xml reports (#6212)\n- fix: correct name on reference links in report (#6205)\n- fix: flaws int the gitlab report (#6193)\n\nSee the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/73?closed=1).",
+      "date_published": "2025-01-24T13:02:55Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.3"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.2",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.2",
+      "title": "[Dependency-Check] v9.0.2",
+      "content_text": "- fix: remove virtual match string on NVD API Request (#6177)\r\n- fix: correct meta data in report after switching the NVD API (#6154)\r\n- fix: retry HTTP connections to NVD on 502 and 504 errors (#6151)\r\n- fix: Gitlab report format needs severity capitalized (#6182)\r\n- fix: improve JDK update version parsing (#6163)\r\n- fix: mute JCS logging (again) (#6153)\r\n\r\nSee the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/72?closed=1).",
+      "date_published": "2025-01-24T13:02:33Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.2"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.1",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.1",
+      "title": "[Dependency-Check] Version 9.0.1",
+      "content_text": "- fix: check java 8 update version; minimum JRE is 8 update 251 (#6118)\n- fix: add retry for failed NVD API requests (#6136)\n- docs: add default values to documentation for the NVD API Delay (#6135)\n- chore: Revert \"build(deps): bump com.h2database:h2 from 2.1.214 to 2.2.224\" (#6131)\n  - this is a **breaking change** for anyone that successfully created the H2 database with 9.0.0.\n- fix: mute jcs logging (#6130)\n- docs: update NVD notice (#6110)\n- fix: Use the correct key for NVD API-Key from Maven Settings serverId (#6109)\n\nSee the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/71?closed=1).",
+      "date_published": "2025-01-24T13:02:12Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.1"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.0",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.0",
+      "title": "[Dependency-Check] Version 9.0.0",
+      "content_text": "**breaking changes**: See the [upgrade notice](https://github.com/dependency-check/DependencyCheck#900-upgrade-notice)\r\n\r\n- feat: Utilize NVD API (#5978)\r\n- feat: gitlab dependency scanner report format #5919 (#5920)\r\n- fix: Use ASCII apostrophe for console message (#6076)\r\n\r\nSee the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/68?closed=1).",
+      "date_published": "2025-01-24T13:01:49Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v9.0.0"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.3",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.3",
+      "title": "[Dependency-Check] Version 8.4.3",
+      "content_text": "- fix: bump jcs3 (#6047)\n- docs: Corrected docs on hostedSuppressions (#6035)\n\nSee the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/70?closed=1).",
+      "date_published": "2025-01-24T13:01:29Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v8.4.3"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.2",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.2",
+      "title": "[Dependency-Check] Version 8.4.2",
+      "content_text": "- fix: correct log configuration in cli (#6002)\n\nSee the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/69?closed=1).",
+      "date_published": "2025-01-24T13:01:07Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v8.4.2"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.1",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.1",
+      "title": "[Dependency-Check] Version 8.4.1",
+      "content_text": "- fix: upgrade to JCS3 (#5114)\n- fix: Support ~= version specifier in requirements.txt and pipfile (#5902)\n- fix: Version of dependency no longer ignored when CPE product has a 'java' suffix in a product name (#5901)\n- fix: Do not filter out evidences added by hints (#5900)\n- fix: fixes FP #5925 (#5927)\n\nSee the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/67?closed=1).",
+      "date_published": "2025-01-24T13:00:47Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v8.4.1"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.0",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.0",
+      "title": "[Dependency-Check] Version 8.4.0",
+      "content_text": "### Added\n\n- feat: Add support for Nexus v3 to NexusAnalyzer (#5849)\n\n### Fixed\n\n- fix: Hint Analyzer should run before VersionFilter Analyzer (#5818)\n- chore: switch to sha1-pinning as suggested by Semgrep\n- fix: OSS Index Analyzer SocketTimeoutException exception handling based on warn only parameter (#5845)\n- fix: use curl with -L to follow github redirect (#5808)\n- fix: use curl with -L to follow github redirect\n- fix: #5671 out of memory error (#5789)\n- fix: #5671 Exit method as soon as we detect a loop to prevent an infinite loop leading to an OutOfMemoryError",
+      "date_published": "2025-01-24T13:00:26Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v8.4.0"
+    },
+    {
+      "id": "https://github.com/jeremylong/DependencyCheck/releases/tag/v8.3.1",
+      "url": "https://github.com/jeremylong/DependencyCheck/releases/tag/v8.3.1",
+      "title": "[Dependency-Check] Version 8.3.1",
+      "content_text": "Re-release of 8.3.0 as 8.3.1.",
+      "date_published": "2025-01-24T13:00:04Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "dependency-check",
+      "_version": "v8.3.1"
+    }
+  ]
+}

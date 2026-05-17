@@ -1,0 +1,677 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>SCA Tools Feed - FutureVuls</title>
+    <link>https://tmyymmt.github.io/sca-tools-feed/feeds/futurevuls.rss</link>
+    <description>SCA Tools Feed - FutureVuls - SCA tool release feed</description>
+    <atom:link href="https://tmyymmt.github.io/sca-tools-feed/feeds/futurevuls.rss" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 17 May 2026 14:14:03 +0000</lastBuildDate>
+    <item>
+      <title>[FutureVuls] 2018-08-27</title>
+      <link>https://help.vuls.biz/releasenotes/20180827/</link>
+      <description>2018-08-27</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20180827/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 27 Aug 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2018-09-04</title>
+      <link>https://help.vuls.biz/releasenotes/20180904/</link>
+      <description>2018-09-04</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20180904/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2018-09-13</title>
+      <link>https://help.vuls.biz/releasenotes/20180913/</link>
+      <description>2018-09-13</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20180913/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2018-09-21</title>
+      <link>https://help.vuls.biz/releasenotes/20180921/</link>
+      <description>2018-09-21</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20180921/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2018-10-02</title>
+      <link>https://help.vuls.biz/releasenotes/20181002/</link>
+      <description>2018-10-02</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20181002/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2018-10-11</title>
+      <link>https://help.vuls.biz/releasenotes/20181011/</link>
+      <description>2018-10-11</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20181011/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2018-10-26</title>
+      <link>https://help.vuls.biz/releasenotes/20181026/</link>
+      <description>2018-10-26</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20181026/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2018-11-09</title>
+      <link>https://help.vuls.biz/releasenotes/20181109/</link>
+      <description>2018-11-09</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20181109/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2018-11-19</title>
+      <link>https://help.vuls.biz/releasenotes/20181119/</link>
+      <description>2018-11-19</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20181119/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2018-12-07</title>
+      <link>https://help.vuls.biz/releasenotes/20181207/</link>
+      <description>2018-12-07</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20181207/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-01-16</title>
+      <link>https://help.vuls.biz/releasenotes/20190116/</link>
+      <description>2019-01-16</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20190116/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-01-24</title>
+      <link>https://help.vuls.biz/releasenotes/20190124/</link>
+      <description>2019-01-24</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20190124/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-02-21</title>
+      <link>https://help.vuls.biz/releasenotes/20190221/</link>
+      <description>2019-02-21</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20190221/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 21 Feb 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-03-20</title>
+      <link>https://help.vuls.biz/releasenotes/20190320/</link>
+      <description>2019-03-20</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20190320/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-04-10</title>
+      <link>https://help.vuls.biz/releasenotes/20190410/</link>
+      <description>2019-04-10</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20190410/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-06-05</title>
+      <link>https://help.vuls.biz/releasenotes/20190605/</link>
+      <description>2019-06-05</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20190605/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-06-19</title>
+      <link>https://help.vuls.biz/releasenotes/20190619/</link>
+      <description>2019-06-19</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20190619/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-07-05</title>
+      <link>https://help.vuls.biz/releasenotes/20190705/</link>
+      <description>2019-07-05</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20190705/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-08-02</title>
+      <link>https://help.vuls.biz/releasenotes/20190802/</link>
+      <description>2019-08-02</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20190802/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-09-19</title>
+      <link>https://help.vuls.biz/releasenotes/20190919/</link>
+      <description>2019-09-19</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20190919/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-10-11</title>
+      <link>https://help.vuls.biz/releasenotes/20191011/</link>
+      <description>2019-10-11</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20191011/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2019-12-17</title>
+      <link>https://help.vuls.biz/releasenotes/20191217/</link>
+      <description>2019-12-17</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20191217/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 17 Dec 2019 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2020-03-30</title>
+      <link>https://help.vuls.biz/releasenotes/20200330/</link>
+      <description>2020-03-30</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20200330/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2020-05-15</title>
+      <link>https://help.vuls.biz/releasenotes/20200515/</link>
+      <description>2020-05-15</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20200515/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2020-07-03</title>
+      <link>https://help.vuls.biz/releasenotes/20200703/</link>
+      <description>2020-07-03</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20200703/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2020-07-17</title>
+      <link>https://help.vuls.biz/releasenotes/20200717/</link>
+      <description>2020-07-17</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20200717/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2020-07-29</title>
+      <link>https://help.vuls.biz/releasenotes/20200729/</link>
+      <description>2020-07-29</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20200729/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2020-08-07</title>
+      <link>https://help.vuls.biz/releasenotes/20200807/</link>
+      <description>2020-08-07</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20200807/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2020-09-04</title>
+      <link>https://help.vuls.biz/releasenotes/20200904/</link>
+      <description>2020-09-04</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20200904/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2020-10-30</title>
+      <link>https://help.vuls.biz/releasenotes/20201030/</link>
+      <description>2020-10-30</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20201030/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2020-12-04</title>
+      <link>https://help.vuls.biz/releasenotes/20201204/</link>
+      <description>2020-12-04</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20201204/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2020-12-17</title>
+      <link>https://help.vuls.biz/releasenotes/20201217/</link>
+      <description>2020-12-17</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20201217/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2021-01-28</title>
+      <link>https://help.vuls.biz/releasenotes/20210128/</link>
+      <description>2021-01-28</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20210128/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2021-04-08</title>
+      <link>https://help.vuls.biz/releasenotes/20210408/</link>
+      <description>2021-04-08</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20210408/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 08 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2021-04-16</title>
+      <link>https://help.vuls.biz/releasenotes/20210416/</link>
+      <description>2021-04-16</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20210416/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2021-05-21</title>
+      <link>https://help.vuls.biz/releasenotes/20210521/</link>
+      <description>2021-05-21</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20210521/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2021-06-18</title>
+      <link>https://help.vuls.biz/releasenotes/20210618/</link>
+      <description>2021-06-18</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20210618/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2021-07-30</title>
+      <link>https://help.vuls.biz/releasenotes/20210730/</link>
+      <description>2021-07-30</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20210730/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2021-10-15</title>
+      <link>https://help.vuls.biz/releasenotes/20211015/</link>
+      <description>2021-10-15</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20211015/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 15 Oct 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2021-10-29</title>
+      <link>https://help.vuls.biz/releasenotes/20211029/</link>
+      <description>2021-10-29</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20211029/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2021-12-09</title>
+      <link>https://help.vuls.biz/releasenotes/20211209/</link>
+      <description>2021-12-09</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20211209/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2022-01-31</title>
+      <link>https://help.vuls.biz/releasenotes/20220131/</link>
+      <description>2022-01-31</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20220131/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2022-02-08</title>
+      <link>https://help.vuls.biz/releasenotes/20220208/</link>
+      <description>2022-02-08</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20220208/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2022-03-14</title>
+      <link>https://help.vuls.biz/releasenotes/20220314/</link>
+      <description>2022-03-14</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20220314/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2022-05-17</title>
+      <link>https://help.vuls.biz/releasenotes/20220517/</link>
+      <description>2022-05-17</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20220517/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2022-07-13</title>
+      <link>https://help.vuls.biz/releasenotes/20220713/</link>
+      <description>2022-07-13</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20220713/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2022-09-13</title>
+      <link>https://help.vuls.biz/releasenotes/20220913/</link>
+      <description>2022-09-13</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20220913/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2022-11-21</title>
+      <link>https://help.vuls.biz/releasenotes/20221121/</link>
+      <description>2022-11-21</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20221121/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2023-02-06</title>
+      <link>https://help.vuls.biz/releasenotes/20230206/</link>
+      <description>2023-02-06</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20230206/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2023-03-01</title>
+      <link>https://help.vuls.biz/releasenotes/20230301/</link>
+      <description>2023-03-01</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20230301/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2023-03-29</title>
+      <link>https://help.vuls.biz/releasenotes/20230329/</link>
+      <description>2023-03-29</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20230329/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2023-04-26</title>
+      <link>https://help.vuls.biz/releasenotes/20230426/</link>
+      <description>2023-04-26</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20230426/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2023-05-30</title>
+      <link>https://help.vuls.biz/releasenotes/20230530/</link>
+      <description>2023-05-30</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20230530/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2023-07-25</title>
+      <link>https://help.vuls.biz/releasenotes/20230725/</link>
+      <description>2023-07-25</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20230725/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2023-09-11</title>
+      <link>https://help.vuls.biz/releasenotes/20230911/</link>
+      <description>2023-09-11</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20230911/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2023-09-26</title>
+      <link>https://help.vuls.biz/releasenotes/20230926/</link>
+      <description>2023-09-26</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20230926/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2023-11-20</title>
+      <link>https://help.vuls.biz/releasenotes/20231120/</link>
+      <description>2023-11-20</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20231120/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-01-15</title>
+      <link>https://help.vuls.biz/releasenotes/20240115/</link>
+      <description>2024-01-15</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20240115/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-02-08</title>
+      <link>https://help.vuls.biz/releasenotes/20240208/</link>
+      <description>2024-02-08</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20240208/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-04-01</title>
+      <link>https://help.vuls.biz/releasenotes/20240401/</link>
+      <description>2024-04-01</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20240401/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-04-15</title>
+      <link>https://help.vuls.biz/releasenotes/20240415/</link>
+      <description>2024-04-15</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20240415/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-05-02</title>
+      <link>https://help.vuls.biz/releasenotes/20240502/</link>
+      <description>2024-05-02</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20240502/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-05-13</title>
+      <link>https://help.vuls.biz/releasenotes/20240513/</link>
+      <description>2024-05-13</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20240513/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-06-06</title>
+      <link>https://help.vuls.biz/releasenotes/20240606/</link>
+      <description>2024-06-06</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20240606/</guid>
+      <category>feature</category>
+      <pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-06-24</title>
+      <link>https://help.vuls.biz/releasenotes/20240624/</link>
+      <description>2024-06-24</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20240624/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-09-13</title>
+      <link>https://help.vuls.biz/releasenotes/20240913/</link>
+      <description>2024-09-13</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20240913/</guid>
+      <category>feature</category>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-10-21</title>
+      <link>https://help.vuls.biz/releasenotes/20241021/</link>
+      <description>2024-10-21</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20241021/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2024-12-16</title>
+      <link>https://help.vuls.biz/releasenotes/20241216/</link>
+      <description>2024-12-16</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20241216/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2025-02-05</title>
+      <link>https://help.vuls.biz/releasenotes/20250205/</link>
+      <description>2025-02-05</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20250205/</guid>
+      <category>feature</category>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2025-04-21</title>
+      <link>https://help.vuls.biz/releasenotes/20250421/</link>
+      <description>2025-04-21</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20250421/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2025-05 [Hotfix]</title>
+      <link>https://help.vuls.biz/releasenotes/20250500_hotfix/</link>
+      <description>2025-05 [Hotfix]</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20250500_hotfix/</guid>
+      <category>security</category>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2025-07-14</title>
+      <link>https://help.vuls.biz/releasenotes/20250714/</link>
+      <description>2025-07-14</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20250714/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 14 Jul 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2025-09 [Hotfix]</title>
+      <link>https://help.vuls.biz/releasenotes/20250900_hotfix/</link>
+      <description>2025-09 [Hotfix]</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20250900_hotfix/</guid>
+      <category>security</category>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2025-11 [Hotfix]</title>
+      <link>https://help.vuls.biz/releasenotes/20251100_hotfix/</link>
+      <description>2025-11 [Hotfix]</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20251100_hotfix/</guid>
+      <category>security</category>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2025-11-11</title>
+      <link>https://help.vuls.biz/releasenotes/20251111/</link>
+      <description>2025-11-11</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20251111/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2025-12 [Hotfix]</title>
+      <link>https://help.vuls.biz/releasenotes/20251200_hotfix/</link>
+      <description>2025-12 [Hotfix]</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20251200_hotfix/</guid>
+      <category>security</category>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2025-12-22</title>
+      <link>https://help.vuls.biz/releasenotes/20251222/</link>
+      <description>2025-12-22</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20251222/</guid>
+      <category>feature</category>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2026-01 [Hotfix]</title>
+      <link>https://help.vuls.biz/releasenotes/20260100_hotfix/</link>
+      <description>2026-01 [Hotfix]</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20260100_hotfix/</guid>
+      <category>security</category>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2026-02-24</title>
+      <link>https://help.vuls.biz/releasenotes/20260224/</link>
+      <description>2026-02-24</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20260224/</guid>
+      <category>feature</category>
+      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2026-03 [Hotfix]</title>
+      <link>https://help.vuls.biz/releasenotes/20260300_hotfix/</link>
+      <description>2026-03 [Hotfix]</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20260300_hotfix/</guid>
+      <category>security</category>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2026-03-02 [Hotfix]</title>
+      <link>https://help.vuls.biz/releasenotes/20260302_hotfix/</link>
+      <description>2026-03-02 [Hotfix]</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20260302_hotfix/</guid>
+      <category>security</category>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2026-04-06 [éè¦]</title>
+      <link>https://help.vuls.biz/releasenotes/20260406_hotfix/</link>
+      <description>2026-04-06 [éè¦]</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20260406_hotfix/</guid>
+      <category>security</category>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[FutureVuls] 2026-04-08 [éè¦]</title>
+      <link>https://help.vuls.biz/releasenotes/20260408_hotfix/</link>
+      <description>2026-04-08 [éè¦]</description>
+      <guid isPermaLink="false">https://help.vuls.biz/releasenotes/20260408_hotfix/</guid>
+      <category>security</category>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

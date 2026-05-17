@@ -1,0 +1,832 @@
+[
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2026-04-08 [éè¦]",
+    "published_at": "2026-04-08T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20260408_hotfix/",
+    "summary": "2026-04-08 [éè¦]",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2026-04-06 [éè¦]",
+    "published_at": "2026-04-06T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20260406_hotfix/",
+    "summary": "2026-04-06 [éè¦]",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2026-03 [Hotfix]",
+    "published_at": "2026-03-01T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20260300_hotfix/",
+    "summary": "2026-03 [Hotfix]",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2026-03-02 [Hotfix]",
+    "published_at": "2026-03-02T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20260302_hotfix/",
+    "summary": "2026-03-02 [Hotfix]",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2026-02-24",
+    "published_at": "2026-02-24T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20260224/",
+    "summary": "2026-02-24",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2026-01 [Hotfix]",
+    "published_at": "2026-01-01T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20260100_hotfix/",
+    "summary": "2026-01 [Hotfix]",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2025-12-22",
+    "published_at": "2025-12-22T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20251222/",
+    "summary": "2025-12-22",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2025-12 [Hotfix]",
+    "published_at": "2025-12-01T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20251200_hotfix/",
+    "summary": "2025-12 [Hotfix]",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2025-11 [Hotfix]",
+    "published_at": "2025-11-01T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20251100_hotfix/",
+    "summary": "2025-11 [Hotfix]",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2025-11-11",
+    "published_at": "2025-11-11T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20251111/",
+    "summary": "2025-11-11",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2025-09 [Hotfix]",
+    "published_at": "2025-09-01T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20250900_hotfix/",
+    "summary": "2025-09 [Hotfix]",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2025-07-14",
+    "published_at": "2025-07-14T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20250714/",
+    "summary": "2025-07-14",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2025-05 [Hotfix]",
+    "published_at": "2025-05-01T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20250500_hotfix/",
+    "summary": "2025-05 [Hotfix]",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2025-04-21",
+    "published_at": "2025-04-21T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20250421/",
+    "summary": "2025-04-21",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2025-02-05",
+    "published_at": "2025-02-05T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20250205/",
+    "summary": "2025-02-05",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-12-16",
+    "published_at": "2024-12-16T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20241216/",
+    "summary": "2024-12-16",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-10-21",
+    "published_at": "2024-10-21T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20241021/",
+    "summary": "2024-10-21",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-09-13",
+    "published_at": "2024-09-13T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20240913/",
+    "summary": "2024-09-13",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-06-24",
+    "published_at": "2024-06-24T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20240624/",
+    "summary": "2024-06-24",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-06-06",
+    "published_at": "2024-06-06T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20240606/",
+    "summary": "2024-06-06",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-05-13",
+    "published_at": "2024-05-13T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20240513/",
+    "summary": "2024-05-13",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-05-02",
+    "published_at": "2024-05-02T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20240502/",
+    "summary": "2024-05-02",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-04-15",
+    "published_at": "2024-04-15T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20240415/",
+    "summary": "2024-04-15",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-04-01",
+    "published_at": "2024-04-01T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20240401/",
+    "summary": "2024-04-01",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-02-08",
+    "published_at": "2024-02-08T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20240208/",
+    "summary": "2024-02-08",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2024-01-15",
+    "published_at": "2024-01-15T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20240115/",
+    "summary": "2024-01-15",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2023-11-20",
+    "published_at": "2023-11-20T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20231120/",
+    "summary": "2023-11-20",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2023-09-26",
+    "published_at": "2023-09-26T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20230926/",
+    "summary": "2023-09-26",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2023-09-11",
+    "published_at": "2023-09-11T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20230911/",
+    "summary": "2023-09-11",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2023-07-25",
+    "published_at": "2023-07-25T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20230725/",
+    "summary": "2023-07-25",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2023-05-30",
+    "published_at": "2023-05-30T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20230530/",
+    "summary": "2023-05-30",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2023-04-26",
+    "published_at": "2023-04-26T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20230426/",
+    "summary": "2023-04-26",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2023-03-29",
+    "published_at": "2023-03-29T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20230329/",
+    "summary": "2023-03-29",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2023-03-01",
+    "published_at": "2023-03-01T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20230301/",
+    "summary": "2023-03-01",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2023-02-06",
+    "published_at": "2023-02-06T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20230206/",
+    "summary": "2023-02-06",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2022-11-21",
+    "published_at": "2022-11-21T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20221121/",
+    "summary": "2022-11-21",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2022-09-13",
+    "published_at": "2022-09-13T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20220913/",
+    "summary": "2022-09-13",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2022-07-13",
+    "published_at": "2022-07-13T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20220713/",
+    "summary": "2022-07-13",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2022-05-17",
+    "published_at": "2022-05-17T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20220517/",
+    "summary": "2022-05-17",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2022-03-14",
+    "published_at": "2022-03-14T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20220314/",
+    "summary": "2022-03-14",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2022-02-08",
+    "published_at": "2022-02-08T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20220208/",
+    "summary": "2022-02-08",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2022-01-31",
+    "published_at": "2022-01-31T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20220131/",
+    "summary": "2022-01-31",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2021-12-09",
+    "published_at": "2021-12-09T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20211209/",
+    "summary": "2021-12-09",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2021-10-29",
+    "published_at": "2021-10-29T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20211029/",
+    "summary": "2021-10-29",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2021-10-15",
+    "published_at": "2021-10-15T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20211015/",
+    "summary": "2021-10-15",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2021-07-30",
+    "published_at": "2021-07-30T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20210730/",
+    "summary": "2021-07-30",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2021-06-18",
+    "published_at": "2021-06-18T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20210618/",
+    "summary": "2021-06-18",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2021-05-21",
+    "published_at": "2021-05-21T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20210521/",
+    "summary": "2021-05-21",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2021-04-16",
+    "published_at": "2021-04-16T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20210416/",
+    "summary": "2021-04-16",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2021-04-08",
+    "published_at": "2021-04-08T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20210408/",
+    "summary": "2021-04-08",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2021-01-28",
+    "published_at": "2021-01-28T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20210128/",
+    "summary": "2021-01-28",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2020-12-17",
+    "published_at": "2020-12-17T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20201217/",
+    "summary": "2020-12-17",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2020-12-04",
+    "published_at": "2020-12-04T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20201204/",
+    "summary": "2020-12-04",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2020-10-30",
+    "published_at": "2020-10-30T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20201030/",
+    "summary": "2020-10-30",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2020-09-04",
+    "published_at": "2020-09-04T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20200904/",
+    "summary": "2020-09-04",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2020-08-07",
+    "published_at": "2020-08-07T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20200807/",
+    "summary": "2020-08-07",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2020-07-29",
+    "published_at": "2020-07-29T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20200729/",
+    "summary": "2020-07-29",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2020-07-17",
+    "published_at": "2020-07-17T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20200717/",
+    "summary": "2020-07-17",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2020-07-03",
+    "published_at": "2020-07-03T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20200703/",
+    "summary": "2020-07-03",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2020-05-15",
+    "published_at": "2020-05-15T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20200515/",
+    "summary": "2020-05-15",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2020-03-30",
+    "published_at": "2020-03-30T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20200330/",
+    "summary": "2020-03-30",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-12-17",
+    "published_at": "2019-12-17T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20191217/",
+    "summary": "2019-12-17",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-10-11",
+    "published_at": "2019-10-11T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20191011/",
+    "summary": "2019-10-11",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-09-19",
+    "published_at": "2019-09-19T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20190919/",
+    "summary": "2019-09-19",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-08-02",
+    "published_at": "2019-08-02T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20190802/",
+    "summary": "2019-08-02",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-07-05",
+    "published_at": "2019-07-05T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20190705/",
+    "summary": "2019-07-05",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-06-19",
+    "published_at": "2019-06-19T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20190619/",
+    "summary": "2019-06-19",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-06-05",
+    "published_at": "2019-06-05T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20190605/",
+    "summary": "2019-06-05",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-04-10",
+    "published_at": "2019-04-10T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20190410/",
+    "summary": "2019-04-10",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-03-20",
+    "published_at": "2019-03-20T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20190320/",
+    "summary": "2019-03-20",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-02-21",
+    "published_at": "2019-02-21T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20190221/",
+    "summary": "2019-02-21",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-01-24",
+    "published_at": "2019-01-24T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20190124/",
+    "summary": "2019-01-24",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2019-01-16",
+    "published_at": "2019-01-16T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20190116/",
+    "summary": "2019-01-16",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2018-12-07",
+    "published_at": "2018-12-07T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20181207/",
+    "summary": "2018-12-07",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2018-11-19",
+    "published_at": "2018-11-19T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20181119/",
+    "summary": "2018-11-19",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2018-11-09",
+    "published_at": "2018-11-09T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20181109/",
+    "summary": "2018-11-09",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2018-10-26",
+    "published_at": "2018-10-26T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20181026/",
+    "summary": "2018-10-26",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2018-10-11",
+    "published_at": "2018-10-11T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20181011/",
+    "summary": "2018-10-11",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2018-10-02",
+    "published_at": "2018-10-02T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20181002/",
+    "summary": "2018-10-02",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2018-09-21",
+    "published_at": "2018-09-21T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20180921/",
+    "summary": "2018-09-21",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2018-09-13",
+    "published_at": "2018-09-13T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20180913/",
+    "summary": "2018-09-13",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2018-09-04",
+    "published_at": "2018-09-04T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20180904/",
+    "summary": "2018-09-04",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "futurevuls",
+    "tool_name": "FutureVuls",
+    "version": "2018-08-27",
+    "published_at": "2018-08-27T00:00:00Z",
+    "url": "https://help.vuls.biz/releasenotes/20180827/",
+    "summary": "2018-08-27",
+    "body": "",
+    "category": "feature"
+  }
+]

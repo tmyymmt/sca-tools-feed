@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://tmyymmt.github.io/sca-tools-feed/feeds/dependency-check.atom</id>
+  <title>SCA Tools Feed - Dependency-Check</title>
+  <updated>2026-05-17T14:14:03.138717+00:00</updated>
+  <link href="https://tmyymmt.github.io/sca-tools-feed/feeds/dependency-check.atom" rel="self"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>SCA Tools Feed - Dependency-Check - SCA tool release feed</subtitle>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v8.3.1</id>
+    <title>[Dependency-Check] Version 8.3.1</title>
+    <updated>2025-01-24T13:00:04+00:00</updated>
+    <content type="text">Re-release of 8.3.0 as 8.3.1.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v8.3.1"/>
+    <category term="feature"/>
+    <published>2025-01-24T13:00:04+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.0</id>
+    <title>[Dependency-Check] Version 8.4.0</title>
+    <updated>2025-01-24T13:00:26+00:00</updated>
+    <content type="text">### Added
+
+- feat: Add support for Nexus v3 to NexusAnalyzer (#5849)
+
+### Fixed
+
+- fix: Hint Analyzer should run before VersionFilter Analyzer (#5818)
+- chore: switch to sha1-pinning as suggested by Semgrep
+- fix: OSS Index Analyzer SocketTimeoutException exception handling based on warn only parameter (#5845)
+- fix: use curl with -L to follow github redirect (#5808)
+- fix: use curl with -L to follow github redirect
+- fix: #5671 out of memory error (#5789)
+- fix: #5671 Exit method as soon as we detect a loop to prevent an infinite loop leading to an OutOfMemoryError</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.0"/>
+    <category term="bugfix"/>
+    <published>2025-01-24T13:00:26+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.1</id>
+    <title>[Dependency-Check] Version 8.4.1</title>
+    <updated>2025-01-24T13:00:47+00:00</updated>
+    <content type="text">- fix: upgrade to JCS3 (#5114)
+- fix: Support ~= version specifier in requirements.txt and pipfile (#5902)
+- fix: Version of dependency no longer ignored when CPE product has a 'java' suffix in a product name (#5901)
+- fix: Do not filter out evidences added by hints (#5900)
+- fix: fixes FP #5925 (#5927)
+
+See the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/67?closed=1).</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.1"/>
+    <category term="bugfix"/>
+    <published>2025-01-24T13:00:47+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.2</id>
+    <title>[Dependency-Check] Version 8.4.2</title>
+    <updated>2025-01-24T13:01:07+00:00</updated>
+    <content type="text">- fix: correct log configuration in cli (#6002)
+
+See the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/69?closed=1).</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.2"/>
+    <category term="bugfix"/>
+    <published>2025-01-24T13:01:07+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.3</id>
+    <title>[Dependency-Check] Version 8.4.3</title>
+    <updated>2025-01-24T13:01:29+00:00</updated>
+    <content type="text">- fix: bump jcs3 (#6047)
+- docs: Corrected docs on hostedSuppressions (#6035)
+
+See the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/70?closed=1).</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v8.4.3"/>
+    <category term="bugfix"/>
+    <published>2025-01-24T13:01:29+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.0</id>
+    <title>[Dependency-Check] Version 9.0.0</title>
+    <updated>2025-01-24T13:01:49+00:00</updated>
+    <content type="text">**breaking changes**: See the [upgrade notice](https://github.com/dependency-check/DependencyCheck#900-upgrade-notice)&#13;
+&#13;
+- feat: Utilize NVD API (#5978)&#13;
+- feat: gitlab dependency scanner report format #5919 (#5920)&#13;
+- fix: Use ASCII apostrophe for console message (#6076)&#13;
+&#13;
+See the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/68?closed=1).</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.0"/>
+    <category term="bugfix"/>
+    <published>2025-01-24T13:01:49+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.1</id>
+    <title>[Dependency-Check] Version 9.0.1</title>
+    <updated>2025-01-24T13:02:12+00:00</updated>
+    <content type="text">- fix: check java 8 update version; minimum JRE is 8 update 251 (#6118)
+- fix: add retry for failed NVD API requests (#6136)
+- docs: add default values to documentation for the NVD API Delay (#6135)
+- chore: Revert "build(deps): bump com.h2database:h2 from 2.1.214 to 2.2.224" (#6131)
+  - this is a **breaking change** for anyone that successfully created the H2 database with 9.0.0.
+- fix: mute jcs logging (#6130)
+- docs: update NVD notice (#6110)
+- fix: Use the correct key for NVD API-Key from Maven Settings serverId (#6109)
+
+See the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/71?closed=1).</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.1"/>
+    <category term="bugfix"/>
+    <published>2025-01-24T13:02:12+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.2</id>
+    <title>[Dependency-Check] v9.0.2</title>
+    <updated>2025-01-24T13:02:33+00:00</updated>
+    <content type="text">- fix: remove virtual match string on NVD API Request (#6177)&#13;
+- fix: correct meta data in report after switching the NVD API (#6154)&#13;
+- fix: retry HTTP connections to NVD on 502 and 504 errors (#6151)&#13;
+- fix: Gitlab report format needs severity capitalized (#6182)&#13;
+- fix: improve JDK update version parsing (#6163)&#13;
+- fix: mute JCS logging (again) (#6153)&#13;
+&#13;
+See the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/72?closed=1).</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.2"/>
+    <category term="bugfix"/>
+    <published>2025-01-24T13:02:33+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.3</id>
+    <title>[Dependency-Check] Version 9.0.3</title>
+    <updated>2025-01-24T13:02:55+00:00</updated>
+    <content type="text">- fix: use Java properties for proxy configuration (#6238)
+- docs: update proxy configuration documentation (#6237)
+- docs: add documentation on caching (#6204)
+- docs: Clarify H2 database caching strategy (#6220)
+- docs: Update list of supported report formats (#6224)
+- docs: example 5 with new nvdDatafeedUrl parameter (#6215)
+- fix: prevent NPEs (#6232 and #6206)
+- fix: check valid for hours for NVD API (#6225)
+- fix: correct NVD cache last checked logic (#6218)
+- fix: nvd datafeed should process current year (#6213)
+- fix: correct references to cvssv2 and cvssv3 fields in json and xml reports (#6212)
+- fix: correct name on reference links in report (#6205)
+- fix: flaws int the gitlab report (#6193)
+
+See the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/73?closed=1).</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.3"/>
+    <category term="bugfix"/>
+    <published>2025-01-24T13:02:55+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.4</id>
+    <title>[Dependency-Check] Version 9.0.4</title>
+    <updated>2025-01-24T13:03:17+00:00</updated>
+    <content type="text">- fix: utilize maven proxy if present (#6255)
+- fix: allow api key in cli to be quoted (#6253)
+- fix: use correct maven plugin reporting plugin (#6244)
+- fix: correct trailing comma in JSON report (#6245)
+
+See the full listing of [changes](https://github.com/dependency-check/DependencyCheck/milestone/74?closed=1).</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.4"/>
+    <category term="bugfix"/>
+    <published>2025-01-24T13:03:17+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.5</id>
+    <title>[Dependency-Check] Version 9.0.5</title>
+    <updated>2025-01-24T13:03:39+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.5"/>
+    <category term="other"/>
+    <published>2025-01-24T13:03:39+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.6</id>
+    <title>[Dependency-Check] Version 9.0.6</title>
+    <updated>2025-01-24T13:04:00+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.6"/>
+    <category term="other"/>
+    <published>2025-01-24T13:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.7</id>
+    <title>[Dependency-Check] Version 9.0.7</title>
+    <updated>2025-01-24T13:04:20+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.7"/>
+    <category term="other"/>
+    <published>2025-01-24T13:04:20+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.8</id>
+    <title>[Dependency-Check] Version 9.0.8</title>
+    <updated>2025-01-24T13:04:42+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.8"/>
+    <category term="other"/>
+    <published>2025-01-24T13:04:42+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.9</id>
+    <title>[Dependency-Check] Version 9.0.9</title>
+    <updated>2025-01-24T13:05:07+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.9"/>
+    <category term="other"/>
+    <published>2025-01-24T13:05:07+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.10</id>
+    <title>[Dependency-Check] Version 9.0.10</title>
+    <updated>2025-01-24T13:05:29+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.0.10"/>
+    <category term="other"/>
+    <published>2025-01-24T13:05:29+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.1.0</id>
+    <title>[Dependency-Check] Version 9.1.0</title>
+    <updated>2025-01-24T13:05:51+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.1.0"/>
+    <category term="other"/>
+    <published>2025-01-24T13:05:51+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v9.2.0</id>
+    <title>[Dependency-Check] Version 9.2.0</title>
+    <updated>2025-01-24T13:06:13+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v9.2.0"/>
+    <category term="other"/>
+    <published>2025-01-24T13:06:13+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.0</id>
+    <title>[Dependency-Check] Version 10.0.0</title>
+    <updated>2025-01-24T13:06:35+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.0"/>
+    <category term="other"/>
+    <published>2025-01-24T13:06:35+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.1</id>
+    <title>[Dependency-Check] Version 10.0.1</title>
+    <updated>2025-01-24T13:06:56+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.1"/>
+    <category term="other"/>
+    <published>2025-01-24T13:06:56+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.2</id>
+    <title>[Dependency-Check] Version 10.0.2</title>
+    <updated>2025-01-24T13:07:17+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.2"/>
+    <category term="other"/>
+    <published>2025-01-24T13:07:17+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.3</id>
+    <title>[Dependency-Check] Version 10.0.3</title>
+    <updated>2025-01-24T13:07:38+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.3"/>
+    <category term="other"/>
+    <published>2025-01-24T13:07:38+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.4</id>
+    <title>[Dependency-Check] Version 10.0.4</title>
+    <updated>2025-01-24T13:07:58+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v10.0.4"/>
+    <category term="other"/>
+    <published>2025-01-24T13:07:58+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v11.0.0</id>
+    <title>[Dependency-Check] Version 11.0.0</title>
+    <updated>2025-01-24T13:08:18+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v11.0.0"/>
+    <category term="other"/>
+    <published>2025-01-24T13:08:18+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v11.1.0</id>
+    <title>[Dependency-Check] Version 11.1.0</title>
+    <updated>2025-01-24T13:08:40+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v11.1.0"/>
+    <category term="other"/>
+    <published>2025-01-24T13:08:40+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v11.1.1</id>
+    <title>[Dependency-Check] Version 11.1.1</title>
+    <updated>2025-01-24T13:09:02+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v11.1.1"/>
+    <category term="other"/>
+    <published>2025-01-24T13:09:02+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.0</id>
+    <title>[Dependency-Check] Version 12.0.0</title>
+    <updated>2025-01-24T13:09:24+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.0"/>
+    <category term="other"/>
+    <published>2025-01-24T13:09:24+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.1</id>
+    <title>[Dependency-Check] Version 12.0.1</title>
+    <updated>2025-01-24T13:09:45+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.1"/>
+    <category term="other"/>
+    <published>2025-01-24T13:09:45+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.2</id>
+    <title>[Dependency-Check] Version 12.0.2</title>
+    <updated>2025-02-14T10:52:52+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v12.0.2"/>
+    <category term="other"/>
+    <published>2025-02-14T10:52:52+00:00</published>
+  </entry>
+  <entry>
+    <id>https://github.com/jeremylong/DependencyCheck/releases/tag/v12.1.0</id>
+    <title>[Dependency-Check] Version 12.1.0</title>
+    <updated>2025-02-17T10:14:26+00:00</updated>
+    <content type="text">Refer to the [CHANGELOG.md](https://github.com/dependency-check/DependencyCheck/blob/main/CHANGELOG.md#change-log) for information about improvements and upgrade notes.</content>
+    <link href="https://github.com/jeremylong/DependencyCheck/releases/tag/v12.1.0"/>
+    <category term="other"/>
+    <published>2025-02-17T10:14:26+00:00</published>
+  </entry>
+</feed>

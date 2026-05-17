@@ -1,0 +1,367 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "SCA Tools Feed - Grype",
+  "feed_url": "https://tmyymmt.github.io/sca-tools-feed/feeds/grype.json",
+  "items": [
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.112.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.112.0",
+      "title": "[Grype] v0.112.0",
+      "content_text": "### Added Features\n\n- Expand ignore rules to owned sub packages of distro packages [[#3368](https://github.com/anchore/grype/issues/3368) [#3326](https://github.com/anchore/grype/pull/3326) @kzantow]\n\n### Additional Changes\n\n- update anchore dependencies [[#3391](https://github.com/anchore/grype/pull/3391) @anchore-oss-update-bot]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.111.1...v0.112.0)**\n\n",
+      "date_published": "2026-05-01T19:12:37Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.112.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.111.1",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.111.1",
+      "title": "[Grype] v0.111.1",
+      "content_text": "### Bug Fixes\n\n- apply overlap by ownership removal to dynamically created relationships [[#3363](https://github.com/anchore/grype/pull/3363) @kzantow]\n- compare mismatched package / db versions [[#3372](https://github.com/anchore/grype/pull/3372) @kzantow]\n- Grype doesn't recognize debian component when `\"group\" : \"debian\"` is specified [[#2967](https://github.com/anchore/grype/issues/2967)]\n- HelpURI missing information in SARIF output [[#2874](https://github.com/anchore/grype/issues/2874) [#3351](https://github.com/anchore/grype/pull/3351) @will-bates11]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.111.0...v0.111.1)**\n\n",
+      "date_published": "2026-04-22T17:31:58Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.111.1"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.111.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.111.0",
+      "title": "[Grype] v0.111.0",
+      "content_text": "### Added Features\n\n- db diff for v6 [[#3277](https://github.com/anchore/grype/pull/3277) @kzantow]\n- add ProvideFromReader for in-memory SBOM processing [[#3344](https://github.com/anchore/grype/pull/3344) @jspilman]\n- match on hummingbird [[#3331](https://github.com/anchore/grype/pull/3331) @willmurphyscode]\n- CSAF vex transformer [[#3349](https://github.com/anchore/grype/pull/3349) @willmurphyscode]\n- curated mapping of known CPE to grype package specifiers [[#3332](https://github.com/anchore/grype/pull/3332) @westonsteimel]\n- templates/html.tmpl - Add Grype version and vulnerability DB version [[#2877](https://github.com/anchore/grype/issues/2877) [#3345](https://github.com/anchore/grype/pull/3345) @kenvez]\n\n### Bug Fixes\n\n- normalise version constraint types in v6 db [[#3328](https://github.com/anchore/grype/pull/3328) @westonsteimel]\n- set alpm ecosystem for Arch Linux packages [[#3324](https://github.com/anchore/grype/pull/3324) @westonsteimel]\n- spec-compliant CPE string formatting for db search commands [[#3308](https://github.com/anchore/grype/pull/3308) @westonsteimel]\n- Update APK NAK handling to be based on ownership-by-file-overlap relationship [[#3267](https://github.com/anchore/grype/issues/3267) [#3286](https://github.com/anchore/grype/pull/3286) @kzantow]\n- Wrong version output [[#3306](https://github.com/anchore/grype/issues/3306)]\n\n### Additional Changes\n\n- update anchore dependencies [[#3321](https://github.com/anchore/grype/pull/3321) @anchore-oss-update-bot]\n- update tool versions [[#3319](https://github.com/anchore/grype/pull/3319) @anchore-oss-update-bot]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.110.0...v0.111.0)**\n\n",
+      "date_published": "2026-04-09T13:29:25Z",
+      "tags": [
+        "security"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.111.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.110.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.110.0",
+      "title": "[Grype] v0.110.0",
+      "content_text": "### Added Features\n\n- suppress GHSA matches on language packages in fixed APKs [[#3282](https://github.com/anchore/grype/pull/3282) @willmurphyscode]\n\n### Bug Fixes\n\n- use Syft for decoding CPEs [[#3058](https://github.com/anchore/grype/pull/3058) @chovanecadam]\n\n### Additional Changes\n\n- bump github.com/buger/jsonparser to v1.1.2 [[#3297](https://github.com/anchore/grype/pull/3297) @willmurphyscode]\n- update quality gate labels [[#3293](https://github.com/anchore/grype/pull/3293) @westonsteimel]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.109.1...v0.110.0)**\n\n",
+      "date_published": "2026-03-19T18:16:47Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.110.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.109.1",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.109.1",
+      "title": "[Grype] v0.109.1",
+      "content_text": "### Bug Fixes\n\n- CVE-2025-12183 is not detected even if vulnerable jar is present [[#3205](https://github.com/anchore/grype/issues/3205)]\n\n### Additional Changes\n\n- migrate fixtures to testdata [[#3263](https://github.com/anchore/grype/pull/3263) @wagoodman]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.109.0...v0.109.1)**\n\n",
+      "date_published": "2026-03-09T19:50:07Z",
+      "tags": [
+        "security"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.109.1"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.109.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.109.0",
+      "title": "[Grype] v0.109.0",
+      "content_text": "### Added Features\n\n- Strip v prefix from apk versions [[#3239](https://github.com/anchore/grype/pull/3239) @wagoodman]\n\n### Bug Fixes\n\n- missing EPSS/KEV should not be fatal error [[#3224](https://github.com/anchore/grype/pull/3224) @willmurphyscode]\n\n### Additional Changes\n\n- update build flag to use provenance=false [[#3243](https://github.com/anchore/grype/pull/3243) @spiffcs]\n- update to check-latest golang for ci [[#3238](https://github.com/anchore/grype/pull/3238) @spiffcs]\n- enable fedora OS transformer [[#3232](https://github.com/anchore/grype/pull/3232) @willmurphyscode]\n- Port grype-db lib to grype [[#3149](https://github.com/anchore/grype/pull/3149) @wagoodman]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.108.0...v0.109.0)**\n\n",
+      "date_published": "2026-02-19T16:38:10Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.109.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.108.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.108.0",
+      "title": "[Grype] v0.108.0",
+      "content_text": "### Added Features\n\n- enable disabling EOL warnings [[#3204](https://github.com/anchore/grype/pull/3204) @willmurphyscode]\n\n### Bug Fixes\n\n- fix fallback on major only distro [[#3213](https://github.com/anchore/grype/pull/3213) @willmurphyscode]\n- VEX Documents still not working with syft sbom [[#3167](https://github.com/anchore/grype/issues/3167)]\n- VEX: minimal OpenVEX Example not working [[#3212](https://github.com/anchore/grype/issues/3212)]\n\n### Additional Changes\n\n- support more accurate scanning for postmarketos [[#3182](https://github.com/anchore/grype/pull/3182) @westonsteimel]\n- charmbracelet/bubbletea erases grype ui status line [[#3214](https://github.com/anchore/grype/pull/3214) @spiffcs]\n- bump labels and add several test images [[#3215](https://github.com/anchore/grype/pull/3215) @westonsteimel]\n- improve VEX product and subcomponent matching [[#3168](https://github.com/anchore/grype/pull/3168) @dariozachow]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.107.1...v0.108.0)**\n\n",
+      "date_published": "2026-02-10T18:49:12Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.108.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.107.1",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.107.1",
+      "title": "[Grype] v0.107.1",
+      "content_text": "### Additional Changes\n\n- support context cancellation while finding vuln matches [[#3200](https://github.com/anchore/grype/pull/3200) @luhring]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.107.0...v0.107.1)**\n\n",
+      "date_published": "2026-02-03T19:24:39Z",
+      "tags": [
+        "other"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.107.1"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.107.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.107.0",
+      "title": "[Grype] v0.107.0",
+      "content_text": "### Added Features\n\n- Add secureos distro [[#3086](https://github.com/anchore/grype/pull/3086) @divolgin]\n- add hex matcher for Erlang/Elixir ecosystem [[#3194](https://github.com/anchore/grype/pull/3194) @willmurphyscode]\n\n### Bug Fixes\n\n- disable version fallback in EOL query [[#3195](https://github.com/anchore/grype/pull/3195) @willmurphyscode]\n- VEX documents with docker.io registry reference not matching, require index.docker.io instead [[#2818](https://github.com/anchore/grype/issues/2818) [#3172](https://github.com/anchore/grype/pull/3172) @jainlakshya]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.106.0...v0.107.0)**\n\n",
+      "date_published": "2026-01-29T22:24:48Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.107.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.106.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.106.0",
+      "title": "[Grype] v0.106.0",
+      "content_text": "### Added Features\n\n- warn about packages from EOL distros [[#3171](https://github.com/anchore/grype/pull/3171) @willmurphyscode]\n- make it configurable what grype assumes when incoming package to grype is missing dpkg/RPM epoch [[#2964](https://github.com/anchore/grype/issues/2964) [#2976](https://github.com/anchore/grype/pull/2976) @willmurphyscode]\n\n### Bug Fixes\n\n- RHEL EUS: `--only-fixed` should filter out matches are not fixed in the current EUS version [[#2847](https://github.com/anchore/grype/issues/2847) [#3181](https://github.com/anchore/grype/pull/3181) @willmurphyscode]\n\n### Additional Changes\n\n- support scientific linux [[#3175](https://github.com/anchore/grype/pull/3175) @westonsteimel]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.105.0...v0.106.0)**\n\n",
+      "date_published": "2026-01-27T14:08:53Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.106.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.105.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.105.0",
+      "title": "[Grype] v0.105.0",
+      "content_text": "### Added Features\n\n- Add archlinux matcher to grype [[#3154](https://github.com/anchore/grype/pull/3154) @willmurphyscode]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.104.4...v0.105.0)**\n\n",
+      "date_published": "2026-01-15T23:07:39Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.105.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.104.4",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.104.4",
+      "title": "[Grype] v0.104.4",
+      "content_text": "### Bug Fixes\n\n- preserve local version segment in constraints for PEP 440 comparison [[#3146](https://github.com/anchore/grype/pull/3146) @willmurphyscode]\n\n### Additional Changes\n\n- correct help text for return code for fail-on severity option [[#3138](https://github.com/anchore/grype/pull/3138) @u-ways]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.104.3...v0.104.4)**\n\n",
+      "date_published": "2026-01-08T13:58:30Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.104.4"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.104.3",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.104.3",
+      "title": "[Grype] v0.104.3",
+      "content_text": "### Bug Fixes\n\n- Use specifier matching rules when comparing python versions [[#3121](https://github.com/anchore/grype/pull/3121) @wagoodman]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.104.2...v0.104.3)**\n\n",
+      "date_published": "2025-12-22T23:16:53Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.104.3"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.104.2",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.104.2",
+      "title": "[Grype] v0.104.2",
+      "content_text": "### Bug Fixes\n\n- Since version 0.104.0 shaded jars are not reported [[#3098](https://github.com/anchore/grype/issues/3098)]\n- db search fails with misleading message (out of memory) when no db is present [[#3049](https://github.com/anchore/grype/issues/3049) [#3077](https://github.com/anchore/grype/pull/3077) @JvD-Ericsson]\n\n### Additional Changes\n\n- replace os.Chdir with t.Chdir in test code [[#3067](https://github.com/anchore/grype/pull/3067) @joonas]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.104.1...v0.104.2)**\n\n",
+      "date_published": "2025-12-09T23:17:35Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.104.2"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.104.1",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.104.1",
+      "title": "[Grype] v0.104.1",
+      "content_text": "### Bug Fixes\r\n\r\n- Redact during file output [[#3068](https://github.com/anchore/grype/pull/3068) @kzantow]\r\n- Unaffected match table does not filter results if CPE matching is enabled [[#3056](https://github.com/anchore/grype/issues/3056) [#3066](https://github.com/anchore/grype/pull/3066) @kzantow]\r\n\r\n### Additional Changes\r\n\r\n- Migrate grype to use `mholt/archives` instead of anchore fork [[#3036](https://github.com/anchore/grype/pull/3036) @joonas]\r\n\r\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.104.0...v0.104.1)**\r\n\r\n",
+      "date_published": "2025-11-24T16:27:27Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.104.1"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.104.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.104.0",
+      "title": "[Grype] v0.104.0",
+      "content_text": "### Added Features\n\n- Add `--from` flag [[#3035](https://github.com/anchore/grype/pull/3035) @wagoodman]\n- Let a suppression expire to prevent that one will forget to resolve a vulnerability [[#3031](https://github.com/anchore/grype/issues/3031)]\n\n### Bug Fixes\n\n- Unnormalized fix version triggers false-positive in mssql-jdbc [[#3042](https://github.com/anchore/grype/issues/3042) [#3034](https://github.com/anchore/grype/pull/3034) @jamestexas]\n\n### Additional Changes\n\n- junit template use CDATA block to prevent XML parse errors [[#3019](https://github.com/anchore/grype/pull/3019) @nvtkaszpir]\n- Keep nested loggers labeled [[#3040](https://github.com/anchore/grype/pull/3040) @wagoodman]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.103.0...v0.104.0)**\n\n",
+      "date_published": "2025-11-17T22:39:08Z",
+      "tags": [
+        "security"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.104.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.103.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.103.0",
+      "title": "[Grype] v0.103.0",
+      "content_text": "### Added Features\n\n- Allow hyphen in version string [[#3021](https://github.com/anchore/grype/pull/3021) @willmurphyscode]\n- Respect rpmmod PURL qualifier [[#3020](https://github.com/anchore/grype/pull/3020) @willmurphyscode]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.102.0...v0.103.0)**\n\n",
+      "date_published": "2025-11-03T20:00:40Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.103.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.102.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.102.0",
+      "title": "[Grype] v0.102.0",
+      "content_text": "### Added Features\n\n- Use Alma Linux specific advisories for Alma Linux scans [[#2745](https://github.com/anchore/grype/issues/2745) [#2939](https://github.com/anchore/grype/pull/2939) @willmurphyscode]\n\n### Bug Fixes\n\n- Bitnami packages with CPEs are not matched against CPE-based vulnerabilities [[#2997](https://github.com/anchore/grype/issues/2997)]\n\n### Additional Changes\n\n- add markdown template [[#2987](https://github.com/anchore/grype/pull/2987) @sebdanielsson]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.101.1...v0.102.0)**\n\n",
+      "date_published": "2025-10-23T10:59:26Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.102.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.101.1",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.101.1",
+      "title": "[Grype] v0.101.1",
+      "content_text": "### Bug Fixes\n\n- Panic error scanning images with v0.101.0 on some java dependencies [[#3002](https://github.com/anchore/grype/issues/3002)]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.101.0...v0.101.1)**\n\n",
+      "date_published": "2025-10-16T13:42:08Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.101.1"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.101.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.101.0",
+      "title": "[Grype] v0.101.0",
+      "content_text": "### Added Features\n\n- Add cyclonedx to RpmMetadata [[#2935](https://github.com/anchore/grype/pull/2935) @sfc-gh-rmaj]\n- `grype db search` can filter by fixed state [[#2968](https://github.com/anchore/grype/pull/2968) @willmurphyscode]\n- Support using VEX documents with directory scans and SBOMs [[#2471](https://github.com/anchore/grype/issues/2471) [#2811](https://github.com/anchore/grype/pull/2811) @alegrey91]\n\n### Bug Fixes\n\n- Issue installing Grype using documented curl command [[#2985](https://github.com/anchore/grype/issues/2985)]\n- Advisory ID blank in JSON output [[#2965](https://github.com/anchore/grype/issues/2965)]\n\n### Additional Changes\n\n- update flags with v3 to not use default config [[#3000](https://github.com/anchore/grype/pull/3000) @spiffcs]\n- fix Cosign documentation URL in installer [[#2995](https://github.com/anchore/grype/pull/2995) @lime]\n- set advisory id again [[#2979](https://github.com/anchore/grype/pull/2979) @willmurphyscode]\n- add db schema validation [[#2962](https://github.com/anchore/grype/pull/2962) @willmurphyscode]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.100.0...v0.101.0)**\n\n",
+      "date_published": "2025-10-15T17:15:25Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.101.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.100.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.100.0",
+      "title": "[Grype] v0.100.0",
+      "content_text": "### Added Features\n\n- Add unaffected package and CPE stores [[#2888](https://github.com/anchore/grype/pull/2888) @wagoodman]\n- use unaffected match table to remove appropriate vulns [[#2886](https://github.com/anchore/grype/pull/2886) @CrosleyZack]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.99.1...v0.100.0)**\n\n",
+      "date_published": "2025-09-15T22:06:37Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.100.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.99.1",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.99.1",
+      "title": "[Grype] v0.99.1",
+      "content_text": "### Bug Fixes\n\n- Present fix available version in grype JSON output [[#2905](https://github.com/anchore/grype/pull/2905) @wagoodman]\n- detect patch numbers in fuzzy version comparison [[#2844](https://github.com/anchore/grype/pull/2844) @willmurphyscode]\n- Make timestamp in output configurable (so that results are more reproducible) [[#522](https://github.com/anchore/grype/issues/522) [#2724](https://github.com/anchore/grype/pull/2724) @gabetrau]\n- Grype .98 misidentifies the container package version [[#2884](https://github.com/anchore/grype/issues/2884)]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.99.0...v0.99.1)**\n\n",
+      "date_published": "2025-08-30T14:34:21Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.99.1"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.99.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.99.0",
+      "title": "[Grype] v0.99.0",
+      "content_text": "### Added Features\r\n\r\n- Add fix availability information to DB schema [[#2862](https://github.com/anchore/grype/pull/2862) @wagoodman]\r\n- Add support vulnerability matching for raspbian [[#2893](https://github.com/anchore/grype/pull/2893) @westonsteimel]\r\n- Add Vex CSAF support [[#1826](https://github.com/anchore/grype/pull/1826) @juan131]\r\n\r\n### Bug Fixes\r\n\r\n- include channel in grype db search output [[#2873](https://github.com/anchore/grype/pull/2873) @willmurphyscode]\r\n- add UnmarshalJSON to fix availability blob [[#2889](https://github.com/anchore/grype/pull/2889) @willmurphyscode]\r\n- Grype misdetect Grafana version [[#2783](https://github.com/anchore/grype/issues/2783)]\r\n\r\n### Breaking Changes\r\n\r\n- CSAF support [[#1826](https://github.com/anchore/grype/pull/1826) @juan131]\r\n\r\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.98.0...v0.99.0)**\r\n\r\n",
+      "date_published": "2025-08-27T00:47:35Z",
+      "tags": [
+        "security"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.99.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.98.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.98.0",
+      "title": "[Grype] v0.98.0",
+      "content_text": "### Added Features\n\n- move debian 13 (trixie) to released and debian 14 (forky) to testing/sid/unstable [[#2861](https://github.com/anchore/grype/pull/2861) @westonsteimel]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.97.2...v0.98.0)**\n\n",
+      "date_published": "2025-08-13T17:38:04Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.98.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.97.2",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.97.2",
+      "title": "[Grype] v0.97.2",
+      "content_text": "## Grype v0.97.2\r\n\r\n### Added Features\r\n\r\n- new syft version adds binary classifier for hashicorp vault [[#4121](https://github.com/anchore/syft/pull/4121) @willmurphyscode]\r\n\r\n### Bug Fixes\r\n\r\n- fix: update syft's nondeterministic Java archive purl and improve groupID for better matching [[#3521](https://github.com/anchore/syft/issues/3521) [#4118](https://github.com/anchore/syft/pull/4118) @kzantow]\r\n\r\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.97.1...v0.97.2)**\r\n\r\n",
+      "date_published": "2025-08-08T19:45:03Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.97.2"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.97.1",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.97.1",
+      "title": "[Grype] v0.97.1",
+      "content_text": "### Bug Fixes\n\n- Multiple EUS advisories where only some are fixed result in unexpected vulnerabilities [[#2840](https://github.com/anchore/grype/issues/2840) [#2841](https://github.com/anchore/grype/pull/2841) @kzantow]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.97.0...v0.97.1)**\n\n",
+      "date_published": "2025-08-01T16:20:51Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.97.1"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.97.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.97.0",
+      "title": "[Grype] v0.97.0",
+      "content_text": "### Added Features\n\n- Add support for RHEL EUS [[#2446](https://github.com/anchore/grype/issues/2446) [#2787](https://github.com/anchore/grype/pull/2787) @wagoodman]\n\n### Bug Fixes\n\n- Error scanning snap \"unsupported source: source.SnapMetadata\" [[#2819](https://github.com/anchore/grype/issues/2819) [#2821](https://github.com/anchore/grype/pull/2821) @kzantow]\n\n### Additional Changes\n\n- add channel to os / distro [[#2782](https://github.com/anchore/grype/pull/2782) @wagoodman]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.96.1...v0.97.0)**\n\n",
+      "date_published": "2025-07-30T19:29:46Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.97.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.96.1",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.96.1",
+      "title": "[Grype] v0.96.1",
+      "content_text": "### Syft Improvments\r\n- Update to latest version of syft [v1.29.0](https://github.com/anchore/syft/releases/tag/v1.29.0)\r\n\r\n### Performance Improvements\r\n- Create ignore regex objects conditionally[[#2805](https://github.com/anchore/grype/pull/2805) @wagoodman ]\r\n\r\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.96.0...v0.96.1)**\r\n\r\n",
+      "date_published": "2025-07-21T21:10:35Z",
+      "tags": [
+        "feature"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.96.1"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.96.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.96.0",
+      "title": "[Grype] v0.96.0",
+      "content_text": "### Added Features\n\n- Added the EPSS score and KEV indications as CycloneDX `vulnerabilities.ratings` entries [[#2695](https://github.com/anchore/grype/issues/2695) [#2765](https://github.com/anchore/grype/pull/2765) @AlinaPodoba]\n\n### Bug Fixes\n\n- The `go run` and `go install` broken due to useless `redirect` directive in `go.mod` [[#2777](https://github.com/anchore/grype/issues/2777) [#2780](https://github.com/anchore/grype/pull/2780) @stefanb]\n- EPSS implementation using percentile instead of percent probability [[#2778](https://github.com/anchore/grype/issues/2778) [#2785](https://github.com/anchore/grype/pull/2785) @wagoodman]\n- Latest version of grype with V6 schema lists incorrect URL for v6 database [[#2513](https://github.com/anchore/grype/issues/2513)]\n\n### Additional Changes\n\n- Add more detail around cataloging and DB load log statements [[#2779](https://github.com/anchore/grype/pull/2779) @wagoodman]\n- add version set and combined constraint [[#2763](https://github.com/anchore/grype/pull/2763) @wagoodman]\n- add v6 OS store [[#2766](https://github.com/anchore/grype/pull/2766) @wagoodman]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.95.0...v0.96.0)**\n\n",
+      "date_published": "2025-07-15T13:13:59Z",
+      "tags": [
+        "bugfix"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.96.0"
+    },
+    {
+      "id": "https://github.com/anchore/grype/releases/tag/v0.95.0",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.95.0",
+      "title": "[Grype] v0.95.0",
+      "content_text": "### Added Features\n\n- Add string severity to db search json results [[#2730](https://github.com/anchore/grype/pull/2730) @wagoodman]\n- Add package specifier overrides for `kb`, `dpkg`, and `apkg` [[#2742](https://github.com/anchore/grype/pull/2742) @westonsteimel]\n\n### Bug Fixes\n\n- show related NVD records for non-NVD matches [[#2755](https://github.com/anchore/grype/pull/2755) @kzantow]\n- assume that a vulnerability with no ranges is always vulnerable [[#2759](https://github.com/anchore/grype/pull/2759) @wagoodman]\n- DB should hydrate for when the client has new features [[#2758](https://github.com/anchore/grype/pull/2758) @wagoodman]\n- show relationship back to NVD for all CVE ids [[#2756](https://github.com/anchore/grype/pull/2756) @westonsteimel]\n- properly escape CPE segments [[#2731](https://github.com/anchore/grype/pull/2731) @kzantow]\n- msrc matcher should search by package ecosystem, not by distro [[#2748](https://github.com/anchore/grype/pull/2748) @westonsteimel]\n- Grype does not report any vulnerabilities for CPEs with target_sw field set to value that does not correspond to known package type [[#2768](https://github.com/anchore/grype/issues/2768) [#2772](https://github.com/anchore/grype/pull/2772) @willmurphyscode]\n- malformed CPE in grype db search output [[#2767](https://github.com/anchore/grype/issues/2767) [#2769](https://github.com/anchore/grype/pull/2769) @westonsteimel]\n- vex documents from the --vex flag do get processed or applied to the output correctly [[#1836](https://github.com/anchore/grype/issues/1836) [#2741](https://github.com/anchore/grype/pull/2741) @willmurphyscode]\n\n### Additional Changes\n\n- replace deprecated GoReleaser configurations [[#2729](https://github.com/anchore/grype/pull/2729) @emmanuel-ferdman]\n- specify types for all match details [[#2762](https://github.com/anchore/grype/pull/2762) @wagoodman]\n- Refactor the version package [[#2735](https://github.com/anchore/grype/pull/2735) @wagoodman]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.94.0...v0.95.0)**\n\n",
+      "date_published": "2025-07-02T17:26:05Z",
+      "tags": [
+        "security"
+      ],
+      "_tool_id": "grype",
+      "_version": "v0.95.0"
+    }
+  ]
+}

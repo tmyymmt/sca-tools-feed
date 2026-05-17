@@ -1,0 +1,302 @@
+[
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.3.8",
+    "published_at": "2026-05-08T05:28:16Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.3.8",
+    "summary": "v2.3.8",
+    "body": "### Fixes:\r\n\r\n- Fix installation issues with `go install` due to dependency conflicts (downgrade `containerd/cgroups/v3`, `moby/buildkit` and `opencontainers/runtime-spec`). (#2782)\r\n- [Bug #2762](https://github.com/google/osv-scanner/pull/2762) Skip packages with short commit hashes instead of aborting scan.\r\n- [Bug #2781](https://github.com/google/osv-scanner/pull/2781) Secure file path handling with `os.OpenRoot`.\r\n- [Bug #2766](https://github.com/google/osv-scanner/pull/2766) Correct typos across docs, configs, and Go source.\r\n\r\n### Misc:\r\n\r\n- Update osv-scalibr to `v0.4.6-0.20260504042738-9293bfa4f86f`.\r\n",
+    "category": "other"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.3.6",
+    "published_at": "2026-05-01T00:58:10Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.3.6",
+    "summary": "v2.3.6",
+    "body": "### Features:\r\n\r\n- [Feature #2658](https://github.com/google/osv-scanner/pull/2658) Support regex matching for package name overrides.\r\n- [Feature #2510](https://github.com/google/osv-scanner/pull/2510) Scan Homebrew inventory using git repository metadata.\r\n\r\n### Fixes:\r\n\r\n- [Bug #2750](https://github.com/google/osv-scanner/pull/2750) Sanitize \\r/\\n in default/table/vertical output to prevent GitHub Actions workflow command injection.\r\n- [Bug #2641](https://github.com/google/osv-scanner/pull/2641) Correctly output packages from osv-scanner.json source in spdx format.\r\n- [Bug #2729](https://github.com/google/osv-scanner/pull/2729) Increase color contrast of vulnerability stats.\r\n- [Bug #2664](https://github.com/google/osv-scanner/pull/2664) Remove second newline at end of vertical output.\r\n- [Bug #2669](https://github.com/google/osv-scanner/pull/2669) Sanitize \\r in gh-annotations to prevent GitHub Actions workflow command injection.\r\n\r\n### Misc:\r\n\r\n- Update osv-scalibr to `v0.4.6-0.20260428235529-7791e288d6c1`.\r\n- Update Go version to 1.26.2 (#2706).\r\n\r\n## New Contributors\r\n* @djvirus9 made their first contribution in https://github.com/google/osv-scanner/pull/2669\r\n* @jonjensen made their first contribution in https://github.com/google/osv-scanner/pull/2695\r\n* @dosisod made their first contribution in https://github.com/google/osv-scanner/pull/2729\r\n* @ibondarenko1 made their first contribution in https://github.com/google/osv-scanner/pull/2748\r\n* @sjhddh made their first contribution in https://github.com/google/osv-scanner/pull/2744\r\n* @Mananshah237 made their first contribution in https://github.com/google/osv-scanner/pull/2641\r\n* @majiayu000 made their first contribution in https://github.com/google/osv-scanner/pull/2658\r\n* @hits313 made their first contribution in https://github.com/google/osv-scanner/pull/2750\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.3.5...v2.3.6",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.3.5",
+    "published_at": "2026-03-25T00:23:10Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.3.5",
+    "summary": "v2.3.5",
+    "body": "# v2.3.5\r\n\r\n### Features:\r\n\r\n- [Feature #2571](https://github.com/google/osv-scanner/pull/2571) Enable transitive scanning for Python requirements.txt files using the deps.dev API.\r\n- [Feature #2649](https://github.com/google/osv-scanner/pull/2649) Add ability to allow unsafe plugins, logging a warning when any unsafe plugin is enabled.\r\n\r\n### Fixes:\r\n\r\n- [Bug #2630](https://github.com/google/osv-scanner/pull/2630) Improve startup performance on Windows Terminal by updating lipgloss.\r\n- [Bug #2599](https://github.com/google/osv-scanner/pull/2599) Ensure the package deprecation enricher respects the same configuration as other plugins.\r\n- [Bug #2600](https://github.com/google/osv-scanner/pull/2600) Ensure the Java extractor plugin for call analysis respects the same configuration as other plugins.\r\n\r\n### Misc:\r\n\r\n- Update osv-scalibr from v0.4.2 to v0.4.5. Release notes: [v0.4.3](https://github.com/google/osv-scalibr/releases/tag/v0.4.3), [v0.4.4](https://github.com/google/osv-scalibr/releases/tag/v0.4.4), [v0.4.5](https://github.com/google/osv-scalibr/releases/tag/v0.4.5).\r\n- Fix broken release workflow.\r\n\r\n## New Contributors\r\n* @gurusai-voleti made their first contribution in https://github.com/google/osv-scanner/pull/2520\r\n* @hopkincame made their first contribution in https://github.com/google/osv-scanner/pull/2564\r\n* @tobyhawker made their first contribution in https://github.com/google/osv-scanner/pull/2639\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.3.3...v2.3.5",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.3.3",
+    "published_at": "2026-02-12T00:12:48Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.3.3",
+    "summary": "v2.3.3",
+    "body": "### Features:\r\n- [Feature #2458](https://github.com/google/osv-scanner/pull/2458) Add `--exclude` flag to skip paths during scanning.\r\n- [Feature #2477](https://github.com/google/osv-scanner/pull/2477) Add `pylock` extractor.\r\n- [Feature #2475](https://github.com/google/osv-scanner/pull/2475) Add base image info to container scanning output header (in table, markdown and vertical formats).\r\n\r\n### Misc:\r\n- Update Go version to 1.25.7.\r\n- Update osv-scalibr from v0.4.1 to v0.4.2. [Release note](https://github.com/google/osv-scalibr/releases/tag/v0.4.2).\r\n- Refactor to better align with osv-scalibr plugins and inventory data structure.\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.3.2...v2.3.3",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.3.2",
+    "published_at": "2026-01-15T01:35:40Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.3.2",
+    "summary": "v2.3.2",
+    "body": "# v2.3.2\r\n\r\nThis release includes performance improvements for local scanning, reducing memory usage and avoiding unnecessary advisory loading. It also fixes issues with MCP's get_vulnerability_details tool, git queries in `osv-scanner.json`, and ignore entry tracking, along with documentation updates.\r\n\r\n### Fixes:\r\n\r\n- [Bug #2415](https://github.com/google/osv-scanner/pull/2415) Add more PURL-to-ecosystem mappings\r\n- [Bug #2422](https://github.com/google/osv-scanner/pull/2422) MCP error for get_vulnerability_id because type definition is incorrect.\r\n- [Bug #2460](https://github.com/google/osv-scanner/pull/2460) Enable osv-scanner.json git queries\r\n- [Bug #2456](https://github.com/google/osv-scanner/pull/2456) Properly track if an ignore entry has been used\r\n- [Bug #2450](https://github.com/google/osv-scanner/pull/2450) **Performance:** Avoid loading the entire advisory unless it will actually be used\r\n- [Bug #2445](https://github.com/google/osv-scanner/pull/2445) **Performance:** Don't read the entire zip into memory\r\n- [Bug #2433](https://github.com/google/osv-scanner/pull/2433) Allow specifying user agent in v2 osvscanner package\r\n\r\n### Misc:\r\n\r\n- [Misc #2453](https://github.com/google/osv-scanner/pull/2453) Switch from gopkg.in/yaml.v3 to go.yaml.in/yaml/v3\r\n- [Misc #2447](https://github.com/google/osv-scanner/pull/2447) Include `bun.lock` as a supported lockfile\r\n- [Misc #2444](https://github.com/google/osv-scanner/pull/2444) Document GoVersionOverride in configuration.md\r\n\r\n## New Contributors\r\n* @catatsuy made their first contribution in https://github.com/google/osv-scanner/pull/2437\r\n* @google-labs-jules[bot] made their first contribution in https://github.com/google/osv-scanner/pull/2444\r\n* @fumblehool made their first contribution in https://github.com/google/osv-scanner/pull/2447\r\n* @scop made their first contribution in https://github.com/google/osv-scanner/pull/2453\r\n* @Ankitsinghsisodya made their first contribution in https://github.com/google/osv-scanner/pull/2457\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.3.1...v2.3.2",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.3.1",
+    "published_at": "2025-12-11T06:03:17Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.3.1",
+    "summary": "v2.3.1",
+    "body": "# v2.3.1\r\n\r\n### Features:\r\n\r\n- [Feature #2370](https://github.com/google/osv-scanner/pull/2370) Add support for the `packagedeprecation` plugin via the new `--experimental-flag-deprecated-packages` flag. The result is available in all output formats except SPDX.\r\n\r\n### Fixes:\r\n\r\n- [Bug #2395](https://github.com/google/osv-scanner/pull/2395) Fix license scanning to correctly match new `deps.dev` package names.\r\n- [Bug #2333](https://github.com/google/osv-scanner/pull/2333) Deduplicate SARIF outputs for GitHub.\r\n- [Bug #2259](https://github.com/google/osv-scanner/pull/2259) Fix lookup of Go packages with major versions by including the subpath of Go PURLs, preventing false positives.\r\n\r\n### Misc:\r\n\r\n- Updated Go version to v1.25.5 to support Go reachability analysis for the latest version.",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.3.0",
+    "published_at": "2025-11-19T05:14:53Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.3.0",
+    "summary": "v2.3.0",
+    "body": "This release migrates to the new `osv.dev` and `osv-schema` proto bindings for its internal data models ([#2328](https://github.com/google/osv-scanner/pull/2328)). This is primarily an internal change and should not impact users.\r\n\r\n### Features:\r\n\r\n- [Feature #2321](https://github.com/google/osv-scanner/pull/2321) Add support for license checks for RubyGems.\r\n- [Feature #2294](https://github.com/google/osv-scanner/pull/2294) Replace `requirementsenhanceable` extractor with transitive enricher.\r\n- [Feature #2344](https://github.com/google/osv-scanner/pull/2344) Use `osduplicate` annotators.\r\n\r\n### Fixes:\r\n\r\n- [Bug #2329](https://github.com/google/osv-scanner/pull/2329) Add `--ignore-scripts` flag to npm lockfile generation.\r\n- [Bug #2311](https://github.com/google/osv-scanner/pull/2311) Improve logic for `--all-packages` flag.\r\n- [Bug #2309](https://github.com/google/osv-scanner/pull/2309) Exit with a non-zero code when showing help.\r\n- [Bug #2316](https://github.com/google/osv-scanner/pull/2316) Pre-commit hook now defaults to scanning current directory instead of failing.\r\n- [Bug #1507 (osv-scalibr)](https://github.com/google/osv-scalibr/pull/1507) Interpolate Maven projects before extracting repositories.\r\n\r\n## New Contributors\r\n* @Ly-Joey made their first contribution in https://github.com/google/osv-scanner/pull/2311\r\n* @pcastellazzi made their first contribution in https://github.com/google/osv-scanner/pull/2316\r\n\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.2.4...v2.3.0",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.2.4",
+    "published_at": "2025-10-29T05:34:48Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.2.4",
+    "summary": "v2.2.4",
+    "body": "### Features:\r\n\r\n- [Feature #2256](https://github.com/google/osv-scanner/pull/2256) Add experimental OSV-Scanner MCP server. (`osv-scanner experimental-mcp`)\r\n- [Feature #2284](https://github.com/google/osv-scanner/pull/2284) Update `osv-scalibr` integration, replacing `baseimagematch` with the base image enricher.\r\n- [Feature #2216](https://github.com/google/osv-scanner/pull/2216) Warn when vulnerabilities specified in the ignore config are not found during a scan (fixes \\#2206).\r\n\r\n### Fixes:\r\n\r\n- [Bug #2305](https://github.com/google/osv-scanner/pull/2305) Ignore common protocols and `.git` suffix when checking if an advisory affects a git repository (fixes \\#2291).\r\n- [Bug #2300](https://github.com/google/osv-scanner/pull/2300) Ensure the global logger is used in `cmdlogger` and `osv-scalibr` when set (fixes \\#2081).\r\n- [Bug #2295](https://github.com/google/osv-scanner/pull/2295) Fix Go stdlib license result matching (fixes \\#2191).\r\n\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.2.3...v2.2.4",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.2.3",
+    "published_at": "2025-10-01T04:55:36Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.2.3",
+    "summary": "v2.2.3",
+    "body": "## Changelog\r\n### Features:\r\n\r\n- [Feature #2209](https://github.com/google/osv-scanner/pull/2209) Add support for resolving git packages that have a version specified.\r\n- [Feature #2210](https://github.com/google/osv-scanner/pull/2210) Make the `--experimental-plugins` flag additive by default, and introduce a new `--experimental-no-default-plugins` flag.\r\n- [Feature #2203](https://github.com/google/osv-scanner/pull/2203) Update `osv-scalibr` to 0.3.4 for improved dependency extraction. See osv-scalibr changelog for additional information.\r\n\r\n### Fixes:\r\n\r\n- [Bug #2214](https://github.com/google/osv-scanner/pull/2214) Fix issue where `input.Path` was incorrectly constructed on Windows when using the `-L` flag.\r\n- [Fix #2241](https://github.com/google/osv-scanner/pull/2241) **Performance:** Greatly reduce memory usage in the local matcher by only loading advisories relevant to the packages being scanned.\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.2.2...v2.2.3",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.2.2",
+    "published_at": "2025-08-27T03:34:15Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.2.2",
+    "summary": "v2.2.2",
+    "body": "### Features:\r\n\r\n- [Feature #2113](https://github.com/google/osv-scanner/pull/2113) Add support for Java reachability analysis to identify uncalled vulnerabilities in JAR files.\r\n- [Feature #2177](https://github.com/google/osv-scanner/pull/2177) Automatically parse `osv-scanner-custom.json` files as `osv-scanner.json` custom lockfiles.\r\n\r\n### Fixes:\r\n\r\n- [Bug #2204](https://github.com/google/osv-scanner/pull/2204) Add a warning to guide users to the correct GitHub Action.\r\n- [Bug #2202](https://github.com/google/osv-scanner/pull/2202) Fix incorrect exit code when unimportant vulnerabilities are found in non-container scans.\r\n- [Bug #2188](https://github.com/google/osv-scanner/pull/2188) Fix handling of absolute paths on Windows.\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.2.1...v2.2.2",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.2.1",
+    "published_at": "2025-08-11T00:54:06Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.2.1",
+    "summary": "v2.2.1",
+    "body": "\r\n### Fixes\r\n\r\n- [Bug #2151](https://github.com/google/osv-scanner/issues/2151) Filter by ecosystem before querying.\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.2.0...v2.2.1",
+    "category": "other"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.2.0",
+    "published_at": "2025-08-07T03:47:31Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.2.0",
+    "summary": "v2.2.0",
+    "body": "OSV-Scanner now supports all OSV-Scalibr features behind experimental flags (`--experimental-plugins`, see details [here](https://google.github.io/osv-scanner/experimental/manual-plugin-selection/))!\r\n\r\n### Features:\r\n\r\n- [Feature #2146](https://github.com/google/osv-scanner/pull/2146) Allow manual OSV-Scalibr plugin selection.\r\n- [Feature #2144](https://github.com/google/osv-scanner/pull/2144) Add OSV-Scalibr version to osv-scanner --version output.\r\n- [Feature #2021](https://github.com/google/osv-scanner/pull/2021) Add experimental support for running OSV-Scalibr detectors.\r\n- [Feature #2079](https://github.com/google/osv-scanner/pull/2079) Fall back to offline extractor if the transitive one fails, so at least direct dependencies are returned.\r\n- [Feature #2032](https://github.com/google/osv-scanner/pull/2032) Add summary section at the top of outputs and a 'Fixed Version' column.\r\n- [Feature #2076](https://github.com/google/osv-scanner/pull/2076) Support Ubuntu severity type.\r\n\r\n### Fixes:\r\n\r\n- [Bug #2141](https://github.com/google/osv-scanner/pull/2141) Fix OSV-Scanner json scans not matching with correct ecosystem.\r\n- [Bug #2084](https://github.com/google/osv-scanner/pull/2084) Show absolute paths when scanning containers.\r\n- [Bug #2126](https://github.com/google/osv-scanner/pull/2126) Log and preserve package count before continuing on db error.\r\n- [Bug #2095](https://github.com/google/osv-scanner/pull/2095) Pass through plugin capabilities correctly.\r\n- [Bug #2051](https://github.com/google/osv-scanner/pull/2051) Properly flag if running on Linux or Mac OSs for plugin compatibility.\r\n- [Bug #2072](https://github.com/google/osv-scanner/pull/2072) Add missing \"text\" property in description fields.\r\n- [Bug #2068](https://github.com/google/osv-scanner/pull/2068) Change links in output to go to the specific vulnerability page instead of the list page.\r\n- [Bug #2064](https://github.com/google/osv-scanner/pull/2064) Fix SARIF v3 output to include results.\r\n\r\n### API Changes:\r\n\r\n- [API Change #2096](https://github.com/google/osv-scanner/pull/2096) Allow log handler to be overridden.\r\n\r\n## New Contributors\r\n* @brabster made their first contribution in https://github.com/google/osv-scanner/pull/2072\r\n* @Aejkatappaja made their first contribution in https://github.com/google/osv-scanner/pull/2032\r\n* @dizzydroid made their first contribution in https://github.com/google/osv-scanner/pull/2106\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.1.0...v2.2.0",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.1.0",
+    "published_at": "2025-07-11T04:42:31Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.1.0",
+    "summary": "v2.1.0",
+    "body": "# v2.1.0\r\n\r\n### Features:\r\n\r\n- [Feature #2038](https://github.com/google/osv-scanner/pull/2038) Add CycloneDX location field to the output source string.\r\n- [Feature #2036](https://github.com/google/osv-scanner/pull/2036) Include upstream source information in vulnerability grouping to improve accuracy.\r\n- [Feature #1970](https://github.com/google/osv-scanner/pull/1970) Hide unimportant vulnerabilities by default to reduce noise, and adds a `--show-all-vulns` flag to show all.\r\n- [Feature #2003](https://github.com/google/osv-scanner/pull/2003) Add experimental summary output format for the reporter.\r\n- [Feature #1988](https://github.com/google/osv-scanner/pull/1988) Add support for CycloneDX 1.6 report format.\r\n- [Feature #1987](https://github.com/google/osv-scanner/pull/1987) Add support for `gems.locked` files used by Bundler.\r\n- [Feature #1980](https://github.com/google/osv-scanner/pull/1980) Enable transitive dependency extraction for Python `requirements.txt` files.\r\n- [Feature #1961](https://github.com/google/osv-scanner/pull/1961) Deprecate the `--sbom` flag in favor of the existing `-L/--lockfile` flag for scanning SBOMs.\r\n- [Feature #1963](https://github.com/google/osv-scanner/pull/1963) Stabilize various experimental fields in the output by moving them out of the experimental struct.\r\n- [Feature #1957](https://github.com/google/osv-scanner/pull/1957) Use a dedicated exit code for invalid configuration files.\r\n\r\n### Fixes:\r\n\r\n- [Bug #2046](https://github.com/google/osv-scanner/pull/2046) Correctly set the user agent string for all outgoing requests.\r\n- [Bug #2019](https://github.com/google/osv-scanner/pull/2019) Use more natural language in the descriptions for extractor-related flags.\r\n- [Bug #1982](https://github.com/google/osv-scanner/pull/1982) Correctly parse Ubuntu package information with suffixes (e.g. `:Pro`, `:LTS`).\r\n- [Bug #2000](https://github.com/google/osv-scanner/pull/2000) Ensure CDATA content in XML is correctly outputted in guided remediation.\r\n- [Bug #1949](https://github.com/google/osv-scanner/pull/1949) Fix filtering of package types in vulnerability counts.\r\n\r\n## New Contributors\r\n* @Vialathor made their first contribution in https://github.com/google/osv-scanner/pull/1949\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.0.3...v2.1.0",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.0.3",
+    "published_at": "2025-06-16T02:20:16Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.0.3",
+    "summary": "v2.0.3",
+    "body": "# v2.0.3\r\n\r\n### Features:\r\n\r\n- [Feature #1943](https://github.com/google/osv-scanner/pull/1943) Added a flag to suppress \"no package sources found\" error.\r\n- [Feature #1844](https://github.com/google/osv-scanner/pull/1844) Allow flags to be passed after scan targets, e.g. `osv-scanner ./scan-this-dir --format=vertical`, by updating to cli/v3\r\n- [Feature #1882](https://github.com/google/osv-scanner/pull/1882) Added a `stable` tag to container images for releases that follow semantic versioning.\r\n- [Feature #1846](https://github.com/google/osv-scanner/pull/1846) Experimental: Add `--experimental-extractors` and `--experimental-disable-extractors` flags to allow for more granular control over which OSV-Scalibr dependency extractors are used.\r\n\r\n### Fixes:\r\n\r\n- [Bug #1856](https://github.com/google/osv-scanner/pull/1856) Improve XML output by guessing and matching the indentation of existing `<dependency>` elements.\r\n- [Bug #1850](https://github.com/google/osv-scanner/pull/1850) Prevent escaping of single quotes in XML attributes for better readability and correctness.\r\n- [Bug #1922](https://github.com/google/osv-scanner/pull/1922) Prevent a potential panic in `MatchVulnerabilities` when the API response is nil, particularly on timeout.\r\n- [Bug #1916](https://github.com/google/osv-scanner/pull/1916) Add the \"ubuntu\" namespace to the debian purl type to correctly parse dpkg BOMs generated on Ubuntu.\r\n- [Bug #1871](https://github.com/google/osv-scanner/pull/1871) Ensure inventories are sorted by PURL in addition to name and version to prevent incorrect deduplication of packages.\r\n- [Bug #1919](https://github.com/google/osv-scanner/pull/1919) Improve error reporting by including the underlying error when the response body from a Maven registry cannot be read.\r\n- [Bug #1857](https://github.com/google/osv-scanner/pull/1857) Fix an issue where SPDX output is not correctly outputted because it was getting overwritten.\r\n- [Bug #1873](https://github.com/google/osv-scanner/pull/1873) Fix the GitHub Action to not ignore general errors during execution.\r\n- [Bug #1955](https://github.com/google/osv-scanner/pull/1955) Fix issue causing error messages to be spammed when not running in a git repository.\r\n- [Bug #1930](https://github.com/google/osv-scanner/pull/1930) Fix issue where Maven client loses auth data during extraction.\r\n\r\n### Misc:\r\n\r\n- Update dependencies and updated golang to 1.24.4\r\n\r\n## New Contributors\r\n* @jacj9 made their first contribution in https://github.com/google/osv-scanner/pull/1860\r\n* @ikkebr made their first contribution in https://github.com/google/osv-scanner/pull/1830\r\n* @LeonLow97 made their first contribution in https://github.com/google/osv-scanner/pull/1882\r\n* @osv-robot made their first contribution in https://github.com/google/osv-scanner/pull/1912\r\n* @laojianzi made their first contribution in https://github.com/google/osv-scanner/pull/1922\r\n* @Avgor46 made their first contribution in https://github.com/google/osv-scanner/pull/1916\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.0.2...v2.0.3",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.0.2",
+    "published_at": "2025-04-30T06:19:23Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.0.2",
+    "summary": "v2.0.2",
+    "body": "### Fixes:\r\n\r\n- [Bug #1842](https://github.com/google/osv-scanner/pull/1842) Fix an issue in the GitHub Action where call analysis for Go projects using the `tool` directive (Go 1.24+) in `go.mod` files would fail. The scanner image has been updated to use a newer Go version.\r\n- [Bug #1806](https://github.com/google/osv-scanner/pull/1806) Fix an issue where license overrides were not correctly reflected in the final scan results and license summary.\r\n- [Fix #1825](https://github.com/google/osv-scanner/pull/1825), [#1809](https://github.com/google/osv-scanner/pull/1809), [#1805](https://github.com/google/osv-scanner/pull/1805), [#1803](https://github.com/google/osv-scanner/pull/1803), [#1787](https://github.com/google/osv-scanner/pull/1787) Enhance XML output stability and consistency by preserving original spacing and minimizing unnecessary escaping. This helps reduce differences when XML files are processed.\r\n\r\n## New Contributors\r\n* @s-index made their first contribution in https://github.com/google/osv-scanner/pull/1812\r\n* @shahar-h made their first contribution in https://github.com/google/osv-scanner/pull/1842\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.0.1...v2.0.2",
+    "category": "other"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.0.1",
+    "published_at": "2025-04-03T04:10:55Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.0.1",
+    "summary": "v2.0.1",
+    "body": "## Changelog\r\n \r\n ### Features:\r\n \r\n - [Feature #1730](https://github.com/google/osv-scanner/pull/1730) Add support for extracting dependencies from .NET `packages.config` and `packages.lock.json` files.\r\n - [Feature #1770](https://github.com/google/osv-scanner/pull/1770) Add support for extracting dependencies from rust binaries compiled with cargo-auditable.\r\n - [Feature #1761](https://github.com/google/osv-scanner/pull/1761) Improve output when scanning for OS packages, we now show binary packages associated with a source package in the table output.\r\n \r\n ### Fixes:\r\n \r\n - [Bug #1752](https://github.com/google/osv-scanner/pull/1752) Fix paging depth issue when querying the osv.dev API.\r\n - [Bug #1747](https://github.com/google/osv-scanner/pull/1747) Ensure osv-reporter prints warnings instead of errors for certain messages to return correct exit code (related to [osv-scanner-action#65](https://github.com/google/osv-scanner-action/issues/65)).\r\n - [Bug #1717](https://github.com/google/osv-scanner/pull/1717) Fix issue where nested CycloneDX components were not being parsed.\r\n - [Bug #1744](https://github.com/google/osv-scanner/pull/1744) Fix issue where empty CycloneDX SBOMs was causing a panic.\r\n - [Bug #1726](https://github.com/google/osv-scanner/pull/1726) De-duplicate references in CycloneDX report output for improved validity.\r\n - [Bug #1727](https://github.com/google/osv-scanner/pull/1727) Remove automatic opening of HTML reports in the browser (fixes [#1721](https://github.com/google/osv-scanner/issues/1721)).\r\n - [Bug #1735](https://github.com/google/osv-scanner/pull/1735) Require a tag when scanning container images to prevent potential errors.\r\n \r\n ### API Changes:\r\n \r\n - [API Change #1763](https://github.com/google/osv-scanner/pull/1763) Made the SourceType enum public.\r\n\r\n## New Contributors\r\n* @AlexLaroche made their first contribution in https://github.com/google/osv-scanner/pull/1730\r\n* @kuscar made their first contribution in https://github.com/google/osv-scanner/pull/1726\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.0.0...v2.0.1",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.0.0",
+    "published_at": "2025-03-17T03:58:44Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.0.0",
+    "summary": "v2.0.0",
+    "body": "This release merges the improvements, features, and fixes from v2.0.0-rc1, v2.0.0-beta2, and v2.0.0-beta1.\r\n\r\n**Important:** This release includes several breaking changes aimed at future-proofing OSV-Scanner. Please consult our comprehensive **[Migration Guide](https://google.github.io/osv-scanner/migration-guide.html)** to ensure a smooth upgrade.\r\n\r\n### Features:\r\n\r\n- **Layer and base image-aware container scanning:**\r\n  - Rewritten support for Debian, Ubuntu, and Alpine container images.\r\n  - Layer level analysis and vulnerability breakdown.\r\n  - Supports Go, Java, Node, and Python artifacts within supported distros.\r\n  - Base image identification via `deps.dev`.\r\n  - Usage: `osv-scanner scan image <image-name>:<tag>`\r\n- **Interactive HTML output:**\r\n  - Severity breakdown, package/ID/importance filtering, vulnerability details.\r\n  - Container image layer filtering, layer info, base image identification.\r\n  - Usage: `osv-scanner scan --serve ...`\r\n- **Guided Remediation for Maven pom.xml:**\r\n  - Remediate direct and transitive dependencies (non-interactive mode).\r\n  - New `override` remediation strategy.\r\n  - Support for reading/writing `pom.xml` and parent POM files.\r\n  - Private registry support for Maven metadata.\r\n  - Machine-readable output for guided remediation.\r\n- **Enhanced Dependency Extraction with `osv-scalibr`:**\r\n  - Haskell: `cabal.project.freeze`, `stack.yaml.lock`\r\n  - .NET: `deps.json`\r\n  - Python: `uv.lock`\r\n  - Artifacts: `node_module`s, Python wheels, Java uber jars, Go binaries\r\n- [Feature #1636](https://github.com/google/osv-scanner/pull/1636) `osv-scanner update` command for updating the local vulnerability database (formerly experimental).\r\n- [Feature #1582](https://github.com/google/osv-scanner/pull/1582) Add container scanning information to vertical output format.\r\n- [Feature #1587](https://github.com/google/osv-scanner/pull/1587) Add support for severity in SARIF report format.\r\n- [Feature #1569](https://github.com/google/osv-scanner/pull/1569) Add support for `bun.lock` lockfiles.\r\n- [Feature #1547](https://github.com/google/osv-scanner/pull/1547) Add experimental config support to the `scan image` command.\r\n- [Feature #1557](https://github.com/google/osv-scanner/pull/1557) Allow setting port number with `--serve` using the new `--port` flag.\r\n\r\n### Breaking Changes:\r\n\r\n- [Feature #1670](https://github.com/google/osv-scanner/pull/1670) Guided remediation now defaults to non-interactive mode; use the `--interactive` flag for interactive mode.\r\n- [Feature #1670](https://github.com/google/osv-scanner/pull/1686) Removed the `--verbosity=verbose` verbosity level.\r\n- [Feature #1673](https://github.com/google/osv-scanner/pull/1673) & [Feature #1664](https://github.com/google/osv-scanner/pull/1664) All previous experimental flags are now out of experimental, and the experimental flag mechanism has been removed.\r\n- [Feature #1651](https://github.com/google/osv-scanner/pull/1651) Multiple license flags have been merged into a single `--license` flag.\r\n- [Feature #1666](https://github.com/google/osv-scanner/pull/1666) API: `reporter` removed; logging now uses `slog`, which can be overridden.\r\n- [Feature #1638](https://github.com/google/osv-scanner/pull/1638) API: Deprecated packages removed, including `lockfile` (migrated to `OSV-Scalibr`).\r\n\r\n### Improvements:\r\n\r\n- [Feature #1561](https://github.com/google/osv-scanner/pull/1561) Updated HTML report for better contrast and usability (from beta2).\r\n- [Feature #1584](https://github.com/google/osv-scanner/pull/1584) Make skipping the root git repository the default behavior (from beta2).\r\n- [Feature #1648](https://github.com/google/osv-scanner/pull/1648) Updated HTML report styling to improve contrast (from rc1).\r\n\r\n### Fixes:\r\n\r\n- [Fix #1598](https://github.com/google/osv-scanner/pull/1598) Fix table output vulnerability ordering.\r\n- [Fix #1616](https://github.com/google/osv-scanner/pull/1616) Filter out Ubuntu unimportant vulnerabilities.\r\n- [Fix #1585](https://github.com/google/osv-scanner/pull/1585) Fixed issue where base images are occasionally duplicated.\r\n- [Fix #1597](https://github.com/google/osv-scanner/pull/1597) Fixed issue where SBOM parsers are not correctly parsing CycloneDX files when using the `bom.xml` filename.\r\n- [Fix #1566](https://github.com/google/osv-scanner/pull/1566) Fixed issue where offline scanning returns different results from online scanning.\r\n- [Fix #1538](https://github.com/google/osv-scanner/pull/1538) Reduce memory usage when using guided remediation.\r\n\r\nWe encourage everyone to upgrade to OSV-Scanner v2.0.0 and experience these powerful new capabilities! As always, your feedback is invaluable, so please don't hesitate to share your thoughts and suggestions.\r\n\r\n- [General V2 feedback](https://github.com/google/osv-scanner/discussions/1529)\r\n- [Container scanning feedback](https://github.com/google/osv-scanner/discussions/1521)\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.9.2...v2.0.0",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.0.0-rc1",
+    "published_at": "2025-03-10T00:08:08Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.0.0-rc1",
+    "summary": "v2.0.0-rc1",
+    "body": "Our first release candidate for OSV-Scanner V2, which includes various breaking changes osv-scanner to help future proof osv-scanner in V2! See the changelog for beta1 and beta2 for the full list of changes.\r\n\r\nWe've also added a migration guide here: https://google.github.io/osv-scanner/migration-guide.html\r\n\r\nAs always, please feel free to give us your feedback! \r\n\r\n- [General V2 feedback](https://github.com/google/osv-scanner/discussions/1529)\r\n- [Container scanning feedback](https://github.com/google/osv-scanner/discussions/1521)\r\n\r\n### Changes:\r\n\r\n- [Feature #1670](https://github.com/google/osv-scanner/pull/1670) Guided remediation now makes non-interactive the default mode, and adds the `--interactive` flag.\r\n- [Feature #1670](https://github.com/google/osv-scanner/pull/1686) Removes the `--verbosity=verbose` verbosity level.\r\n- [Feature #1673](https://github.com/google/osv-scanner/pull/1673) & [Feature #1664](https://github.com/google/osv-scanner/pull/1664) Moves all our experimental flags out of experimental, and removes the experimental flags.\r\n- [Feature #1651](https://github.com/google/osv-scanner/pull/1651) License flags have been merged into a single license flag. See `--help` or migration guide for more details.\r\n\r\n### Features:\r\n\r\n- [Feature #1636](https://github.com/google/osv-scanner/pull/1636) `osv-scanner update` command has been released as an experimental feature.\r\n- [Feature #1582](https://github.com/google/osv-scanner/pull/1582) Add container scanning related information to vertical output format.\r\n- [Feature #1587](https://github.com/google/osv-scanner/pull/1587) Add support for severity in SARIF report format.\r\n\r\n### Fixes\r\n\r\n- [Fix #1677](https://github.com/google/osv-scanner/pull/1677) Fix OS filter for HTML report.\r\n- [Fix #1598](https://github.com/google/osv-scanner/pull/1598) Fix table output vulnerability ordering.\r\n- [Fix #1661](https://github.com/google/osv-scanner/pull/1661) Add spinner to iframs in the HTML report.\r\n- [Fix #1648](https://github.com/google/osv-scanner/pull/1648) Updated HTML report styling to improve contrast.\r\n- [Fix #1616](https://github.com/google/osv-scanner/pull/1616) Display git scanning results in HTML report.\r\n- [Fix #1616](https://github.com/google/osv-scanner/pull/1616) Filter out Ubuntu unimportant vulnerabilities.\r\n\r\n### API changes\r\n\r\n- [Feature #1666](https://github.com/google/osv-scanner/pull/1666) Removes `reporter`, all logging now goes through slog, which you can override to change the output.\r\n- [Feature #1638](https://github.com/google/osv-scanner/pull/1638) All deprecated packages have been removed from the osv-scanner module, this includes the `lockfile` package, which has been migrated to the `OSV-Scalibr` library.\r\n\r\n## New Contributors\r\n* @mickem made their first contribution in https://github.com/google/osv-scanner/pull/1587\r\n* @WeizhouRen made their first contribution in https://github.com/google/osv-scanner/pull/1661\r\n* @vitorRibeiro7 made their first contribution in https://github.com/google/osv-scanner/pull/1648\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.0.0-beta2...v2.0.0-rc1",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.0.0-beta2",
+    "published_at": "2025-02-12T05:09:34Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.0.0-beta2",
+    "summary": "v2.0.0-beta2",
+    "body": "This second beta release brings a series of fixes and improvements to the previous release.\r\n\r\nPlease post your feedback in the following threads:\r\n- [General V2 feedback](https://github.com/google/osv-scanner/discussions/1529)\r\n- [Container scanning feedback](https://github.com/google/osv-scanner/discussions/1521)\r\n\r\n\r\n### Improvements:\r\n\r\n- [Feature #1561](https://github.com/google/osv-scanner/pull/1561) Updated HTML report for better contrast and usability\r\n- [Feature #1569](https://github.com/google/osv-scanner/pull/1569) Add support for bun.lock lockfiles.\r\n- [Feature #1584](https://github.com/google/osv-scanner/pull/1584) Make skip root git repository the default behavior.\r\n- [Feature #1547](https://github.com/google/osv-scanner/pull/1547) Add experimental config support to the image command.\r\n- [Feature #1557](https://github.com/google/osv-scanner/pull/1557) Allow setting port number when using the `--serve` flag with the new `--port` flag.\r\n\r\n### Fixes\r\n\r\n- [Fix #1585](https://github.com/google/osv-scanner/pull/1585) Fixed issue where base images are occasionally duplicated.\r\n- [Fix #1597](https://github.com/google/osv-scanner/pull/1597) Fixed issue where SBOM parsers are not correctly parsing CycloneDX files when using the `bom.xml` filename.\r\n- [Fix #1566](https://github.com/google/osv-scanner/pull/1566) Fixed issue where offline scanning returns different results from online scanning.\r\n- [Fix #1538](https://github.com/google/osv-scanner/pull/1538) Reduce memory usage when using guided remediation.\r\n\r\n\r\n\r\n## New Contributors\r\n* @Riddhimaan-Senapati made their first contribution in https://github.com/google/osv-scanner/pull/1557\r\n* @pranjalagg made their first contribution in https://github.com/google/osv-scanner/pull/1580\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.0.0-beta1...v2.0.0-beta2",
+    "category": "bugfix"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v2.0.0-beta1",
+    "published_at": "2025-01-30T00:20:39Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.0.0-beta1",
+    "summary": "v2.0.0-beta1",
+    "body": "## Changelog\r\n\r\nThe first beta of OSV-Scanner V2 is here! This beta release introduces significant enhancements, including refactored dependency extraction capabilities, container image scanning, and guided remediation for Maven.\r\n\r\nThis beta release does _not_ introduce any breaking CLI changes and the beta period is expected to last approximately one month. However, as this is a beta release, there may be breaking changes breaking changes in the final release compared to the first beta.\r\n\r\nGitHub Action based on OSV-Scanner V2 is also coming soon - stay tuned!\r\n\r\nWe encourage you to try out these new features and would appreciate any feedback you might have on our discussion topics:\r\n\r\n- [General V2 feedback](https://github.com/google/osv-scanner/discussions/1529)\r\n- [Container scanning feedback](https://github.com/google/osv-scanner/discussions/1521)\r\n\r\n### Layer and base image-aware container scanning\r\n\r\nA significant new feature is a rewritten, layer-aware container scanning support for Debian, Ubuntu, and Alpine container images. OSV-Scanner can now analyze container images to provide:\r\n\r\n- Layers where a package was first introduced\r\n- Layer history and commands\r\n- Base images the image is based on\r\n- OS/Distro the container is running on\r\n\r\nThis layer analysis leverages [OSV-Scalibr](https://github.com/google/osv-scalibr), and supports the following OSes and languages:\r\n| Distro Support | Language Artifacts Support |\r\n| -------------- | -------------------------- |\r\n| Alpine OS | Go |\r\n| Debian | Java |\r\n| Ubuntu | Node |\r\n| | Python |\r\n\r\nBase image identification also leverages a new experimental API provided by https://deps.dev.\r\n\r\nFor usage, run the new `scan image` command:\r\n\r\n```\r\nosv-scanner scan image <image-name>:<tag>\r\n```\r\n\r\nCheck out our [documentation](https://google.github.io/osv-scanner/usage/scan-image) for more details.\r\n\r\n### Interactive HTML output\r\n\r\nA new, interactive HTML output is now available. This provides a lot more interactivity and information compared to terminal only outputs, including:\r\n\r\n- Severity breakdown\r\n- Package and ID filtering\r\n- Vulnerability importance filtering\r\n- Full vulnerability advisory entries\r\n\r\nAnd additionally for container image scanning:\r\n\r\n- Layer filtering\r\n- Image layer information\r\n- Base image identification\r\n\r\n![Screenshot of HTML output for container image scanning](./docs/images/html-container-output.png)\r\n\r\n### Guided Remediation for Maven pom.xml\r\n\r\nLast year we released a feature called [guided remediation](https://osv.dev/blog/posts/announcing-guided-remediation-in-osv-scanner/) for npm. We have now expanded support to Maven pom.xml.\r\n\r\nWith guided remediation support for Maven, you can remediate vulnerabilities in both direct and transitive dependencies through direct version updates or overriding versions through dependency management.\r\n\r\nWe’ve introduced a few new features for our Maven support:\r\n\r\n- A new remediation strategy `override` is introduced.\r\n- Support for reading and writing pom.xml files, including writing changes to local parent pom files.\r\n- Private registry can be specified to fetch Maven metadata.\r\n\r\nThe guided remediation support for Maven is only available in the non-interactive mode. For basic usage, run the following command:\r\n\r\n```\r\nosv-scanner fix --non-interactive --strategy=override -M path/to/pom.xml\r\n```\r\n\r\nWe also introduced machine readable output for guided remediation that makes it easier to integrate guided remediation into your workflow.\r\n\r\nFor more usage details on guided remediation, please see our [documentation](https://google.github.io/osv-scanner/experimental/guided-remediation/).\r\n\r\n### Enhanced Dependency Extraction with `osv-scalibr`\r\n\r\nWith the help from [OSV-Scalibr](https://github.com/google/osv-scalibr), we now also have expanded support for the kinds of dependencies we can extract from projects and containers:\r\n\r\n#### Source manifests and lockfiles\r\n\r\n- Haskell: `cabal.project.freeze`, `stack.yaml.lock`\r\n- .NET: `deps.json`\r\n- Python: `uv.lock`\r\n\r\n#### Artifacts\r\n\r\n- node_modules\r\n- Python wheels\r\n- Java uber jars\r\n- Go binaries\r\n\r\nThe full list of supported formats can be found [here](https://google.github.io/osv-scanner/supported-languages-and-lockfiles/).\r\n\r\nThe first beta doesn’t enable every single extractor currently available in OSV-Scalibr today. We’ll continue to add more leading up to the final 2.0.0 release.\r\n\r\nOSV-Scalibr also makes it incredibly easy to add new extractors. Please file a [feature request](https://github.com/google/osv-scalibr/issues) if a format you’re interested in is missing!\r\n\r\n\r\n## New Contributors\r\n* @ivmeta made their first contribution in https://github.com/google/osv-scanner/pull/1327\r\n* @janniclas made their first contribution in https://github.com/google/osv-scanner/pull/1398\r\n* @VishalGawade1 made their first contribution in https://github.com/google/osv-scanner/pull/1390\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.9.1...v2.0.0-beta1",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v1.9.2",
+    "published_at": "2024-12-19T04:02:55Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v1.9.2",
+    "summary": "v1.9.2",
+    "body": "## Changelog\r\n\r\n### Fixes:\r\n\r\n- [Bug #1327](https://github.com/google/osv-scanner/pull/1327) Parsing crash on malformed pnpm lockfile.\r\n- [Bug #1377](https://github.com/google/osv-scanner/pull/1377) Warn if a vulnerability is ignored multiple times in the same config.\r\n- [Bug #1394](https://github.com/google/osv-scanner/pull/1394) Guided remediation: handle extraneous/missing packages in package-lock.json more leniently.\r\n- [Bug #1443](https://github.com/google/osv-scanner/issues/1443) Go call analysis now works with Go version up to v1.23.4.\r\n- [Bug #1436](https://github.com/google/osv-scanner/pull/1436) Only fetch Maven snapshots and releases when enabled.\r\n- [Bug #1456](https://github.com/google/osv-scanner/pull/1456) Remove redundant calls from PreFetch.\r\n\r\n## New Contributors\r\n* @ivmeta made their first contribution in https://github.com/google/osv-scanner/pull/1327\r\n* @janniclas made their first contribution in https://github.com/google/osv-scanner/pull/1398\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.9.1...v1.9.2",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v1.9.1",
+    "published_at": "2024-10-31T00:20:54Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v1.9.1",
+    "summary": "v1.9.1",
+    "body": "OSV-Scanner v2 is coming soon! The next release will start with version `v2.0.0-alpha1`.\r\n\r\nHere's a peek at some of the exciting upcoming features:\r\n\r\n- Standalone container image scanning support.\r\n  - Including support for Alpine and Debian images.\r\n- Refactored internals to use [`osv-scalibr`](https://github.com/google/osv-scalibr) library for better extraction capabilities.\r\n- HTML output format for clearer vulnerability results.\r\n- More control over output format and logging.\r\n- ...and more!\r\n\r\nImportantly, the CLI interface of osv-scanner will be maintained with minimal breaking changes.\r\nMost breaking changes will only be in the API. More details in the upcoming alpha release.\r\n\r\n---\r\n\r\nThis is the final feature v1 release of osv-scanner, future releases for v1 will only contain bug fixes.\r\n\r\n# v1.9.1\r\n\r\n### Features:\r\n\r\n- [Feature #1295](https://github.com/google/osv-scanner/pull/1295) Support offline database in fix subcommand.\r\n- [Feature #1342](https://github.com/google/osv-scanner/pull/1342) Add `--experimental-offline-vulnerabilities` and `--experimental-no-resolve` flags.\r\n- [Feature #1045](https://github.com/google/osv-scanner/pull/1045) Support private registries for Maven.\r\n- [Feature #1226](https://github.com/google/osv-scanner/pull/1226) Support `vulnerabilities.ignore` in package overrides.\r\n\r\n### Fixes:\r\n\r\n- [Bug #604](https://github.com/google/osv-scanner/pull/604) Use correct path separator in SARIF output when on Windows.\r\n- [Bug #330](https://github.com/google/osv-scanner/pull/330) Warn about and ignore duplicate entries in SBOMs.\r\n- [Bug #1325](https://github.com/google/osv-scanner/pull/1325) Set CharsetReader and Entity when reading pom.xml.\r\n- [Bug #1310](https://github.com/google/osv-scanner/pull/1310) Update spdx license ids.\r\n- [Bug #1288](https://github.com/google/osv-scanner/pull/1288) Sort sbom packages by PURL.\r\n- [Bug #1285](https://github.com/google/osv-scanner/pull/1285) Improve handling if `docker` exits with a non-zero code when trying to scan images\r\n\r\n### API Changes:\r\n\r\n- Deprecate auxillary public packages: As part of the V2 update described above, we have started deprecating some of the auxillary packages\r\n  which are not commonly used to give us more room to make better API designs. These include:\r\n  - `config`\r\n  - `depsdev`\r\n  - `grouper`\r\n  - `spdx`\r\n\r\n### Misc\r\n- Update build to go1.23.2\r\n\r\n## New Contributors\r\n* @emmanuel-ferdman made their first contribution in https://github.com/google/osv-scanner/pull/1351\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.9.0...v1.9.1",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v1.9.0",
+    "published_at": "2024-10-02T06:16:01Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v1.9.0",
+    "summary": "v1.9.0",
+    "body": "## What's Changed\r\n\r\n### Features:\r\n\r\n- [Feature #1243](https://github.com/google/osv-scanner/pull/1243) Allow explicitly ignoring the license of a package in config with `license.ignore = true`.\r\n- [Feature #1249](https://github.com/google/osv-scanner/pull/1249) Error if configuration file has unknown properties.\r\n- [Feature #1271](https://github.com/google/osv-scanner/pull/1271) Assume `.txt` files with \"requirements\" in their name are `requirements.txt` files\r\n\r\n### Fixes:\r\n\r\n- [Bug #1242](https://github.com/google/osv-scanner/pull/1242) Announce when a config file is invalid and exit with a non-zero code.\r\n- [Bug #1241](https://github.com/google/osv-scanner/pull/1241) Display `(no reason given)` when there is no reason in the override config.\r\n- [Bug #1252](https://github.com/google/osv-scanner/pull/1252) Don't allow `LoadPath` to be set via config file.\r\n- [Bug #1279](https://github.com/google/osv-scanner/pull/1279) Report all ecosystems without local databases in one single line.\r\n- [Bug #1283](https://github.com/google/osv-scanner/pull/1283) Output invalid PURLs when scanning SBOMs.\r\n- [Bug #1278](https://github.com/google/osv-scanner/pull/1278) Apply go version override to _all_ instances of the `stdlib`.\r\n\r\n### Misc:\r\n\r\n- [#1253](https://github.com/google/osv-scanner/pull/1253) Deprecate `ParseX()` functions in `pkg/lockfile` in favor of their `Extract` equivalents.\r\n- [#1290](https://github.com/google/osv-scanner/pull/1290) Bump maximum number of concurrent requests to the OSV.dev API.\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.8.5...v1.9.0",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v1.8.5",
+    "published_at": "2024-09-11T05:58:36Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v1.8.5",
+    "summary": "v1.8.5",
+    "body": "## What's Changed\r\n\r\n### Features:\r\n\r\n- [Feature #1160](https://github.com/google/osv-scanner/pull/1160) Support fetching snapshot versions from a Maven registry.\r\n- [Feature #1177](https://github.com/google/osv-scanner/pull/1177) Support composite-based package overrides. This allows for ignoring entire manifests when scanning.\r\n- [Feature #1210](https://github.com/google/osv-scanner/pull/1210) Add FIXED-VULN-IDS to guided remediation non-interactive output.\r\n\r\n### Fixes:\r\n\r\n- [Bug #1220](https://github.com/google/osv-scanner/issues/1220) Fix govulncheck calls on C code.\r\n- [Bug #1236](https://github.com/google/osv-scanner/pull/1236) Alpine package scanning now falls back to latest release version if no release version can be found.\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.8.4...v1.8.5",
+    "category": "bugfix"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v1.8.4",
+    "published_at": "2024-08-22T04:49:46Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v1.8.4",
+    "summary": "v1.8.4",
+    "body": "## What's Changed\r\n\r\n### Features:\r\n\r\n- [Feature #1177](https://github.com/google/osv-scanner/pull/1177) Adds `--upgrade-config` flag for configuring allowed upgrades on a per-package basis. Also hide & deprecate previous `--disallow-major-upgrades` and `--disallow-package-upgrades` flags.\r\n\r\n### Fixes:\r\n\r\n- [Bug #1123](https://github.com/google/osv-scanner/issues/1123) Issue when running osv-scanner on project running with golang 1.22 #1123\r\n\r\n### Misc:\r\n\r\n- [Feature #638](https://github.com/google/osv-scanner/issues/638) Update go policy to use stable go version for builds (updated to go 1.23)\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.8.3...v1.8.4",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v1.8.3",
+    "published_at": "2024-08-07T04:39:08Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v1.8.3",
+    "summary": "v1.8.3",
+    "body": "## Features:\r\n\r\n- [Feature #889](https://github.com/google/osv-scanner/pull/889) OSV-Scanner now provides \"vertical\" output format!\r\n\r\n## Fixes:\r\n\r\n- [Bug #1115](https://github.com/google/osv-scanner/issues/1115) Ensure that `semantic` is passed a valid `models.Ecosystem`.\r\n- [Bug #1140](https://github.com/google/osv-scanner/pull/1140) Add Maven dependency management to override client.\r\n- [Bug #1149](https://github.com/google/osv-scanner/pull/1149) Handle Maven parent relative path.\r\n\r\n## Misc:\r\n\r\n- [Feature #1091](https://github.com/google/osv-scanner/pull/1091) Improved the runtime of DiffVulnerabilityResults. Thanks @neilnaveen!\r\n- [Feature #1125](https://github.com/google/osv-scanner/pull/1125) Workflow for stale issue and PR management.\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.8.2...v1.8.3",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v1.8.2",
+    "published_at": "2024-07-10T06:21:54Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v1.8.2",
+    "summary": "v1.8.2",
+    "body": "## Features:\r\n\r\n- [Feature #1014](https://github.com/google/osv-scanner/pull/1014) Adding CycloneDX 1.4 and 1.5 output format. Thanks @marcwieserdev!\r\n\r\n## Fixes:\r\n\r\n- [Bug #769](https://github.com/google/osv-scanner/issues/769) Fixed missing vulnerabilities for debian purls for `--experimental-local-db`.\r\n- [Bug #1055](https://github.com/google/osv-scanner/issues/1055) Ensure that `package` exists in `affected` property.\r\n- [Bug #1072](https://github.com/google/osv-scanner/issues/1072) Filter out unimportant vulnerabilities from vuln group.\r\n- [Bug #1077](https://github.com/google/osv-scanner/issues/1077) Fix rate osv-scanner deadlock.\r\n- [Bug #924](https://github.com/google/osv-scanner/issues/924) Ensure that npm dependencies retain their \"production\" grouping.\r\n\r\n\r\n## New Contributors\r\n* @neilnaveen made their first contribution in https://github.com/google/osv-scanner/pull/1076\r\n* @marcwieserdev made their first contribution in https://github.com/google/osv-scanner/pull/1014\r\n* @GeoDerp made their first contribution in https://github.com/google/osv-scanner/pull/1073\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.8.1...v1.8.2",
+    "category": "bugfix"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v1.8.1",
+    "published_at": "2024-06-21T02:49:00Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v1.8.1",
+    "summary": "v1.8.1",
+    "body": "# v1.8.0/v1.8.1:\r\n\r\n### Features:\r\n\r\n- [Feature #35](https://github.com/google/osv-scanner/issues/35)\r\n  OSV-Scanner now scans transitive dependencies in Maven `pom.xml` files!\r\n  See [our documentation](https://google.github.io/osv-scanner/supported-languages-and-lockfiles/#transitive-dependency-scanning) for more information.\r\n- [Feature #944](https://github.com/google/osv-scanner/pull/944)\r\n  The `osv-scanner.toml` configuration file can now filter specific packages with new `[[PackageOverrides]]` sections:\r\n  ```toml\r\n  [[PackageOverrides]]\r\n  # The package name, version, and ecosystem to match against\r\n  name = \"lib\"\r\n  # If version is not set or empty, it will match every version\r\n  version = \"1.0.0\"\r\n  ecosystem = \"Go\"\r\n  # Ignore this package entirely, including license scanning\r\n  ignore = true\r\n  # Override the license of the package\r\n  # This is not used if ignore = true\r\n  license.override = [\"MIT\", \"0BSD\"]\r\n  # effectiveUntil = 2022-11-09 # Optional exception expiry date\r\n  reason = \"abc\"\r\n  ```\r\n\r\n### Minor Updates\r\n\r\n- [Feature #1039](https://github.com/google/osv-scanner/pull/1039) The `--experimental-local-db` flag has been removed and replaced with a new flag `--experimental-download-offline-databases` which better reflects what the flag does.  \r\n  To replicate the behavior of the original `--experimental-local-db` flag, replace it with both `--experimental-offline --experimental-download-offline-databases` flags. This will run osv-scanner in offline mode, but download the latest version of the vulnerability databases before scanning.\r\n\r\n### Fixes:\r\n\r\n- [Bug #1000](https://github.com/google/osv-scanner/pull/1000) Standard dependencies now correctly override `dependencyManagement` dependencies when scanning `pom.xml` files in offline mode.\r\n\r\n## New Contributors\r\n* @np5 made their first contribution in https://github.com/google/osv-scanner/pull/1029\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.7.4...v1.8.1",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v1.7.4",
+    "published_at": "2024-05-30T01:58:25Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v1.7.4",
+    "summary": "v1.7.4",
+    "body": "# v1.7.4:\r\n\r\n### Features:\r\n\r\n- [Feature #943](https://github.com/google/osv-scanner/pull/943) Support scanning gradle/verification-metadata.xml files.\r\n\r\n### Misc:\r\n\r\n- [Bug #968](https://github.com/google/osv-scanner/issues/968) Hide unimportant Debian vulnerabilities to reduce noise.\r\n\r\n## New Contributors\r\n* @khorben made their first contribution in https://github.com/google/osv-scanner/pull/969\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.7.3...v1.7.4",
+    "category": "feature"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
+    "version": "v1.7.3",
+    "published_at": "2024-05-09T00:54:39Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v1.7.3",
+    "summary": "v1.7.3",
+    "body": "# v1.7.3:\r\n\r\n### Features:\r\n\r\n- [Feature #934](https://github.com/google/osv-scanner/pull/934) add support for PNPM v9 lockfiles.\r\n\r\n### Fixes:\r\n\r\n- [Bug #938](https://github.com/google/osv-scanner/issues/938) Ensure the sarif output has a stable order.\r\n- [Bug #922](https://github.com/google/osv-scanner/issues/922) Support filtering on alias IDs in Guided Remediation.\r\n\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v1.7.2...v1.7.3",
+    "category": "feature"
+  }
+]
