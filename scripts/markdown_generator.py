@@ -2,7 +2,42 @@
 from datetime import datetime, timezone
 from typing import Dict, List, Optional
 
+import markdown as _md_lib
+
 from scripts.models import ReleaseEntry
+
+_HTML_STYLE = """
+  body { font-family: sans-serif; max-width: 900px; margin: 2em auto; padding: 0 1em; line-height: 1.6; }
+  nav { margin-bottom: 1.5em; }
+  h1 { border-bottom: 2px solid #333; padding-bottom: 0.3em; }
+  h2, h3 { border-bottom: 1px solid #eee; padding-bottom: 0.2em; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ccc; padding: 0.5em 1em; text-align: left; }
+  th { background: #f5f5f5; }
+  a { color: #0066cc; }
+  code { background: #f0f0f0; padding: 0.1em 0.3em; border-radius: 3px; font-size: 0.9em; }
+  pre code { display: block; padding: 1em; overflow: auto; }
+  blockquote { border-left: 4px solid #ddd; margin: 0; padding-left: 1em; color: #666; }
+  hr { border: none; border-top: 1px solid #eee; margin: 1.5em 0; }
+"""
+
+
+def render_html(title: str, md_content: str, lang: str = "en") -> str:
+    """MarkdownをHTMLページに変換する。"""
+    body_html = _md_lib.markdown(md_content, extensions=["tables", "fenced_code"])
+    return f"""<!DOCTYPE html>
+<html lang="{lang}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <style>{_HTML_STYLE}</style>
+</head>
+<body>
+  <nav><a href="index.html">&larr; SCA Tools Feed</a></nav>
+{body_html}
+</body>
+</html>"""
 
 BOOL_MARK: Dict[bool, str] = {True: "✅", False: "❌"}
 
@@ -167,7 +202,7 @@ def generate_comparison_page(tools: list, entries_by_tool: Dict[str, List[Releas
         version = latest.version if latest else "—"
         updated = latest.published_at[:10] if latest else "—"
         lines.append(
-            f"| [{tool['name']}]({tid}.md)"
+            f"| [{tool['name']}]({tid}.html)"
             f" | {version}"
             f" | {updated}"
             f" | {_tool_type(tool)}"
@@ -204,7 +239,7 @@ def generate_comparison_page_ja(tools: list, entries_by_tool: Dict[str, List[Rel
         version = latest.version if latest else "—"
         updated = latest.published_at[:10] if latest else "—"
         lines.append(
-            f"| [{tool['name']}]({tid}_ja.md)"
+            f"| [{tool['name']}]({tid}_ja.html)"
             f" | {version}"
             f" | {updated}"
             f" | {_tool_type(tool)}"

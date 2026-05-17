@@ -13,6 +13,10 @@ The following categories are **out of scope**:
 - **DAST (Dynamic Application Security Testing)**: Tools that detect vulnerabilities by sending requests to a running system (e.g., OWASP ZAP)
 - **SBOM generation/management only**: Tools that do not perform CVE matching (e.g., microsoft/sbom-tool)
 
+## Published Site
+
+https://tmyymmt.github.io/sca-tools-feed/ is published as GitHub Pages. You can browse feed listings, per-tool summary pages, and the comparison page.
+
 ## How It Works
 
 - Update each Markdown file and feed file using one of the following methods:

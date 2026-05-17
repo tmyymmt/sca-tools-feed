@@ -17,6 +17,7 @@ from scripts.markdown_generator import (
     generate_comparison_page_ja,
     generate_tool_page,
     generate_tool_page_ja,
+    render_html,
 )
 from scripts.models import ReleaseEntry
 from scripts.storage import load_entries, merge_entries, save_entries
@@ -111,7 +112,7 @@ def _generate_index_html(tools: list) -> bytes:
         f'<td><a href="feeds/{t["id"]}.rss">RSS</a></td>'
         f'<td><a href="feeds/{t["id"]}.atom">Atom</a></td>'
         f'<td><a href="feeds/{t["id"]}.json">JSON</a></td>'
-        f'<td><a href="{t["id"]}.md">EN</a> / <a href="{t["id"]}_ja.md">JA</a></td>'
+        f'<td><a href="{t["id"]}.html">EN</a> / <a href="{t["id"]}_ja.html">JA</a></td>'
         f'</tr>'
         for t in tools
     )
@@ -147,8 +148,8 @@ def _generate_index_html(tools: list) -> bytes:
 
   <h2>Comparison</h2>
   <p>
-    <a href="comparison.md">comparison.md (English)</a> /
-    <a href="comparison_ja.md">comparison_ja.md (日本語)</a>
+    <a href="comparison.html">comparison.html (English)</a> /
+    <a href="comparison_ja.html">comparison_ja.html (日本語)</a>
   </p>
 
   <h2>Per-Tool Feeds &amp; Summaries</h2>
@@ -171,22 +172,23 @@ def write_pages(tools: list, entries_by_tool: Dict[str, List[ReleaseEntry]]) -> 
     for tool in tools:
         tid = tool["id"]
         tool_entries = entries_by_tool.get(tid, [])
+        name = tool["name"]
         write_file_atomic(
-            PAGES_DIR / f"{tid}.md",
-            generate_tool_page(tool, tool_entries).encode("utf-8"),
+            PAGES_DIR / f"{tid}.html",
+            render_html(name, generate_tool_page(tool, tool_entries)).encode("utf-8"),
         )
         write_file_atomic(
-            PAGES_DIR / f"{tid}_ja.md",
-            generate_tool_page_ja(tool, tool_entries).encode("utf-8"),
+            PAGES_DIR / f"{tid}_ja.html",
+            render_html(name, generate_tool_page_ja(tool, tool_entries), lang="ja").encode("utf-8"),
         )
 
     write_file_atomic(
-        PAGES_DIR / "comparison.md",
-        generate_comparison_page(tools, entries_by_tool).encode("utf-8"),
+        PAGES_DIR / "comparison.html",
+        render_html("SCA Tools Comparison", generate_comparison_page(tools, entries_by_tool)).encode("utf-8"),
     )
     write_file_atomic(
-        PAGES_DIR / "comparison_ja.md",
-        generate_comparison_page_ja(tools, entries_by_tool).encode("utf-8"),
+        PAGES_DIR / "comparison_ja.html",
+        render_html("SCAツール比較", generate_comparison_page_ja(tools, entries_by_tool), lang="ja").encode("utf-8"),
     )
     write_file_atomic(PAGES_DIR / "index.html", _generate_index_html(tools))
     logger.info("Pages written to %s/", PAGES_DIR)

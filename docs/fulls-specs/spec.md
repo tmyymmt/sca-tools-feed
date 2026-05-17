@@ -116,6 +116,23 @@ Feeds are categorized by release type, also used for filtering:
 - Subscription methods: RSS readers, or direct access to repository files
 - Filtering: available by release type category
 
+### Published URL
+
+https://tmyymmt.github.io/sca-tools-feed/
+
+### Output File Structure (public/)
+
+`public/` is not committed to the repository (gitignored). It is generated at runtime by GitHub Actions and deployed to GitHub Pages.
+
+| Path | Content |
+|---|---|
+| `feeds/all.{rss,atom,json}` | Combined feed for all tools |
+| `feeds/{tool_id}.{rss,atom,json}` | Per-tool feeds |
+| `{tool_id}.html` / `{tool_id}_ja.html` | Per-tool summary pages (English/Japanese) |
+| `comparison.html` / `comparison_ja.html` | All-tools comparison pages |
+| `index.html` | Top page (feed list and links to comparison pages) |
+| `.nojekyll` | Disables Jekyll processing on GitHub Pages |
+
 ---
 
 ## 6. Non-Functional Requirements

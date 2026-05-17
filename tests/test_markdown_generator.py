@@ -6,6 +6,7 @@ from scripts.markdown_generator import (
     generate_comparison_page_ja,
     generate_tool_page,
     generate_tool_page_ja,
+    render_html,
 )
 from scripts.models import ReleaseEntry
 
@@ -115,3 +116,35 @@ def test_generate_comparison_page_empty_entries_shows_dash():
     tools = [TOOL]
     result = generate_comparison_page(tools, {"trivy": []})
     assert "—" in result
+
+
+def test_generate_comparison_page_links_to_html():
+    tools = [TOOL]
+    result = generate_comparison_page(tools, {"trivy": ENTRIES})
+    assert "trivy.html" in result
+    assert ".md" not in result
+
+
+def test_generate_comparison_page_ja_links_to_html():
+    tools = [TOOL]
+    result = generate_comparison_page_ja(tools, {"trivy": ENTRIES})
+    assert "trivy_ja.html" in result
+    assert ".md" not in result
+
+
+def test_render_html_returns_html_document():
+    result = render_html("Test Title", "# Hello\n\nWorld")
+    assert "<!DOCTYPE html>" in result
+    assert "<title>Test Title</title>" in result
+    assert "<h1>Hello</h1>" in result
+
+
+def test_render_html_lang_ja():
+    result = render_html("テスト", "# こんにちは", lang="ja")
+    assert 'lang="ja"' in result
+
+
+def test_render_html_renders_table():
+    md = "| A | B |\n|---|---|\n| 1 | 2 |"
+    result = render_html("T", md)
+    assert "<table>" in result
