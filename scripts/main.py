@@ -235,9 +235,11 @@ def main() -> None:
     write_feeds(all_entries)
 
     # ページ表示用にツールを対応機能数降順・ツール名昇順でソート
+    # saas はスキャン機能ではなく提供形態のフラグのため除外する
+    _SCAN_FEATURE_KEYS = ("container", "language_libs", "sbom", "policy")
     tools_for_pages = sorted(
         tools,
-        key=lambda t: (-sum(1 for v in t.get("features", {}).values() if v), t["name"].lower()),
+        key=lambda t: (-sum(t.get("features", {}).get(k, False) for k in _SCAN_FEATURE_KEYS), t["name"].lower()),
     )
     write_pages(tools_for_pages, entries_by_tool)
 
