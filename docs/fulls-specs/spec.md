@@ -135,6 +135,8 @@ https://tmyymmt.github.io/sca-tools-feed/
 
 HTML pages automatically apply dark mode by detecting browser/OS settings via the `prefers-color-scheme` media query.
 
+Tools in `index.html` and rows in `comparison.html` are ordered by descending number of supported features, then alphabetically by tool name.
+
 ---
 
 ## 6. Non-Functional Requirements

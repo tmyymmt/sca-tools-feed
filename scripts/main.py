@@ -233,7 +233,13 @@ def main() -> None:
     all_entries.sort(key=lambda e: e.published_at, reverse=True)
 
     write_feeds(all_entries)
-    write_pages(tools, entries_by_tool)
+
+    # ページ表示用にツールを対応機能数降順・ツール名昇順でソート
+    tools_for_pages = sorted(
+        tools,
+        key=lambda t: (-sum(1 for v in t.get("features", {}).values() if v), t["name"].lower()),
+    )
+    write_pages(tools_for_pages, entries_by_tool)
 
     if failed_tools:
         logger.warning("Failed to collect from: %s", ", ".join(failed_tools))

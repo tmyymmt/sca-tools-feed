@@ -135,6 +135,8 @@ https://tmyymmt.github.io/sca-tools-feed/
 
 HTMLページは `prefers-color-scheme` メディアクエリでブラウザ・ OS の設定を検知し、自動的にダークモードを適用する。
 
+`index.html` のツール一覧および `comparison.html` のツール行は、対応機能数の多い順（降順）、同数の場合はツール名のアルファベット昇順で並べる。
+
 ---
 
 ## 6. 非機能要件
