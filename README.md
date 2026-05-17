@@ -28,3 +28,8 @@ The following categories are **out of scope**:
 - docs/fulls-specs/spec.md
 - The full specification always reflects the latest spec
 - Update the full specification when making functional changes
+
+## Rules
+
+- Create documentation in both Japanese and English
+  - English: `*.md`, Japanese: `*_ja.md`

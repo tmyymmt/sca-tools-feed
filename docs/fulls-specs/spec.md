@@ -4,10 +4,9 @@ This directory contains the full specification of this project.
 
 ## Writing Guidelines
 
-- The entire specification should be navigable starting from this file
-- Keep individual files from becoming too large
-  - Adjust the level of abstraction in each file appropriately
-  - Split files into appropriate units
+- The specification should be navigable starting from this file
+- Manage specifications hierarchically to prevent individual files from becoming too large and hard to read
+- When there is a large amount of specification content, start with a high-level, concise description and create child files for the details
 - When creating child files
   - Include links to prerequisite information files
 
