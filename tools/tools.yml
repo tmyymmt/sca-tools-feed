@@ -3,43 +3,142 @@ tools:
     name: Trivy
     type: github
     repo: aquasecurity/trivy
+    homepage: https://trivy.dev
+    license: Apache-2.0
+    pricing: Free
+    description: "Comprehensive vulnerability scanner for containers, IaC, and language dependencies."
+    description_ja: "コンテナ・IaC・依存ライブラリを対象とする包括的な脆弱性スキャナー。"
+    features:
+      container: true
+      language_libs: true
+      sbom: true
+      policy: true
+      saas: false
 
   - id: grype
     name: Grype
     type: github
     repo: anchore/grype
+    homepage: https://github.com/anchore/grype
+    license: Apache-2.0
+    pricing: Free
+    description: "Vulnerability scanner for container images and filesystems, powered by Syft."
+    description_ja: "コンテナイメージとファイルシステム向け脆弱性スキャナー（Syftと連携）。"
+    features:
+      container: true
+      language_libs: true
+      sbom: true
+      policy: false
+      saas: false
 
   - id: syft
     name: Syft
     type: github
     repo: anchore/syft
+    homepage: https://github.com/anchore/syft
+    license: Apache-2.0
+    pricing: Free
+    description: "SBOM generation tool for container images and filesystems."
+    description_ja: "コンテナイメージとファイルシステム向けSBOM生成ツール。"
+    features:
+      container: true
+      language_libs: true
+      sbom: true
+      policy: false
+      saas: false
 
   - id: osv-scanner
     name: OSV-Scanner
     type: github
     repo: google/osv-scanner
+    homepage: https://google.github.io/osv-scanner/
+    license: Apache-2.0
+    pricing: Free
+    description: "Open source vulnerability scanner by Google, using the OSV database."
+    description_ja: "GoogleによるOSSの脆弱性スキャナー。OSVデータベースを使用。"
+    features:
+      container: false
+      language_libs: true
+      sbom: true
+      policy: false
+      saas: false
 
   - id: dependency-check
     name: Dependency-Check
     type: github
     repo: jeremylong/DependencyCheck
+    homepage: https://jeremylong.github.io/DependencyCheck/
+    license: Apache-2.0
+    pricing: Free
+    description: "OWASP tool that detects publicly disclosed vulnerabilities in project dependencies."
+    description_ja: "OWASPが提供する依存ライブラリの既知脆弱性を検出するツール。"
+    features:
+      container: false
+      language_libs: true
+      sbom: false
+      policy: false
+      saas: false
 
   - id: clair
     name: Clair
     type: github
     repo: quay/clair
+    homepage: https://github.com/quay/clair
+    license: Apache-2.0
+    pricing: Free
+    description: "Static analysis tool for vulnerabilities in container images (used by Quay.io)."
+    description_ja: "コンテナイメージの静的脆弱性解析ツール（Quay.ioに統合）。"
+    features:
+      container: true
+      language_libs: false
+      sbom: false
+      policy: false
+      saas: false
 
   - id: vuls
     name: Vuls
     type: github
     repo: future-architect/vuls
+    homepage: https://vuls.io
+    license: GPL-3.0
+    pricing: Free
+    description: "Agentless Linux server vulnerability scanner."
+    description_ja: "Linuxサーバー向けエージェントレス脆弱性スキャナー。"
+    features:
+      container: false
+      language_libs: false
+      sbom: false
+      policy: false
+      saas: false
 
   - id: futurevuls
     name: FutureVuls
     type: scrape_futurevuls
     url: https://help.vuls.biz/releasenotes/
+    homepage: https://vuls.biz
+    license: Proprietary
+    pricing: Freemium
+    description: "Cloud-based vulnerability management SaaS built on Vuls."
+    description_ja: "Vulsをベースにしたクラウド型脆弱性管理SaaS。"
+    features:
+      container: true
+      language_libs: true
+      sbom: false
+      policy: false
+      saas: true
 
   - id: yamory
     name: Yamory
     type: scrape_yamory
     url: https://yamory.io/news
+    homepage: https://yamory.io
+    license: Proprietary
+    pricing: Freemium
+    description: "SaaS for managing vulnerabilities in libraries and containers."
+    description_ja: "ライブラリ・コンテナの脆弱性管理SaaS。"
+    features:
+      container: true
+      language_libs: true
+      sbom: false
+      policy: false
+      saas: true

@@ -4,7 +4,7 @@ import logging
 import os
 import tempfile
 from pathlib import Path
-from typing import List
+from typing import Dict, List
 
 import yaml
 
@@ -12,6 +12,12 @@ from scripts.collectors.futurevuls import collect_futurevuls
 from scripts.collectors.github import collect_github_releases
 from scripts.collectors.yamory import collect_yamory
 from scripts.feed_generator import generate_atom, generate_json_feed, generate_rss
+from scripts.markdown_generator import (
+    generate_comparison_page,
+    generate_comparison_page_ja,
+    generate_tool_page,
+    generate_tool_page_ja,
+)
 from scripts.models import ReleaseEntry
 from scripts.storage import load_entries, merge_entries, save_entries
 
@@ -20,6 +26,7 @@ logger = logging.getLogger(__name__)
 
 DATA_DIR = Path("data")
 FEEDS_DIR = Path("feeds")
+PAGES_DIR = Path("pages")
 TOOLS_CONFIG = Path("tools/tools.yml")
 FEED_TITLE = "SCA Tools Feed"
 FEED_BASE_URL = os.environ.get("FEED_BASE_URL", "https://tmyymmt.github.io/sca-tools-feed/feeds")
@@ -96,12 +103,40 @@ def write_feeds(all_entries: List[ReleaseEntry]) -> None:
     logger.info("Feeds written to %s/", FEEDS_DIR)
 
 
+def write_pages(tools: list, entries_by_tool: Dict[str, List[ReleaseEntry]]) -> None:
+    """ツールごとのまとめページと比較ページをMarkdownで書き込む。"""
+    PAGES_DIR.mkdir(exist_ok=True)
+
+    for tool in tools:
+        tid = tool["id"]
+        tool_entries = entries_by_tool.get(tid, [])
+        write_file_atomic(
+            PAGES_DIR / f"{tid}.md",
+            generate_tool_page(tool, tool_entries).encode("utf-8"),
+        )
+        write_file_atomic(
+            PAGES_DIR / f"{tid}_ja.md",
+            generate_tool_page_ja(tool, tool_entries).encode("utf-8"),
+        )
+
+    write_file_atomic(
+        PAGES_DIR / "comparison.md",
+        generate_comparison_page(tools, entries_by_tool).encode("utf-8"),
+    )
+    write_file_atomic(
+        PAGES_DIR / "comparison_ja.md",
+        generate_comparison_page_ja(tools, entries_by_tool).encode("utf-8"),
+    )
+    logger.info("Pages written to %s/", PAGES_DIR)
+
+
 def main() -> None:
     github_token = os.environ.get("GITHUB_TOKEN")
     tools = load_tools_config()
     DATA_DIR.mkdir(exist_ok=True)
 
     all_entries: List[ReleaseEntry] = []
+    entries_by_tool: Dict[str, List[ReleaseEntry]] = {}
     failed_tools = []
 
     for tool in tools:
@@ -119,12 +154,14 @@ def main() -> None:
             save_entries(data_path, merged)
             logger.info("Saved %d entries for %s (+%d new)", len(merged), tool["id"], len(merged) - len(existing))
 
+        entries_by_tool[tool["id"]] = merged
         all_entries.extend(merged)
 
     # 公開日時でソート（新しい順）
     all_entries.sort(key=lambda e: e.published_at, reverse=True)
 
     write_feeds(all_entries)
+    write_pages(tools, entries_by_tool)
 
     if failed_tools:
         logger.warning("Failed to collect from: %s", ", ".join(failed_tools))
