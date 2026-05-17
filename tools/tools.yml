@@ -57,7 +57,7 @@ tools:
     description: "Open source vulnerability scanner by Google, using the OSV database."
     description_ja: "GoogleによるOSSの脆弱性スキャナー。OSVデータベースを使用。"
     features:
-      container: false
+      container: true
       language_libs: true
       sbom: true
       policy: false
