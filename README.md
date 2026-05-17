@@ -33,3 +33,7 @@ The following categories are **out of scope**:
 
 - Create documentation in both Japanese and English
   - English: `*.md`, Japanese: `*_ja.md`
+
+## License
+
+MIT License

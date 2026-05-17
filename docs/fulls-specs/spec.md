@@ -125,5 +125,4 @@ See [spec-nonfunctional.md](spec-nonfunctional.md) for details.
 - Prefer GitHub API over scraping; scraping is a last resort
 - Tolerate partial failures; keep updating other tools' feeds on failure
 - Use atomic writes to prevent publishing partially written files
-- License: MIT License
 
