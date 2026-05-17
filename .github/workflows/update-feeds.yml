@@ -6,12 +6,17 @@ on:
   workflow_dispatch:       # 手動実行も可能
 
 permissions:
-  contents: write
-  issues: write            # 失敗時のIssue作成に必要
+  contents: write          # data/ のコミット・プッシュ
+  pages: write             # GitHub Pages へのデプロイ
+  id-token: write          # OIDC 認証（Pages デプロイに必要）
+  issues: write            # 失敗時の Issue 作成
 
 jobs:
-  update:
+  update-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -24,21 +29,32 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Collect and generate feeds
+      - name: Collect and generate feeds and pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FEED_BASE_URL: "https://tmyymmt.github.io/sca-tools-feed/feeds"
         run: python -m scripts.main
 
-      - name: Commit and push if changed
+      - name: Commit data if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ feeds/
-          git diff --staged --quiet || git commit -m "chore: update feeds $(date -u +'%Y-%m-%d')"
-          git push
+          git add data/
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update data $(date -u +'%Y-%m-%d')"
+            git push
+          fi
 
-      - name: Create issue on consecutive failure
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Create issue on failure
         if: failure()
         uses: actions/github-script@v7
         with:

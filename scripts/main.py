@@ -25,8 +25,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name
 logger = logging.getLogger(__name__)
 
 DATA_DIR = Path("data")
-FEEDS_DIR = Path("feeds")
-PAGES_DIR = Path("pages")
+FEEDS_DIR = Path("public/feeds")
+PAGES_DIR = Path("public")
 TOOLS_CONFIG = Path("tools/tools.yml")
 FEED_TITLE = "SCA Tools Feed"
 FEED_BASE_URL = os.environ.get("FEED_BASE_URL", "https://tmyymmt.github.io/sca-tools-feed/feeds")
@@ -76,7 +76,7 @@ def write_file_atomic(path: Path, content: bytes) -> None:
 
 def write_feeds(all_entries: List[ReleaseEntry]) -> None:
     """全エントリおよびツール別のRSS/Atom/JSON Feedをアトミックに書き込む。"""
-    FEEDS_DIR.mkdir(exist_ok=True)
+    FEEDS_DIR.mkdir(parents=True, exist_ok=True)
     base_url = FEED_BASE_URL
 
     # 全ツール統合フィード
@@ -103,9 +103,70 @@ def write_feeds(all_entries: List[ReleaseEntry]) -> None:
     logger.info("Feeds written to %s/", FEEDS_DIR)
 
 
+def _generate_index_html(tools: list) -> bytes:
+    """public/index.html の内容を生成する。"""
+    tool_rows = "\n".join(
+        f'    <tr>'
+        f'<td>{t["name"]}</td>'
+        f'<td><a href="feeds/{t["id"]}.rss">RSS</a></td>'
+        f'<td><a href="feeds/{t["id"]}.atom">Atom</a></td>'
+        f'<td><a href="feeds/{t["id"]}.json">JSON</a></td>'
+        f'<td><a href="{t["id"]}.md">EN</a> / <a href="{t["id"]}_ja.md">JA</a></td>'
+        f'</tr>'
+        for t in tools
+    )
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCA Tools Feed</title>
+  <style>
+    body {{ font-family: sans-serif; max-width: 860px; margin: 2em auto; padding: 0 1em; line-height: 1.6; }}
+    h1 {{ border-bottom: 2px solid #333; padding-bottom: 0.3em; }}
+    h2 {{ margin-top: 1.5em; }}
+    table {{ border-collapse: collapse; width: 100%; }}
+    th, td {{ border: 1px solid #ccc; padding: 0.5em 1em; text-align: left; }}
+    th {{ background: #f5f5f5; }}
+    a {{ color: #0066cc; }}
+    code {{ background: #f0f0f0; padding: 0.1em 0.3em; border-radius: 3px; }}
+  </style>
+</head>
+<body>
+  <h1>SCA Tools Feed</h1>
+  <p>Release information feeds for SCA (Software Composition Analysis) tools.</p>
+  <p>Updated daily via GitHub Actions. Subscribe with any RSS reader.</p>
+
+  <h2>All Tools (Combined)</h2>
+  <table>
+    <tr><th>Format</th><th>URL</th></tr>
+    <tr><td>RSS 2.0</td><td><a href="feeds/all.rss">feeds/all.rss</a></td></tr>
+    <tr><td>Atom 1.0</td><td><a href="feeds/all.atom">feeds/all.atom</a></td></tr>
+    <tr><td>JSON Feed 1.1</td><td><a href="feeds/all.json">feeds/all.json</a></td></tr>
+  </table>
+
+  <h2>Comparison</h2>
+  <p>
+    <a href="comparison.md">comparison.md (English)</a> /
+    <a href="comparison_ja.md">comparison_ja.md (日本語)</a>
+  </p>
+
+  <h2>Per-Tool Feeds &amp; Summaries</h2>
+  <table>
+    <tr><th>Tool</th><th>RSS</th><th>Atom</th><th>JSON Feed</th><th>Summary</th></tr>
+{tool_rows}
+  </table>
+</body>
+</html>"""
+    return html.encode("utf-8")
+
+
 def write_pages(tools: list, entries_by_tool: Dict[str, List[ReleaseEntry]]) -> None:
-    """ツールごとのまとめページと比較ページをMarkdownで書き込む。"""
+    """ツールごとのまとめページ、比較ページ、index.html を public/ に書き込む。"""
     PAGES_DIR.mkdir(exist_ok=True)
+
+    # Jekyll 無効化
+    write_file_atomic(PAGES_DIR / ".nojekyll", b"")
 
     for tool in tools:
         tid = tool["id"]
@@ -127,6 +188,7 @@ def write_pages(tools: list, entries_by_tool: Dict[str, List[ReleaseEntry]]) -> 
         PAGES_DIR / "comparison_ja.md",
         generate_comparison_page_ja(tools, entries_by_tool).encode("utf-8"),
     )
+    write_file_atomic(PAGES_DIR / "index.html", _generate_index_html(tools))
     logger.info("Pages written to %s/", PAGES_DIR)
 
 
