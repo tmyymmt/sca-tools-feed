@@ -1,0 +1,45 @@
+tools:
+  - id: trivy
+    name: Trivy
+    type: github
+    repo: aquasecurity/trivy
+
+  - id: grype
+    name: Grype
+    type: github
+    repo: anchore/grype
+
+  - id: syft
+    name: Syft
+    type: github
+    repo: anchore/syft
+
+  - id: osv-scanner
+    name: OSV-Scanner
+    type: github
+    repo: google/osv-scanner
+
+  - id: dependency-check
+    name: Dependency-Check
+    type: github
+    repo: jeremylong/DependencyCheck
+
+  - id: clair
+    name: Clair
+    type: github
+    repo: quay/clair
+
+  - id: vuls
+    name: Vuls
+    type: github
+    repo: future-architect/vuls
+
+  - id: futurevuls
+    name: FutureVuls
+    type: scrape_futurevuls
+    url: https://help.vuls.biz/releasenotes/
+
+  - id: yamory
+    name: Yamory
+    type: scrape_yamory
+    url: https://yamory.io/news
