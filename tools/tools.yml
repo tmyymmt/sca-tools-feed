@@ -139,6 +139,6 @@ tools:
     features:
       container: true
       language_libs: true
-      sbom: false
+      sbom: true
       policy: false
       saas: true
