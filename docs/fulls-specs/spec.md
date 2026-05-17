@@ -133,6 +133,8 @@ https://tmyymmt.github.io/sca-tools-feed/
 | `index.html` | Top page (feed list and links to comparison pages) |
 | `.nojekyll` | Disables Jekyll processing on GitHub Pages |
 
+HTML pages automatically apply dark mode by detecting browser/OS settings via the `prefers-color-scheme` media query.
+
 ---
 
 ## 6. Non-Functional Requirements

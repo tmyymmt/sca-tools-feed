@@ -133,6 +133,8 @@ https://tmyymmt.github.io/sca-tools-feed/
 | `index.html` | トップページ（フィード一覧・比較ページへのリンク） |
 | `.nojekyll` | GitHub Pages の Jekyll 処理を無効化 |
 
+HTMLページは `prefers-color-scheme` メディアクエリでブラウザ・ OS の設定を検知し、自動的にダークモードを適用する。
+
 ---
 
 ## 6. 非機能要件

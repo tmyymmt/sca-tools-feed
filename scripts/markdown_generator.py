@@ -19,6 +19,17 @@ _HTML_STYLE = """
   pre code { display: block; padding: 1em; overflow: auto; }
   blockquote { border-left: 4px solid #ddd; margin: 0; padding-left: 1em; color: #666; }
   hr { border: none; border-top: 1px solid #eee; margin: 1.5em 0; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #1a1a1a; color: #e0e0e0; }
+    h1 { border-bottom-color: #555; }
+    h2, h3 { border-bottom-color: #444; }
+    th, td { border-color: #444; }
+    th { background: #2a2a2a; }
+    a { color: #4da6ff; }
+    code { background: #2a2a2a; }
+    blockquote { border-left-color: #555; color: #aaa; }
+    hr { border-top-color: #444; }
+  }
 """
 
 

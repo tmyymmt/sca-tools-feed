@@ -131,6 +131,14 @@ def _generate_index_html(tools: list) -> bytes:
     th {{ background: #f5f5f5; }}
     a {{ color: #0066cc; }}
     code {{ background: #f0f0f0; padding: 0.1em 0.3em; border-radius: 3px; }}
+    @media (prefers-color-scheme: dark) {{
+      body {{ background: #1a1a1a; color: #e0e0e0; }}
+      h1 {{ border-bottom-color: #555; }}
+      th, td {{ border-color: #444; }}
+      th {{ background: #2a2a2a; }}
+      a {{ color: #4da6ff; }}
+      code {{ background: #2a2a2a; }}
+    }}
   </style>
 </head>
 <body>

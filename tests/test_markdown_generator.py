@@ -148,3 +148,8 @@ def test_render_html_renders_table():
     md = "| A | B |\n|---|---|\n| 1 | 2 |"
     result = render_html("T", md)
     assert "<table>" in result
+
+
+def test_render_html_contains_dark_mode():
+    result = render_html("T", "# Hello")
+    assert "prefers-color-scheme: dark" in result
