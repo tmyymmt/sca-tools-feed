@@ -59,3 +59,39 @@ def test_save_entries_is_atomic(tmp_path):
     save_entries(str(path), entries)
     tmp_files = list(tmp_path.glob("*.tmp"))
     assert tmp_files == []
+
+
+def test_merge_entries_updates_empty_body():
+    """既存エントリの body が空で新エントリに body がある場合は更新する。"""
+    existing_no_body = ReleaseEntry(
+        tool_id="futurevuls",
+        tool_name="FutureVuls",
+        version="2026-02-24",
+        published_at="2026-02-24T00:00:00Z",
+        url="https://example.com/v1.0",
+        summary="2026-02-24",
+        body="",
+        category="feature",
+    )
+    new_with_body = make_entry(url="https://example.com/v1.0", version="v1.0")
+    merged = merge_entries([existing_no_body], [new_with_body])
+    assert len(merged) == 1
+    assert merged[0].body == "## Changes\n- fix: something"
+
+
+def test_merge_entries_does_not_overwrite_existing_body():
+    """既存エントリに body がある場合は上書きしない。"""
+    existing = make_entry(url="https://example.com/v1.0", version="v1.0")
+    new_different_body = ReleaseEntry(
+        tool_id="trivy",
+        tool_name="Trivy",
+        version="v1.0",
+        published_at="2024-01-15T10:00:00Z",
+        url="https://example.com/v1.0",
+        summary="Trivy v1.0",
+        body="different body",
+        category="feature",
+    )
+    merged = merge_entries([existing], [new_different_body])
+    assert len(merged) == 1
+    assert merged[0].body == "## Changes\n- fix: something"

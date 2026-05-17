@@ -31,7 +31,15 @@ def save_entries(path: str, entries: List[ReleaseEntry]) -> None:
 
 
 def merge_entries(existing: List[ReleaseEntry], new: List[ReleaseEntry]) -> List[ReleaseEntry]:
-    """新しいエントリを既存エントリにマージする（URLで重複排除、新しいものを先頭に）。"""
-    existing_urls = {e.url for e in existing}
-    truly_new = [e for e in new if e.url not in existing_urls]
-    return truly_new + existing
+    """新しいエントリを既存エントリにマージする（URLで重複排除、新しいものを先頭に）。
+
+    既存エントリの body が空で新エントリに body がある場合は既存エントリを更新する。
+    """
+    existing_by_url = {e.url: e for e in existing}
+    # body が空の既存エントリを新しいエントリで上書き
+    for e in new:
+        if e.url in existing_by_url and not existing_by_url[e.url].body and e.body:
+            existing_by_url[e.url] = e
+    truly_new = [e for e in new if e.url not in existing_by_url]
+    updated_existing = [existing_by_url[e.url] for e in existing]
+    return truly_new + updated_existing

@@ -13,6 +13,24 @@ FUTUREVULS_HTML = """
 </body></html>
 """
 
+FUTUREVULS_PAGE_HTML = """
+<html><body>
+<article>
+<h1>2026-02-24 リリース内容</h1>
+<p>新機能が追加されました。スキャナのアップデートが必要です。</p>
+</article>
+</body></html>
+"""
+
+FUTUREVULS_HOTFIX_PAGE_HTML = """
+<html><body>
+<article>
+<h1>[Hotfix] 2026-01-01</h1>
+<p>セキュリティ修正が含まれています。</p>
+</article>
+</body></html>
+"""
+
 YAMORY_HTML = """
 <html><body>
 <ul class="news-list">
@@ -29,6 +47,21 @@ YAMORY_HTML = """
 """
 
 
+def _add_futurevuls_page_mocks():
+    responses.add(
+        responses.GET,
+        "https://help.vuls.biz/releasenotes/20260224/",
+        body=FUTUREVULS_PAGE_HTML,
+        status=200,
+    )
+    responses.add(
+        responses.GET,
+        "https://help.vuls.biz/releasenotes/20260101_hotfix/",
+        body=FUTUREVULS_HOTFIX_PAGE_HTML,
+        status=200,
+    )
+
+
 @responses.activate
 def test_collect_futurevuls_returns_entries():
     responses.add(
@@ -37,11 +70,26 @@ def test_collect_futurevuls_returns_entries():
         body=FUTUREVULS_HTML,
         status=200,
     )
+    _add_futurevuls_page_mocks()
     entries = collect_futurevuls()
     assert len(entries) >= 1
     assert entries[0].tool_id == "futurevuls"
     assert entries[0].tool_name == "FutureVuls"
     assert "help.vuls.biz" in entries[0].url
+
+
+@responses.activate
+def test_collect_futurevuls_body_contains_page_content():
+    responses.add(
+        responses.GET,
+        "https://help.vuls.biz/releasenotes/",
+        body=FUTUREVULS_HTML,
+        status=200,
+    )
+    _add_futurevuls_page_mocks()
+    entries = collect_futurevuls()
+    regular = next(e for e in entries if "hotfix" not in e.url)
+    assert "新機能" in regular.body or "スキャナ" in regular.body
 
 
 @responses.activate
@@ -52,6 +100,7 @@ def test_collect_futurevuls_hotfix_categorized_as_security():
         body=FUTUREVULS_HTML,
         status=200,
     )
+    _add_futurevuls_page_mocks()
     entries = collect_futurevuls()
     hotfix_entries = [e for e in entries if "Hotfix" in e.summary or "hotfix" in e.url]
     assert any(e.category == "security" for e in hotfix_entries)

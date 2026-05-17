@@ -14,6 +14,24 @@ BASE_URL = "https://help.vuls.biz"
 INDEX_URL = f"{BASE_URL}/releasenotes/"
 
 
+def _fetch_page_body(url: str) -> str:
+    """個別リリースページの <article> 本文をテキストで取得する。失敗時は空文字を返す。"""
+    try:
+        resp = requests.get(url, timeout=30)
+        if not resp.ok:
+            logger.warning("FutureVuls page returned status %d: %s", resp.status_code, url)
+            return ""
+        resp.encoding = "utf-8"
+        soup = BeautifulSoup(resp.text, "lxml")
+        article = soup.find("article")
+        if article:
+            return article.get_text(separator="\n", strip=True)
+        return ""
+    except requests.RequestException as e:
+        logger.warning("Failed to fetch FutureVuls page %s: %s", url, e)
+        return ""
+
+
 def collect_futurevuls() -> List[ReleaseEntry]:
     """FutureVulsリリースノート一覧ページからリリース情報を収集する。
 
@@ -28,6 +46,7 @@ def collect_futurevuls() -> List[ReleaseEntry]:
         logger.warning("Failed to fetch FutureVuls index: %s", e)
         return []
 
+    resp.encoding = "utf-8"
     soup = BeautifulSoup(resp.text, "lxml")
     entries = []
 
@@ -54,6 +73,8 @@ def collect_futurevuls() -> List[ReleaseEntry]:
             if href_date:
                 published_at = f"{href_date.group(1)}-{href_date.group(2)}-{href_date.group(3)}T00:00:00Z"
 
+        body = _fetch_page_body(url)
+
         entry = ReleaseEntry(
             tool_id="futurevuls",
             tool_name="FutureVuls",
@@ -61,8 +82,8 @@ def collect_futurevuls() -> List[ReleaseEntry]:
             published_at=published_at,
             url=url,
             summary=title,
-            body="",
-            category=classify_release(title, href, "scrape_futurevuls"),
+            body=body,
+            category=classify_release(title, body, "scrape_futurevuls"),
         )
         entries.append(entry)
 
