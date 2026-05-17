@@ -105,8 +105,8 @@ tools:
     description: "Agentless Linux server vulnerability scanner."
     description_ja: "Linuxサーバー向けエージェントレス脆弱性スキャナー。"
     features:
-      container: false
-      language_libs: false
+      container: true
+      language_libs: true
       sbom: false
       policy: false
       saas: false
