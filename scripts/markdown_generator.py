@@ -59,10 +59,10 @@ def _latest_entry(entries: List[ReleaseEntry]) -> Optional[ReleaseEntry]:
 
 def _homepage(tool: dict) -> str:
     hp = tool.get("homepage", tool.get("url", ""))
-    if hp:
-        return hp
-    repo = tool.get("repo", "")
-    return f"https://github.com/{repo}" if repo else "—"
+    if not hp:
+        repo = tool.get("repo", "")
+        hp = f"https://github.com/{repo}" if repo else ""
+    return f"[{hp}]({hp})" if hp else "—"
 
 
 def _tool_type(tool: dict) -> str:
