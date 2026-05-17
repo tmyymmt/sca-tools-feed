@@ -1,5 +1,5 @@
 # sca-tools-feed
-A repository that aggregates release information from security and vulnerability-scanning tools, updates per-tool summary pages in Markdown, updates comparison pages in Markdown, and publishes them as feeds.
+A repository that aggregates release information from security and vulnerability-scanning tools, generates per-tool summary pages and comparison pages as HTML, and publishes them as feeds.
 
 ## Tool Category
 
@@ -15,11 +15,11 @@ The following categories are **out of scope**:
 
 ## Published Site
 
-https://tmyymmt.github.io/sca-tools-feed/ is published as GitHub Pages. You can browse feed listings, per-tool summary pages, and the comparison page.
+https://tmyymmt.github.io/sca-tools-feed/ is published as GitHub Pages. You can browse feed listings, per-tool summary pages, and the comparison page. All HTML pages support dark mode via `prefers-color-scheme`.
 
 ## How It Works
 
-- Update each Markdown file and feed file using one of the following methods:
+- Update feed files and render HTML pages (from Markdown sources) using one of the following methods:
   - Run daily via GitHub Actions
   - Create an Issue, have Copilot create a PR, complete review, and merge to main
 
