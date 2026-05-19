@@ -13,6 +13,7 @@ from scripts.collectors.github import collect_github_releases
 from scripts.collectors.yamory import collect_yamory
 from scripts.feed_generator import generate_atom, generate_json_feed, generate_rss
 from scripts.markdown_generator import (
+    _sort_tools_summary,
     generate_comparison_page,
     generate_comparison_page_ja,
     generate_tool_page,
@@ -114,7 +115,7 @@ def _generate_index_html(tools: list) -> bytes:
         f'<td><a href="feeds/{t["id"]}.json">JSON</a></td>'
         f'<td><a href="{t["id"]}.html">EN</a> / <a href="{t["id"]}_ja.html">JA</a></td>'
         f'</tr>'
-        for t in tools
+        for t in _sort_tools_summary(tools)
     )
     html = f"""<!DOCTYPE html>
 <html lang="en">
