@@ -2,6 +2,16 @@
   {
     "tool_id": "vuls",
     "tool_name": "Vuls",
+    "version": "v0.39.1",
+    "published_at": "2026-05-18T09:41:45Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.39.1",
+    "summary": "v0.39.1",
+    "body": "## Changelog\n* 140017bde3f1b484013b3ee58a909079c4533572 feat(scanner): expose Trivy dependency graph fields on Library (#2552)\n\n",
+    "category": "other"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
     "version": "v0.39.0",
     "published_at": "2026-05-12T02:01:31Z",
     "url": "https://github.com/future-architect/vuls/releases/tag/v0.39.0",
