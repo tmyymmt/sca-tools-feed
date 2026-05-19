@@ -1,0 +1,602 @@
+[
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-05-19",
+    "published_at": "2026-05-19T00:00:00Z",
+    "url": "https://yamory.io/news/InteropTokyo2026",
+    "summary": "株式会社アシュアード、「Interop Tokyo 2026」出展および登壇お知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-05-14",
+    "published_at": "2026-05-14T00:00:00Z",
+    "url": "https://yamory.io/news/AiEngineeringSummitTokyo2026",
+    "summary": "脆弱性管理クラウド「yamory」、「AI Engineering Summit Tokyo 2026」出展および登壇お知らせ",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-03-31",
+    "published_at": "2026-03-31T00:00:00Z",
+    "url": "https://yamory.io/news/GoogleCloudOrganizationIntegration",
+    "summary": "Google Cloud 組織連携機能をリリース",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-03-09",
+    "published_at": "2026-03-09T00:00:00Z",
+    "url": "https://yamory.io/news/ssvc",
+    "summary": "SSVCに対応しオートトリアージ機能をアップデート",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-03-03",
+    "published_at": "2026-03-03T00:00:00Z",
+    "url": "https://yamory.io/news/ismap",
+    "summary": "政府情報システムのためのセキュリティ評価制度『ISMAP』に登録",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-02-26",
+    "published_at": "2026-02-26T00:00:00Z",
+    "url": "https://yamory.io/news/SecurityDaysSpring2026",
+    "summary": "「Security Days Spring 2026」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-02-25",
+    "published_at": "2026-02-25T00:00:00Z",
+    "url": "https://yamory.io/news/googlecloud_scan",
+    "summary": "クラウドアセットスキャン機能のGoogle Cloud対応を開始",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-02-12",
+    "published_at": "2026-02-12T00:00:00Z",
+    "url": "https://yamory.io/news/inhouse-dev-summit2026",
+    "summary": "「内製開発Summit2026」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-01-29",
+    "published_at": "2026-01-29T00:00:00Z",
+    "url": "https://yamory.io/news/dmp",
+    "summary": "デジタル庁「デジタルマーケットプレイス」に登録",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-01-28",
+    "published_at": "2026-01-28T00:00:00Z",
+    "url": "https://yamory.io/news/cra_covalent",
+    "summary": "「欧州サイバーレジリエンス法案（CRA）」対応支援サービス提供のため、Covalentとの協力関係を構築",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-01-14",
+    "published_at": "2026-01-14T00:00:00Z",
+    "url": "https://yamory.io/news/AISecurityConference",
+    "summary": "「AI Security Conference」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-12-23",
+    "published_at": "2025-12-23T00:00:00Z",
+    "url": "https://yamory.io/news/autotriage_custom",
+    "summary": "オートトリアージカスタマイズ機能をリリース",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-12-19",
+    "published_at": "2025-12-19T00:00:00Z",
+    "url": "https://yamory.io/news/2025-security-report",
+    "summary": "2025年セキュリティレポートを公開  〜マリシャスパッケージが急増、2年で約4倍に〜",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-12-09",
+    "published_at": "2025-12-09T00:00:00Z",
+    "url": "https://yamory.io/news/ncpc",
+    "summary": "株式会社アシュアードが、国産セキュリティ産業の発展に向け 「日本サイバーセキュリティ産業振興コミュニティ （NCPC）」へ参画",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-11-17",
+    "published_at": "2025-11-17T00:00:00Z",
+    "url": "https://yamory.io/news/SwiftPM",
+    "summary": "「Swift Package Manager （SwiftPM）」のスキャンに正式対応",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-11-14",
+    "published_at": "2025-11-14T00:00:00Z",
+    "url": "https://yamory.io/news/security-awards2025",
+    "summary": "日本セキュリティ大賞2025 セキュリティ運用支援部門で「奨励賞」を受賞",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-11-12",
+    "published_at": "2025-11-12T00:00:00Z",
+    "url": "https://yamory.io/news/vpn_data",
+    "summary": "ランサムウェアの主要な侵入口「VPN機器」の セキュリティ対策実態調査",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-11-05",
+    "published_at": "2025-11-05T00:00:00Z",
+    "url": "https://yamory.io/news/architecture_conference_2025",
+    "summary": "「アーキテクチャConference 2025」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-10-27",
+    "published_at": "2025-10-27T00:00:00Z",
+    "url": "https://yamory.io/news/runtimeeol",
+    "summary": "アプリケーション開発者主導でランタイムのEOL管理を実現する新機能を提供開始",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-10-15",
+    "published_at": "2025-10-15T00:00:00Z",
+    "url": "https://yamory.io/local-government-summi2025",
+    "summary": "「第4回自治体サミット」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-10-07",
+    "published_at": "2025-10-07T00:00:00Z",
+    "url": "https://yamory.io/4644435",
+    "summary": "フラッグス株式会社様の運用事例を公開",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-10-02",
+    "published_at": "2025-10-02T00:00:00Z",
+    "url": "https://yamory.io/news/fair.j-lis",
+    "summary": "「地方自治情報化推進フェア2025」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-10-01",
+    "published_at": "2025-10-01T00:00:00Z",
+    "url": "https://yamory.io/news/smartsheet",
+    "summary": "株式会社NTTデータ先端技術との共同実証により、脆弱性管理における承認ワークフロー構築の実現性を確認",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-10-01",
+    "published_at": "2025-10-01T00:00:00Z",
+    "url": "https://yamory.io/news/2025-inhouse-dev",
+    "summary": "「内製開発フォーラム」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-09-25",
+    "published_at": "2025-09-25T00:00:00Z",
+    "url": "https://yamory.io/news/tis",
+    "summary": "TIS株式会社の新サービスに 脆弱性管理クラウド「yamory」が採用",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-09-05",
+    "published_at": "2025-09-05T00:00:00Z",
+    "url": "https://yamory.io/news/SecurityDaysFall2025",
+    "summary": "「Security Days Fall 2025」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-09-02",
+    "published_at": "2025-09-02T00:00:00Z",
+    "url": "https://yamory.io/news/trocco",
+    "summary": "primeNumberが提供するクラウドETL「TROCCO」とのAPI連携を開始",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-08-07",
+    "published_at": "2025-08-07T00:00:00Z",
+    "url": "https://yamory.io/news/unlimitedoption",
+    "summary": "大規模組織／プロジェクト向け「ユーザー数／チーム数無制限オプション」を提供開始",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-07-30",
+    "published_at": "2025-07-30T00:00:00Z",
+    "url": "https://yamory.io/news/crossorganizationalmanagement",
+    "summary": "大規模組織向け「組織横断管理機能」をリリース",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-07-28",
+    "published_at": "2025-07-28T00:00:00Z",
+    "url": "https://yamory.io/4517774",
+    "summary": "株式会社インテージテクノスフィアがyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-07-24",
+    "published_at": "2025-07-24T00:00:00Z",
+    "url": "https://yamory.io/4509424",
+    "summary": "株式会社WorkVisionがyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-07-14",
+    "published_at": "2025-07-14T00:00:00Z",
+    "url": "https://yamory.io/news/personassignment",
+    "summary": "担当者割当機能をリリース",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-07-04",
+    "published_at": "2025-07-04T00:00:00Z",
+    "url": "https://yamory.io/news/azure_renkei",
+    "summary": "Azure組織連携機能をリリース",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-07-01",
+    "published_at": "2025-07-01T00:00:00Z",
+    "url": "https://yamory.io/dev-productivity-conference2025",
+    "summary": "「開発生産性Conference 2025」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-06-16",
+    "published_at": "2025-06-16T00:00:00Z",
+    "url": "https://yamory.io/news/internetinitiative",
+    "summary": "インターネットイニシアティブが、yamoryを採用",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-06-12",
+    "published_at": "2025-06-12T00:00:00Z",
+    "url": "https://yamory.io/news/interoptokyobestofaward",
+    "summary": "Interop Tokyo Best of Show Award 審査員特別賞を受賞",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-06-05",
+    "published_at": "2025-06-05T00:00:00Z",
+    "url": "https://yamory.io/news/sakurainternet",
+    "summary": "さくらインターネット株式会社様がyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-06-03",
+    "published_at": "2025-06-03T00:00:00Z",
+    "url": "https://yamory.io/4413411",
+    "summary": "株式会社アズビル様がyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-05-28",
+    "published_at": "2025-05-28T00:00:00Z",
+    "url": "https://yamory.io/news/awssummitjapan2025",
+    "summary": "「AWS Summit Japan」出展のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-05-22",
+    "published_at": "2025-05-22T00:00:00Z",
+    "url": "https://yamory.io/news/interop2025",
+    "summary": "「Interop Tokyo 2025」出展のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-05-13",
+    "published_at": "2025-05-13T00:00:00Z",
+    "url": "https://yamory.io/news/netstar",
+    "summary": "ネットスター株式会社様がyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-04-04",
+    "published_at": "2025-04-04T00:00:00Z",
+    "url": "https://yamory.io/4344723",
+    "summary": "yamory 採用サイトを公開しました",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-04-01",
+    "published_at": "2025-04-01T00:00:00Z",
+    "url": "https://yamory.io/news/kinyu-it",
+    "summary": "株式会社アシュアードが、 特定非営利活動法人 金融IT協会へ入会",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-02-25",
+    "published_at": "2025-02-25T00:00:00Z",
+    "url": "https://yamory.io/news/zdnet_yamory3",
+    "summary": "「ZDNET Japan」でプロダクトオーナーの鈴木が執筆する連載記事の第3回が公開されました",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-02-06",
+    "published_at": "2025-02-06T00:00:00Z",
+    "url": "https://yamory.io/news/FreeBSD",
+    "summary": "FreeBSDのスキャンに対応",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2025-01-24",
+    "published_at": "2025-01-24T00:00:00Z",
+    "url": "https://yamory.io/news/azure_scan",
+    "summary": "クラウドアセットスキャン機能の対応範囲を拡張",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-12-23",
+    "published_at": "2024-12-23T00:00:00Z",
+    "url": "https://yamory.io/news/sakicorporation",
+    "summary": "株式会社サキコーポレーション様がyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-12-18",
+    "published_at": "2024-12-18T00:00:00Z",
+    "url": "https://yamory.io/news/hokendohjin-frontier",
+    "summary": "株式会社保健同人フロンティア様がyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-12-02",
+    "published_at": "2024-12-02T00:00:00Z",
+    "url": "https://yamory.io/news/isms",
+    "summary": "ISMS認証「ISO/IEC 27001」取得のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-11-28",
+    "published_at": "2024-11-28T00:00:00Z",
+    "url": "https://yamory.io/news/hybridscan",
+    "summary": "「クラウドアセットスキャン機能」をアップデート",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-11-19",
+    "published_at": "2024-11-19T00:00:00Z",
+    "url": "https://yamory.io/news/primenumber",
+    "summary": "株式会社primeNumber様がyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-11-14",
+    "published_at": "2024-11-14T00:00:00Z",
+    "url": "https://yamory.io/news/kddibusinessid",
+    "summary": "「KDDI Business ID」のSSO認証に対応",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-11-14",
+    "published_at": "2024-11-14T00:00:00Z",
+    "url": "https://yamory.io/news/zdnet_yamory2",
+    "summary": "「ZDNET Japan」でプロダクトオーナーの鈴木が執筆する連載記事の第2回が公開されました",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-11-12",
+    "published_at": "2024-11-12T00:00:00Z",
+    "url": "https://yamory.io/news/edgetech2024",
+    "summary": "「EdgeTech+ 2024」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-10-18",
+    "published_at": "2024-10-18T00:00:00Z",
+    "url": "https://yamory.io/news/start-techblog",
+    "summary": "yamory Tech Blogを開設",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-10-08",
+    "published_at": "2024-10-08T00:00:00Z",
+    "url": "https://yamory.io/news/securitydaysfall2024",
+    "summary": "「Security Days Fall 2024」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-09-19",
+    "published_at": "2024-09-19T00:00:00Z",
+    "url": "https://yamory.io/news/ctcforum2024",
+    "summary": "「CTC Forum 2024」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-09-19",
+    "published_at": "2024-09-19T00:00:00Z",
+    "url": "https://yamory.io/news/xtechnext2024",
+    "summary": "「日経クロステックNEXT 東京 2024」出展および登壇のお知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-09-12",
+    "published_at": "2024-09-12T00:00:00Z",
+    "url": "https://yamory.io/news/findytools_workshumanintelligence",
+    "summary": "Findy Toolsに株式会社Works Human Intelligence様のレビューが掲載",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2024-09-09",
+    "published_at": "2024-09-09T00:00:00Z",
+    "url": "https://yamory.io/news/zdnet1",
+    "summary": "「ZDNET Japan」でプロダクトオーナー鈴木の連載が開始",
+    "body": "",
+    "category": "feature"
+  }
+]

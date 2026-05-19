@@ -4,6 +4,7 @@ tools:
     type: github
     repo: aquasecurity/trivy
     homepage: https://trivy.dev
+    features_url: https://trivy.dev/latest/docs/
     license: Apache-2.0
     pricing: Free
     description: "Comprehensive vulnerability scanner for containers, IaC, and language dependencies."
@@ -14,12 +15,30 @@ tools:
       sbom: true
       policy: true
       saas: false
-
+      iac: true
+      secret_detection: true
+      license_detection: true
+      build_tool_plugin: false
+      api_server: false
+      agentless_ssh: false
+      dashboard: false
+      centralized_management: false
+    unique_features:
+      - "IaC scanning (Terraform, Kubernetes manifests, Helm, Dockerfile)"
+      - "Secret / credential detection"
+      - "License compliance scanning"
+      - "Multiple output formats (SARIF, SBOM, table, JSON)"
+    unique_features_ja:
+      - "IaCスキャン（Terraform・Kubernetes・Helm・Dockerfile対応）"
+      - "シークレット・認証情報の検出"
+      - "ライセンスコンプライアンススキャン"
+      - "複数の出力形式に対応（SARIF・SBOM・テーブル・JSON等）"
   - id: grype
     name: Grype
     type: github
     repo: anchore/grype
     homepage: https://github.com/anchore/grype
+    features_url: https://github.com/anchore/grype
     license: Apache-2.0
     pricing: Free
     description: "Vulnerability scanner for container images and filesystems, powered by Syft."
@@ -30,12 +49,29 @@ tools:
       sbom: true
       policy: false
       saas: false
+      iac: false
+      secret_detection: false
+      license_detection: false
+      build_tool_plugin: false
+      api_server: false
+      agentless_ssh: false
+      dashboard: false
+      centralized_management: false
+    unique_features:
+      - "Accepts SBOM files (SPDX, CycloneDX, Syft JSON) as direct scan input"
+      - "Tight integration with Syft for SBOM-driven vulnerability pipeline"
+      - "Supports VEX (Vulnerability Exploitability eXchange) for filtering"
+    unique_features_ja:
+      - "SBOMファイル（SPDX・CycloneDX・Syft JSON）を直接スキャン入力として受付可能"
+      - "Syftとの密連携によるSBOM駆動の脆弱性パイプラインをサポート"
+      - "VEX（Vulnerability Exploitability eXchange）による脆弱性フィルタリングに対応"
 
   - id: syft
     name: Syft
     type: github
     repo: anchore/syft
     homepage: https://github.com/anchore/syft
+    features_url: https://github.com/anchore/syft
     license: Apache-2.0
     pricing: Free
     description: "SBOM generation tool for container images and filesystems."
@@ -46,12 +82,29 @@ tools:
       sbom: true
       policy: false
       saas: false
+      iac: false
+      secret_detection: false
+      license_detection: true
+      build_tool_plugin: false
+      api_server: false
+      agentless_ssh: false
+      dashboard: false
+      centralized_management: false
+    unique_features:
+      - "Outputs SBOM in multiple formats (SPDX, CycloneDX, Syft JSON, GitHub SBOM)"
+      - "Focused on SBOM generation only — no built-in vulnerability scanning"
+      - "Paired with Grype for a complete scan pipeline"
+    unique_features_ja:
+      - "複数のSBOM形式で出力（SPDX・CycloneDX・Syft JSON・GitHub SBOM）"
+      - "SBOM生成に特化—脆弱性スキャン機能はビルトインでない"
+      - "Grypeと組み合わせることで完全なスキャンパイプラインを構成可能"
 
   - id: osv-scanner
     name: OSV-Scanner
     type: github
     repo: google/osv-scanner
     homepage: https://google.github.io/osv-scanner/
+    features_url: https://google.github.io/osv-scanner/
     license: Apache-2.0
     pricing: Free
     description: "Open source vulnerability scanner by Google, using the OSV database."
@@ -62,12 +115,31 @@ tools:
       sbom: true
       policy: false
       saas: false
+      iac: false
+      secret_detection: false
+      license_detection: false
+      build_tool_plugin: false
+      api_server: false
+      agentless_ssh: false
+      dashboard: false
+      centralized_management: false
+    unique_features:
+      - "Uses Google's OSV (Open Source Vulnerabilities) database — community maintained"
+      - "Lockfile-based scanning for accurate dependency resolution"
+      - "Git commit history scanning for introduced vulnerabilities"
+      - "Experimental reachability analysis"
+    unique_features_ja:
+      - "Google管理のOSV（Open Source Vulnerabilities）データベースを使用（コミュニティメンテナンス）"
+      - "ロックファイルベーススキャンによる正確な依存解決"
+      - "Gitコミット履歴スキャンによる脆弱性混入履歴の確認"
+      - "到達可能性分析（実験的機能）"
 
   - id: dependency-check
     name: Dependency-Check
     type: github
     repo: jeremylong/DependencyCheck
     homepage: https://jeremylong.github.io/DependencyCheck/
+    features_url: https://jeremylong.github.io/DependencyCheck/
     license: Apache-2.0
     pricing: Free
     description: "OWASP tool that detects publicly disclosed vulnerabilities in project dependencies."
@@ -78,12 +150,31 @@ tools:
       sbom: false
       policy: false
       saas: false
+      iac: false
+      secret_detection: false
+      license_detection: false
+      build_tool_plugin: true
+      api_server: false
+      agentless_ssh: false
+      dashboard: false
+      centralized_management: false
+    unique_features:
+      - "Maven, Gradle, and Ant build tool plugins"
+      - "Jenkins plugin available"
+      - "CPE-based NVD matching"
+      - "HTML / XML / JSON / CSV report generation"
+    unique_features_ja:
+      - "Maven・Gradle・Antのビルドツールプラグインを提供"
+      - "Jenkinsプラグインを提供"
+      - "CPEベースのNVDマッチング"
+      - "HTML・XML・JSON・CSV形式のレポート生成"
 
   - id: clair
     name: Clair
     type: github
     repo: quay/clair
     homepage: https://github.com/quay/clair
+    features_url: https://quay.github.io/clair/
     license: Apache-2.0
     pricing: Free
     description: "Static analysis tool for vulnerabilities in container images (used by Quay.io)."
@@ -94,12 +185,31 @@ tools:
       sbom: false
       policy: false
       saas: false
+      iac: false
+      secret_detection: false
+      license_detection: false
+      build_tool_plugin: false
+      api_server: true
+      agentless_ssh: false
+      dashboard: false
+      centralized_management: false
+    unique_features:
+      - "Designed as an API server for integration into container registries"
+      - "Used by Quay.io as its core scanner"
+      - "ClairCore modular matcher architecture"
+      - "Supports multiple Linux distributions (RHEL, Debian, Ubuntu, Alpine, etc.)"
+    unique_features_ja:
+      - "コンテナレジストリへの統合を目的としたAPIサーバー設計"
+      - "Quay.ioのコアスキャナーとして採用"
+      - "ClairCoreによるモジュラーなマッチャーアーキテクチャ"
+      - "複数のLinuxディストリビューションに対応（RHEL・Debian・Ubuntu・Alpine等）"
 
   - id: vuls
     name: Vuls
     type: github
     repo: future-architect/vuls
     homepage: https://vuls.io
+    features_url: https://vuls.io/docs/en/abstract.html
     license: GPL-3.0
     pricing: Free
     description: "Agentless Linux server vulnerability scanner."
@@ -110,14 +220,33 @@ tools:
       sbom: false
       policy: false
       saas: false
+      iac: false
+      secret_detection: false
+      license_detection: false
+      build_tool_plugin: false
+      api_server: false
+      agentless_ssh: true
+      dashboard: false
+      centralized_management: false
+    unique_features:
+      - "Agentless SSH-based Linux server scanning"
+      - "Supports NVD / JVN / OVAL multiple vulnerability databases"
+      - "Slack and email notification support"
+      - "Scan results stored locally for historical diffing"
+    unique_features_ja:
+      - "SSHベースのエージェントレスLinuxサーバースキャン"
+      - "NVD・JVN・OVALの複数脆弱性DBに対応"
+      - "Slack・メール通知機能をサポート"
+      - "スキャン結果をローカルに保存し差分管理が可能"
 
   - id: futurevuls
     name: FutureVuls
     type: scrape_futurevuls
     url: https://help.vuls.biz/releasenotes/
     homepage: https://vuls.biz
+    features_url: https://vuls.biz/feature/
     license: Proprietary
-    pricing: Freemium
+    pricing: Paid
     description: "Cloud-based vulnerability management SaaS built on Vuls."
     description_ja: "Vulsをベースにしたクラウド型脆弱性管理SaaS。"
     features:
@@ -126,14 +255,35 @@ tools:
       sbom: true
       policy: false
       saas: true
+      iac: false
+      secret_detection: false
+      license_detection: true
+      build_tool_plugin: false
+      api_server: false
+      agentless_ssh: false
+      dashboard: true
+      centralized_management: true
+    unique_features:
+      - "Ticket management for vulnerability triage and remediation tracking"
+      - "Team management with role-based access control"
+      - "SLA tracking and compliance reporting"
+      - "Cloud SaaS built on OSS Vuls engine"
+      - "OSS license detection with GPL violation warning"
+    unique_features_ja:
+      - "脆弱性トリアージと対応管理のためのチケット管理機能"
+      - "ロールベースアクセス制御によるチーム管理"
+      - "SLAトラッキングとコンプライアンスレポート"
+      - "OSS Vulsエンジンをベースに構築されたクラウドSaaS"
+      - "OSSライセンス検出とGPL系ライセンス違反警告"
 
   - id: yamory
     name: Yamory
     type: scrape_yamory
     url: https://yamory.io/news
     homepage: https://yamory.io
+    features_url: https://yamory.io/
     license: Proprietary
-    pricing: Freemium
+    pricing: Paid
     description: "SaaS for managing vulnerabilities in libraries and containers."
     description_ja: "ライブラリ・コンテナの脆弱性管理SaaS。"
     features:
@@ -142,3 +292,21 @@ tools:
       sbom: true
       policy: false
       saas: true
+      iac: false
+      secret_detection: false
+      license_detection: true
+      build_tool_plugin: false
+      api_server: false
+      agentless_ssh: false
+      dashboard: true
+      centralized_management: true
+    unique_features:
+      - "OSS license management and compliance"
+      - "Vulnerability prioritization support"
+      - "CI/CD pipeline integration"
+      - "Japanese-first support and UI"
+    unique_features_ja:
+      - "OSSライセンス管理とコンプライアンス対応"
+      - "脆弱性の優先度付けサポート"
+      - "CI/CDパイプライン連携"
+      - "日本語ファーストのサポートとUI"

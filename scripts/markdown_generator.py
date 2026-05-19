@@ -73,6 +73,17 @@ def _feature_mark(tool: dict, key: str) -> str:
     return BOOL_MARK.get(tool.get("features", {}).get(key, False), "—")
 
 
+def _releases_url(tool: dict) -> str:
+    if tool.get("type") == "github":
+        repo = tool.get("repo", "")
+        return f"https://github.com/{repo}/releases" if repo else ""
+    return tool.get("url", "")
+
+
+def _features_url(tool: dict) -> str:
+    return tool.get("features_url", tool.get("homepage", ""))
+
+
 def generate_tool_page(tool: dict, entries: List[ReleaseEntry]) -> str:
     """ツールごとのまとめページ（英語）を生成する。"""
     name = tool["name"]
@@ -106,7 +117,11 @@ def generate_tool_page(tool: dict, entries: List[ReleaseEntry]) -> str:
         f"| SBOM Generation | {_feature_mark(tool, 'sbom')} |",
         f"| Policy Evaluation | {_feature_mark(tool, 'policy')} |",
         "",
+        f"**Feature reference:** [Official Documentation]({_features_url(tool)})",
+        "",
         "## Release History",
+        "",
+        f"**Source:** [{_releases_url(tool)}]({_releases_url(tool)})",
         "",
     ]
 
@@ -167,7 +182,11 @@ def generate_tool_page_ja(tool: dict, entries: List[ReleaseEntry]) -> str:
         f"| SBOM生成 | {_feature_mark(tool, 'sbom')} |",
         f"| ポリシー評価 | {_feature_mark(tool, 'policy')} |",
         "",
+        f"**機能一覧の情報源:** [公式ドキュメント]({_features_url(tool)})",
+        "",
         "## リリース履歴",
+        "",
+        f"**情報源:** [{_releases_url(tool)}]({_releases_url(tool)})",
         "",
     ]
 
@@ -194,26 +213,81 @@ def generate_tool_page_ja(tool: dict, entries: List[ReleaseEntry]) -> str:
     return "\n".join(lines)
 
 
+_SUMMARY_FEATURES = [
+    "container", "language_libs", "sbom", "policy", "centralized_management",
+]
+
+_DETAILED_FEATURES = [
+    "container", "language_libs", "sbom", "policy", "iac",
+    "secret_detection", "license_detection", "build_tool_plugin",
+    "api_server", "agentless_ssh", "dashboard", "centralized_management",
+]
+
+
+def _feature_count(tool: dict) -> int:
+    return sum(1 for k in _DETAILED_FEATURES if tool.get("features", {}).get(k, False))
+
+
+def _summary_feature_count(tool: dict) -> int:
+    return sum(1 for k in _SUMMARY_FEATURES if tool.get("features", {}).get(k, False))
+
+
+def _sort_tools(tools: list) -> list:
+    return sorted(
+        tools,
+        key=lambda t: (
+            -_feature_count(t),
+            not t.get("features", {}).get("centralized_management", False),
+            t["name"],
+        ),
+    )
+
+
+def _sort_tools_summary(tools: list) -> list:
+    return sorted(
+        tools,
+        key=lambda t: (
+            -_summary_feature_count(t),
+            not t.get("features", {}).get("centralized_management", False),
+            t["name"],
+        ),
+    )
+
+
+def _unique_features_str(tool: dict) -> str:
+    items = tool.get("unique_features", [])
+    return "<br>".join(f"• {f}" for f in items) if items else "—"
+
+
+def _unique_features_str_ja(tool: dict) -> str:
+    items = tool.get("unique_features_ja", tool.get("unique_features", []))
+    return "<br>".join(f"• {f}" for f in items) if items else "—"
+
+
 def generate_comparison_page(tools: list, entries_by_tool: Dict[str, List[ReleaseEntry]]) -> str:
     """全ツール比較ページ（英語）を生成する。"""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    summary_tools = _sort_tools_summary(tools)
+    detailed_tools = _sort_tools(tools)
 
     lines = [
         "# SCA Tools Comparison",
         "",
         f"*Generated at {now}*",
         "",
-        "| Tool | Latest | Updated | Type | License | Pricing | Container | Lang/Lib | SBOM | Policy |",
-        "|------|--------|---------|------|---------|---------|-----------|----------|------|--------|",
+        "## Summary",
+        "",
+        "| Tool | Latest | Updated | Type | License | Pricing | Container | Lang/Lib | SBOM | Policy | Centralized Mgmt |",
+        "|------|--------|---------|------|---------|---------|-----------|----------|------|--------|------------------|",
     ]
 
-    for tool in tools:
+    for tool in summary_tools:
         tid = tool["id"]
         latest = _latest_entry(entries_by_tool.get(tid, []))
         version = latest.version if latest else "—"
         updated = latest.published_at[:10] if latest else "—"
         lines.append(
-            f"| [{tool['name']}]({tid}.html)"
+            f"| [{tool['name']}]({tid}.html)<br>[Features ↗]({_features_url(tool)})"
             f" | {version}"
             f" | {updated}"
             f" | {_tool_type(tool)}"
@@ -222,7 +296,35 @@ def generate_comparison_page(tools: list, entries_by_tool: Dict[str, List[Releas
             f" | {_feature_mark(tool, 'container')}"
             f" | {_feature_mark(tool, 'language_libs')}"
             f" | {_feature_mark(tool, 'sbom')}"
-            f" | {_feature_mark(tool, 'policy')} |"
+            f" | {_feature_mark(tool, 'policy')}"
+            f" | {_feature_mark(tool, 'centralized_management')} |"
+        )
+
+    lines += [
+        "",
+        "## Detailed Comparison",
+        "",
+        "| Tool | Container | Lang/Lib | SBOM | Policy | IaC | Secret Detection | License Scan | Build Plugin | API Server | SSH Agentless | Dashboard | Centralized Mgmt | Unique Features |",
+        "|------|-----------|----------|------|--------|-----|-----------------|--------------|--------------|------------|---------------|-----------|------------------|-----------------|",
+    ]
+
+    for tool in detailed_tools:
+        tid = tool["id"]
+        lines.append(
+            f"| [{tool['name']}]({tid}.html)<br>[Features ↗]({_features_url(tool)})"
+            f" | {_feature_mark(tool, 'container')}"
+            f" | {_feature_mark(tool, 'language_libs')}"
+            f" | {_feature_mark(tool, 'sbom')}"
+            f" | {_feature_mark(tool, 'policy')}"
+            f" | {_feature_mark(tool, 'iac')}"
+            f" | {_feature_mark(tool, 'secret_detection')}"
+            f" | {_feature_mark(tool, 'license_detection')}"
+            f" | {_feature_mark(tool, 'build_tool_plugin')}"
+            f" | {_feature_mark(tool, 'api_server')}"
+            f" | {_feature_mark(tool, 'agentless_ssh')}"
+            f" | {_feature_mark(tool, 'dashboard')}"
+            f" | {_feature_mark(tool, 'centralized_management')}"
+            f" | {_unique_features_str(tool)} |"
         )
 
     lines.append("")
@@ -232,25 +334,27 @@ def generate_comparison_page(tools: list, entries_by_tool: Dict[str, List[Releas
 def generate_comparison_page_ja(tools: list, entries_by_tool: Dict[str, List[ReleaseEntry]]) -> str:
     """全ツール比較ページ（日本語）を生成する。"""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    summary_tools = _sort_tools_summary(tools)
+    detailed_tools = _sort_tools(tools)
 
     lines = [
         "# SCAツール比較",
         "",
         f"*{now} 時点の情報*",
         "",
-        "## 比較表",
+        "## 概要版",
         "",
-        "| ツール | 最新版 | 更新日 | 種別 | ライセンス | 費用 | コンテナ | 言語/ライブラリ | SBOM | ポリシー |",
-        "|--------|--------|--------|------|-----------|------|---------|---------------|------|---------|",
+        "| ツール | 最新版 | 更新日 | 種別 | ライセンス | 費用 | コンテナ | 言語/ライブラリ | SBOM | ポリシー | 集中管理 |",
+        "|--------|--------|--------|------|-----------|------|---------|---------------|------|---------|---------|",
     ]
 
-    for tool in tools:
+    for tool in summary_tools:
         tid = tool["id"]
         latest = _latest_entry(entries_by_tool.get(tid, []))
         version = latest.version if latest else "—"
         updated = latest.published_at[:10] if latest else "—"
         lines.append(
-            f"| [{tool['name']}]({tid}_ja.html)"
+            f"| [{tool['name']}]({tid}_ja.html)<br>[機能一覧 ↗]({_features_url(tool)})"
             f" | {version}"
             f" | {updated}"
             f" | {_tool_type(tool)}"
@@ -259,7 +363,35 @@ def generate_comparison_page_ja(tools: list, entries_by_tool: Dict[str, List[Rel
             f" | {_feature_mark(tool, 'container')}"
             f" | {_feature_mark(tool, 'language_libs')}"
             f" | {_feature_mark(tool, 'sbom')}"
-            f" | {_feature_mark(tool, 'policy')} |"
+            f" | {_feature_mark(tool, 'policy')}"
+            f" | {_feature_mark(tool, 'centralized_management')} |"
+        )
+
+    lines += [
+        "",
+        "## 詳細版",
+        "",
+        "| ツール | コンテナ | 言語/ライブラリ | SBOM | ポリシー | IaC | シークレット検出 | ライセンス | ビルドプラグイン | APIサーバー | SSH無エージェント | ダッシュボード | 集中管理 | 独自機能 |",
+        "|--------|---------|---------------|------|---------|-----|----------------|-----------|----------------|------------|-----------------|--------------|---------|---------|",
+    ]
+
+    for tool in detailed_tools:
+        tid = tool["id"]
+        lines.append(
+            f"| [{tool['name']}]({tid}_ja.html)<br>[機能一覧 ↗]({_features_url(tool)})"
+            f" | {_feature_mark(tool, 'container')}"
+            f" | {_feature_mark(tool, 'language_libs')}"
+            f" | {_feature_mark(tool, 'sbom')}"
+            f" | {_feature_mark(tool, 'policy')}"
+            f" | {_feature_mark(tool, 'iac')}"
+            f" | {_feature_mark(tool, 'secret_detection')}"
+            f" | {_feature_mark(tool, 'license_detection')}"
+            f" | {_feature_mark(tool, 'build_tool_plugin')}"
+            f" | {_feature_mark(tool, 'api_server')}"
+            f" | {_feature_mark(tool, 'agentless_ssh')}"
+            f" | {_feature_mark(tool, 'dashboard')}"
+            f" | {_feature_mark(tool, 'centralized_management')}"
+            f" | {_unique_features_str_ja(tool)} |"
         )
 
     lines.append("")

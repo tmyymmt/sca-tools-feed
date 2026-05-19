@@ -2,7 +2,7 @@ name: Update Feeds
 
 on:
   schedule:
-    - cron: "0 1 * * *"  # 毎日 UTC 01:00 (JST 10:00)
+    - cron: "0 22 * * 5"  # 毎週土曜 JST 07:00 (UTC 金曜 22:00)
   workflow_dispatch:       # 手動実行も可能
 
 permissions:
@@ -30,6 +30,9 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Install Playwright browsers
+        run: playwright install --with-deps chromium
 
       - name: Collect and generate feeds and pages
         env:

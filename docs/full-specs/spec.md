@@ -20,7 +20,7 @@ This directory contains the full specification of this project.
 |---|---|---|---|
 | FutureVuls | SaaS (vulnerability management) | https://help.vuls.biz/releasenotes/ | GitHub Actions + Copilot web search or HTML scraping |
 | Vuls (OSS) | OSS | https://github.com/future-architect/vuls | GitHub Releases API |
-| Yamory | SaaS (vulnerability management) | https://yamory.io/news | GitHub Actions + Copilot web search or HTML scraping |
+| Yamory | SaaS (vulnerability management) | https://yamory.io/news | GitHub Actions + Playwright (headless Chromium) |
 | Trivy | OSS | https://github.com/aquasecurity/trivy | GitHub Releases API + CHANGELOG.md |
 | Grype | OSS | https://github.com/anchore/grype | GitHub Releases API |
 | Syft | OSS | https://github.com/anchore/syft | GitHub Releases API |
@@ -68,7 +68,7 @@ Feeds are categorized by release type, also used for filtering:
 
 ### Update Frequency
 
-- Daily execution via GitHub Actions
+- Weekly execution via GitHub Actions (every Saturday at JST 07:00 / UTC Friday 22:00)
 - Or: create an Issue → Copilot creates a PR → review → merge to main
 
 ### Publication Endpoint
@@ -84,7 +84,8 @@ Feeds are categorized by release type, also used for filtering:
 | Target Type | Method |
 |---|---|
 | GitHub OSS (Trivy, etc.) | GitHub Actions + GitHub Releases API (structured data) |
-| SaaS (FutureVuls, Yamory) | GitHub Actions + Copilot web search or HTML scraping |
+| SaaS (FutureVuls) | GitHub Actions + HTML scraping |
+| SaaS (Yamory) | GitHub Actions + Playwright (headless Chromium) |
 
 ### GitHub Releases API
 
@@ -129,13 +130,23 @@ https://tmyymmt.github.io/sca-tools-feed/
 | `feeds/all.{rss,atom,json}` | Combined feed for all tools |
 | `feeds/{tool_id}.{rss,atom,json}` | Per-tool feeds |
 | `{tool_id}.html` / `{tool_id}_ja.html` | Per-tool summary pages (English/Japanese) |
-| `comparison.html` / `comparison_ja.html` | All-tools comparison pages |
+| `comparison.html` / `comparison_ja.html` | All-tools comparison pages (Summary table + Detailed Comparison table) |
 | `index.html` | Top page (feed list and links to comparison pages) |
 | `.nojekyll` | Disables Jekyll processing on GitHub Pages |
 
 HTML pages automatically apply dark mode by detecting browser/OS settings via the `prefers-color-scheme` media query.
 
-Tools in `index.html` and rows in `comparison.html` are ordered by descending number of supported features, then alphabetically by tool name.
+Tools in `index.html` and rows in `comparison.html` are ordered independently per table: each table sorts by its own checkmark count descending, then by `centralized_management: true` first, then alphabetically by tool name.
+
+### Comparison Page Structure
+
+The comparison pages (`comparison.html` / `comparison_ja.html`) contain two tables:
+
+- **Summary table**: Tool name, latest version, last updated, type, license, pricing, and basic feature flags (Container, Lang/Lib, SBOM, Policy).
+- **Detailed Comparison table**: All feature flags plus a Unique Features column. Feature flags covered:
+  - Container, Lang/Lib, SBOM, Policy, IaC, Secret Detection, License Scan, Build Plugin, API Server, SSH Agentless, Dashboard
+
+Each table uses its own sort order: checkmark count within that table's feature columns descending, then centralized_management true first, then alphabetical.
 
 ---
 
