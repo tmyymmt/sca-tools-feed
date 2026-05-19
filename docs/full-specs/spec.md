@@ -138,13 +138,24 @@ HTML pages automatically apply dark mode by detecting browser/OS settings via th
 
 Tools in `index.html` and rows in `comparison.html` are ordered independently per table: each table sorts by its own checkmark count descending, then by `centralized_management: true` first, then alphabetically by tool name.
 
+### Per-Tool Page Structure
+
+Each per-tool page (`{tool_id}.html` / `{tool_id}_ja.html`) contains:
+
+- Tool overview (title, description, type, license, homepage link)
+- **Features table**: all 12 feature flags with ✅/❌ status:
+  - Container Scanning, Language/Library Scanning, SBOM Generation, Policy Evaluation, IaC Scanning, Secret Detection, License Scanning, Build Tool Plugin, API Server, Agentless SSH Scanning, Dashboard, Centralized Management
+- Feature reference link to official documentation (`features_url` in tools.yml, fallback to `homepage`)
+- Release History (list of releases with version, date, and description)
+- Source URL link below the Release History heading, pointing to the upstream release page
+
 ### Comparison Page Structure
 
 The comparison pages (`comparison.html` / `comparison_ja.html`) contain two tables:
 
-- **Summary table**: Tool name, latest version, last updated, type, license, pricing, and basic feature flags (Container, Lang/Lib, SBOM, Policy).
-- **Detailed Comparison table**: All feature flags plus a Unique Features column. Feature flags covered:
-  - Container, Lang/Lib, SBOM, Policy, IaC, Secret Detection, License Scan, Build Plugin, API Server, SSH Agentless, Dashboard
+- **Summary table**: Tool name (with link to per-tool page and feature reference link), latest version, last updated, type, license, pricing, and basic feature flags (Container, Lang/Lib, SBOM, Policy).
+- **Detailed Comparison table**: Tool name (with link to per-tool page and feature reference link), all feature flags plus a Unique Features column. Feature flags covered:
+  - Container, Lang/Lib, SBOM, Policy, IaC, Secret Detection, License Scan, Build Plugin, API Server, SSH Agentless, Dashboard, Centralized Management
 
 Each table uses its own sort order: checkmark count within that table's feature columns descending, then centralized_management true first, then alphabetical.
 
