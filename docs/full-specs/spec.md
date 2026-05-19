@@ -136,7 +136,7 @@ https://tmyymmt.github.io/sca-tools-feed/
 
 HTML pages automatically apply dark mode by detecting browser/OS settings via the `prefers-color-scheme` media query.
 
-Tools in `index.html` and rows in `comparison.html` are ordered independently per table: each table sorts by its own checkmark count descending, then by `centralized_management: true` first, then alphabetically by tool name.
+The tool list in `index.html` uses the same sort order as the Summary table: summary feature checkmark count descending, then `centralized_management: true` first, then alphabetically by tool name. Rows in `comparison.html` are sorted independently per table: each table sorts by its own checkmark count descending, then by `centralized_management: true` first, then alphabetically.
 
 ### Per-Tool Page Structure
 

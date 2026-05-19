@@ -136,7 +136,7 @@ https://tmyymmt.github.io/sca-tools-feed/
 
 HTMLページは `prefers-color-scheme` メディアクエリでブラウザ・ OS の設定を検知し、自動的にダークモードを適用する。
 
-`index.html` のツール一覧および `comparison.html` の各テーブルは、それぞれのテーブルのチェックマーク数（そのテーブルの列対象）の多い順（降順）、同数の場合は `centralized_management: true` を優先、さらに同条件のときはツール名のアルファベット昇順で並べる。テーブルごとに独立してソートする。
+`index.html` のツール一覧は概要版テーブルと同じソート順（概要版機能フラグのチェックマーク数降順、同数は `centralized_management: true` 優先、さらに同条件はアルファベット昇順）で並べる。`comparison.html` の各テーブルはテーブルごとに独立したソート順を持つ（そのテーブルの列のチェックマーク数降順、同数は `centralized_management: true` 優先、さらに同条件はアルファベット昇順）。
 
 ### ツール個別ページの構成
 
