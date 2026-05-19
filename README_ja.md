@@ -21,7 +21,7 @@ https://tmyymmt.github.io/sca-tools-feed/ で GitHub Pages として公開され
 ## 動作原理
 
 - 以下のいずれかの方法でフィードファイルを更新し、HTML ページ（Markdown ソースから生成）をレンダリングする
-  - GitHub Actions で日次で実行
+  - GitHub Actions で週次（毎週土曜 JST 07:00）で実行
   - Issue を作成し、Copilot で PR を作成、レビューを完了し、main にマージ
 
 ## ファイル構成
@@ -83,7 +83,7 @@ python -m scripts.main
 
 ## GitHub Actions
 
-### 自動実行（日次）
+### 自動実行（週次）
 
 `.github/workflows/update-feeds.yml` により、毎週土曜日 JST 07:00（UTC 金曜 22:00）に自動実行されます。
 

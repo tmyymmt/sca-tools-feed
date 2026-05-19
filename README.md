@@ -20,7 +20,7 @@ https://tmyymmt.github.io/sca-tools-feed/ is published as GitHub Pages. You can 
 ## How It Works
 
 - Update feed files and render HTML pages (from Markdown sources) using one of the following methods:
-  - Run daily via GitHub Actions
+  - Run weekly via GitHub Actions (every Saturday at JST 07:00)
   - Create an Issue, have Copilot create a PR, complete review, and merge to main
 
 ## File Structure
@@ -80,7 +80,7 @@ This updates HTML files under `public/` and feed files under `public/feeds/`.
 
 ## GitHub Actions
 
-### Automated (Daily)
+### Automated (Weekly)
 
 `.github/workflows/update-feeds.yml` runs automatically every Saturday at JST 07:00 (UTC Friday 22:00).
 
