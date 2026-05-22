@@ -2,6 +2,16 @@
   {
     "tool_id": "vuls",
     "tool_name": "Vuls",
+    "version": "v0.39.2",
+    "published_at": "2026-05-20T02:36:14Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.39.2",
+    "summary": "v0.39.2",
+    "body": "## Changelog\n* 48f8c7993dd0ee10273b510897e936d4553e4ae1 feat(scanner): support disablerepo option for yum/dnf (#2559)\n* da0e250aaed6030a3956f00500faef1277c310af fix(detector): sort previous JSON dirs in descending order for diff (#2555)\n* 1b9751899ea19cf6d45c76d32b7d487fabe2f83d docs(readme): remove community Slack links (#2554)\n\n",
+    "category": "other"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
     "version": "v0.39.1",
     "published_at": "2026-05-18T09:41:45Z",
     "url": "https://github.com/future-architect/vuls/releases/tag/v0.39.1",
