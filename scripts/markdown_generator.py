@@ -1,4 +1,5 @@
 """ツールごとのまとめページおよび比較ページをMarkdownで生成する。"""
+import re
 from datetime import datetime, timezone
 from typing import Dict, List, Optional
 
@@ -84,6 +85,19 @@ def _features_url(tool: dict) -> str:
     return tool.get("features_url", tool.get("homepage", ""))
 
 
+def _pricing_display(tool: dict) -> str:
+    pricing = tool.get("pricing", "—")
+    pricing_url = tool.get("pricing_url", "")
+    if isinstance(pricing, str) and pricing_url:
+        return re.sub(
+            r"\bpaid\b",
+            lambda m: f"[{m.group(0)}]({pricing_url})",
+            pricing,
+            flags=re.IGNORECASE,
+        )
+    return pricing
+
+
 def generate_tool_page(tool: dict, entries: List[ReleaseEntry]) -> str:
     """ツールごとのまとめページ（英語）を生成する。"""
     name = tool["name"]
@@ -103,7 +117,7 @@ def generate_tool_page(tool: dict, entries: List[ReleaseEntry]) -> str:
         "|------|-------|",
         f"| Type | {_tool_type(tool)} |",
         f"| License | {tool.get('license', '—')} |",
-        f"| Pricing | {tool.get('pricing', '—')} |",
+        f"| Pricing | {_pricing_display(tool)} |",
         f"| Homepage | {_homepage(tool)} |",
         f"| Latest Version | {latest_version} |",
         f"| Last Updated | {last_updated} |",
@@ -176,7 +190,7 @@ def generate_tool_page_ja(tool: dict, entries: List[ReleaseEntry]) -> str:
         "|------|------|",
         f"| 種別 | {_tool_type(tool)} |",
         f"| ライセンス | {tool.get('license', '—')} |",
-        f"| 費用 | {tool.get('pricing', '—')} |",
+        f"| 費用 | {_pricing_display(tool)} |",
         f"| 公式サイト | {_homepage(tool)} |",
         f"| 最新バージョン | {latest_version} |",
         f"| 最終更新日 | {last_updated} |",
@@ -308,7 +322,7 @@ def generate_comparison_page(tools: list, entries_by_tool: Dict[str, List[Releas
             f" | {updated}"
             f" | {_tool_type(tool)}"
             f" | {tool.get('license', '—')}"
-            f" | {tool.get('pricing', '—')}"
+            f" | {_pricing_display(tool)}"
             f" | {_feature_mark(tool, 'container')}"
             f" | {_feature_mark(tool, 'language_libs')}"
             f" | {_feature_mark(tool, 'sbom')}"
@@ -375,7 +389,7 @@ def generate_comparison_page_ja(tools: list, entries_by_tool: Dict[str, List[Rel
             f" | {updated}"
             f" | {_tool_type(tool)}"
             f" | {tool.get('license', '—')}"
-            f" | {tool.get('pricing', '—')}"
+            f" | {_pricing_display(tool)}"
             f" | {_feature_mark(tool, 'container')}"
             f" | {_feature_mark(tool, 'language_libs')}"
             f" | {_feature_mark(tool, 'sbom')}"

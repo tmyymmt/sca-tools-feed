@@ -1,4 +1,4 @@
-# sca-tools-feed
+# SCA Tools Feed
 A repository that aggregates release information from security and vulnerability-scanning tools, generates per-tool summary pages and comparison pages as HTML, and publishes them as feeds.
 
 ## Tool Category
@@ -9,8 +9,8 @@ These tools scan the components that make up a system (OS packages, libraries, c
 
 The following categories are **out of scope**:
 
-- **SAST (Static Application Security Testing)**: Tools that detect vulnerabilities by analyzing source code patterns (e.g., SonarQube, Semgrep)
-- **DAST (Dynamic Application Security Testing)**: Tools that detect vulnerabilities by sending requests to a running system (e.g., OWASP ZAP)
+- **SAST (Static Application Security Testing)**: Tools that detect vulnerabilities by analyzing source code patterns (e.g., SonarQube, Semgrep). See also: https://github.com/tmyymmt/sast-tools-feed/
+- **DAST (Dynamic Application Security Testing)**: Tools that detect vulnerabilities by sending requests to a running system (e.g., OWASP ZAP). See also: https://github.com/tmyymmt/dast-tools-feed/
 - **SBOM generation/management only**: Tools that do not perform CVE matching (e.g., microsoft/sbom-tool)
 
 ## Published Site

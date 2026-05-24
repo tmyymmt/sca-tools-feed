@@ -4,6 +4,7 @@ import re
 from datetime import datetime, timezone
 from typing import List
 
+import requests
 from bs4 import BeautifulSoup
 
 from scripts.categorize import classify_release
@@ -14,12 +15,32 @@ BASE_URL = "https://yamory.io"
 NEWS_URL = f"{BASE_URL}/news"
 
 
+def _fetch_yamory_html_via_requests() -> str:
+    try:
+        res = requests.get(NEWS_URL, timeout=30)
+        res.raise_for_status()
+        return res.text
+    except requests.RequestException as e:
+        logger.warning("Yamory requests fallback failed: %s", e)
+        raise
+
+
 async def _fetch_yamory_html() -> str:
     """Playwright を使って JS レンダリング後の HTML を取得する。"""
-    from playwright.async_api import async_playwright
+    try:
+        from playwright.async_api import Error as PlaywrightError
+        from playwright.async_api import async_playwright
+    except ImportError as e:
+        logger.info("Playwright not installed for Yamory fetch, falling back to requests: %s", e)
+        return _fetch_yamory_html_via_requests()
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
+        try:
+            browser = await p.chromium.launch(headless=True)
+        except PlaywrightError as e:
+            logger.info("Playwright browser unavailable for Yamory fetch, falling back to requests: %s", e)
+            return _fetch_yamory_html_via_requests()
+
         try:
             page = await browser.new_page()
             await page.goto(NEWS_URL, wait_until="networkidle", timeout=30000)
