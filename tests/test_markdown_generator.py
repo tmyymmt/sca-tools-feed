@@ -29,6 +29,14 @@ TOOL = {
     },
 }
 
+PAID_TOOL = {
+    **TOOL,
+    "id": "futurevuls",
+    "name": "FutureVuls",
+    "pricing": "Paid",
+    "pricing_url": "https://www.vuls.biz/price",
+}
+
 ENTRIES = [
     ReleaseEntry(
         tool_id="trivy",
@@ -83,6 +91,11 @@ def test_generate_tool_page_contains_features():
     assert "Free" in result
 
 
+def test_generate_tool_page_links_paid_pricing():
+    result = generate_tool_page(PAID_TOOL, ENTRIES)
+    assert "[Paid](https://www.vuls.biz/price)" in result
+
+
 def test_generate_tool_page_ja_contains_japanese_headers():
     result = generate_tool_page_ja(TOOL, ENTRIES)
     assert "基本情報" in result
@@ -109,7 +122,7 @@ def test_generate_comparison_page_ja_contains_japanese_header():
     tools = [TOOL]
     result = generate_comparison_page_ja(tools, {"trivy": ENTRIES})
     assert "SCAツール比較" in result
-    assert "比較表" in result
+    assert "概要版" in result
 
 
 def test_generate_comparison_page_empty_entries_shows_dash():
@@ -123,6 +136,12 @@ def test_generate_comparison_page_links_to_html():
     result = generate_comparison_page(tools, {"trivy": ENTRIES})
     assert "trivy.html" in result
     assert ".md" not in result
+
+
+def test_generate_comparison_page_links_paid_pricing():
+    tools = [PAID_TOOL]
+    result = generate_comparison_page(tools, {"futurevuls": ENTRIES})
+    assert "[Paid](https://www.vuls.biz/price)" in result
 
 
 def test_generate_comparison_page_ja_links_to_html():

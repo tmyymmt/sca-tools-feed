@@ -244,6 +244,7 @@ tools:
     type: scrape_futurevuls
     url: https://help.vuls.biz/releasenotes/
     homepage: https://vuls.biz
+    pricing_url: https://www.vuls.biz/price
     features_url: https://vuls.biz/feature/
     license: Proprietary
     pricing: Paid
@@ -281,6 +282,7 @@ tools:
     type: scrape_yamory
     url: https://yamory.io/news
     homepage: https://yamory.io
+    pricing_url: https://yamory.io/service
     features_url: https://yamory.io/
     license: Proprietary
     pricing: Paid
