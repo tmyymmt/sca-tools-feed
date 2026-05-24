@@ -1,4 +1,5 @@
 """ツールごとのまとめページおよび比較ページをMarkdownで生成する。"""
+import re
 from datetime import datetime, timezone
 from typing import Dict, List, Optional
 
@@ -87,8 +88,13 @@ def _features_url(tool: dict) -> str:
 def _pricing_display(tool: dict) -> str:
     pricing = tool.get("pricing", "—")
     pricing_url = tool.get("pricing_url", "")
-    if isinstance(pricing, str) and pricing.lower() == "paid" and pricing_url:
-        return f"[{pricing}]({pricing_url})"
+    if isinstance(pricing, str) and pricing_url:
+        return re.sub(
+            r"\bpaid\b",
+            lambda m: f"[{m.group(0)}]({pricing_url})",
+            pricing,
+            flags=re.IGNORECASE,
+        )
     return pricing
 
 

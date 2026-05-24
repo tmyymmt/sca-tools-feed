@@ -143,6 +143,7 @@ The tool list in `index.html` uses the same sort order as the Summary table: sum
 Each per-tool page (`{tool_id}.html` / `{tool_id}_ja.html`) contains:
 
 - Tool overview (title, description, type, license, homepage link)
+- Pricing display in the overview table: when `pricing_url` is set and `pricing` text contains `Paid` (case-insensitive), each `Paid` token is rendered as a link to `pricing_url` (e.g., `Free / [Paid](...)`)
 - **Features table**: all 12 feature flags with ✅/❌ status:
   - Container Scanning, Language/Library Scanning, SBOM Generation, Policy Evaluation, IaC Scanning, Secret Detection, License Scanning, Build Tool Plugin, API Server, Agentless SSH Scanning, Dashboard, Centralized Management
 - Feature reference link to official documentation (`features_url` in tools.yml, fallback to `homepage`)
@@ -153,7 +154,7 @@ Each per-tool page (`{tool_id}.html` / `{tool_id}_ja.html`) contains:
 
 The comparison pages (`comparison.html` / `comparison_ja.html`) contain two tables:
 
-- **Summary table**: Tool name (with link to per-tool page and feature reference link), latest version, last updated, type, license, pricing, and basic feature flags (Container, Lang/Lib, SBOM, Policy).
+- **Summary table**: Tool name (with link to per-tool page and feature reference link), latest version, last updated, type, license, pricing, and basic feature flags (Container, Lang/Lib, SBOM, Policy). Pricing uses the same `pricing_url` + `Paid` token link rendering rule as per-tool pages.
 - **Detailed Comparison table**: Tool name (with link to per-tool page and feature reference link), all feature flags plus a Unique Features column. Feature flags covered:
   - Container, Lang/Lib, SBOM, Policy, IaC, Secret Detection, License Scan, Build Plugin, API Server, SSH Agentless, Dashboard, Centralized Management
 
@@ -168,4 +169,3 @@ See [spec-nonfunctional.md](spec-nonfunctional.md) for details.
 - Prefer GitHub API over scraping; scraping is a last resort
 - Tolerate partial failures; keep updating other tools' feeds on failure
 - Use atomic writes to prevent publishing partially written files
-
