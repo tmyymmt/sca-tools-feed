@@ -1,6 +1,10 @@
 # SCA Tools Feed
 A repository that aggregates release information from security and vulnerability-scanning tools, generates per-tool summary pages and comparison pages as HTML, and publishes them as feeds.
 
+Updated weekly via GitHub Actions. Subscribe to the generated feeds with any RSS reader.
+
+🌐 **Live site**: https://tmyymmt.github.io/sca-tools-feed/
+
 ## Tool Category
 
 This repository covers **SCA (Software Composition Analysis) tools** — also known as SBOM-based vulnerability management tools.
@@ -12,10 +16,6 @@ The following categories are **out of scope**:
 - **SAST (Static Application Security Testing)**: Tools that detect vulnerabilities by analyzing source code patterns (e.g., SonarQube, Semgrep). See also: https://github.com/tmyymmt/sast-tools-feed/
 - **DAST (Dynamic Application Security Testing)**: Tools that detect vulnerabilities by sending requests to a running system (e.g., OWASP ZAP). See also: https://github.com/tmyymmt/dast-tools-feed/
 - **SBOM generation/management only**: Tools that do not perform CVE matching (e.g., microsoft/sbom-tool)
-
-## Published Site
-
-https://tmyymmt.github.io/sca-tools-feed/ is published as GitHub Pages. You can browse feed listings, per-tool summary pages, and the comparison page. All HTML pages support dark mode via `prefers-color-scheme`.
 
 ## How It Works
 

@@ -2,6 +2,10 @@
 
 セキュリティ／脆弱性スキャンツールのリリース情報を集約し、各ツールごとのまとめページと比較ページを HTML として生成し、フィードとして公開するリポジトリです。
 
+GitHub Actions により毎週自動更新されます。生成されるフィードは任意のRSSリーダーで購読できます。
+
+🌐 **公開サイト**: https://tmyymmt.github.io/sca-tools-feed/
+
 ## 対象ツールのカテゴリ
 
 本リポジトリが扱うのは、**SCA（Software Composition Analysis）ツール**、すなわち**SBOMベースの脆弱性管理ツール**です。
@@ -13,10 +17,6 @@
 - **静的コード解析（SAST）**：ソースコードの記述パターンから脆弱性を検出するツール（例：SonarQube、Semgrep）。関連リポジトリ: https://github.com/tmyymmt/sast-tools-feed/
 - **動的脆弱性スキャン（DAST）**：実行中のシステムにリクエストを送信して脆弱性を検出するツール（例：OWASP ZAP）。関連リポジトリ: https://github.com/tmyymmt/dast-tools-feed/
 - **SBOMの生成・管理のみを行うツール**：CVEとのマッチングを行わないもの（例：microsoft/sbom-tool）
-
-## 公開サイト
-
-https://tmyymmt.github.io/sca-tools-feed/ で GitHub Pages として公開されています。フィード一覧・各ツールまとめページ・比較ページを閲覧できます。HTML ページはすべて `prefers-color-scheme` によるダークモードに対応しています。
 
 ## 動作原理
 
