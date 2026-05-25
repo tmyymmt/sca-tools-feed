@@ -23,7 +23,59 @@ The following categories are **out of scope**:
   - Run weekly via GitHub Actions (every Friday at UTC 22:00)
   - Create an Issue, have Copilot create a PR, complete review, and merge to main
 
-## File Structure
+## Covered Tools
+
+| Tool | Type | License |
+|------|------|---------|
+| [Trivy](https://trivy.dev) | OSS | Apache-2.0 |
+| [Grype](https://github.com/anchore/grype) | OSS | Apache-2.0 |
+| [Syft](https://github.com/anchore/syft) | OSS | Apache-2.0 |
+| [OSV-Scanner](https://google.github.io/osv-scanner/) | OSS | Apache-2.0 |
+| [Dependency-Check](https://jeremylong.github.io/DependencyCheck/) | OSS | Apache-2.0 |
+| [Clair](https://github.com/quay/clair) | OSS | Apache-2.0 |
+| [Vuls](https://vuls.io) | OSS | GPL-3.0 |
+| [FutureVuls](https://vuls.biz) | Commercial | Proprietary |
+| [Yamory](https://yamory.io) | Commercial | Proprietary |
+
+## Feed URLs
+
+### All Tools (Combined)
+
+| Format | URL |
+|--------|-----|
+| RSS 2.0 | `https://tmyymmt.github.io/sca-tools-feed/feeds/all.rss` |
+| Atom 1.0 | `https://tmyymmt.github.io/sca-tools-feed/feeds/all.atom` |
+| JSON Feed 1.1 | `https://tmyymmt.github.io/sca-tools-feed/feeds/all.json` |
+
+### Per-Tool Feeds
+
+Replace `{tool_id}` with: `trivy`, `grype`, `syft`, `osv-scanner`, `dependency-check`, `clair`, `vuls`, `futurevuls`, `yamory`
+
+| Format | URL |
+|--------|-----|
+| RSS 2.0 | `https://tmyymmt.github.io/sca-tools-feed/feeds/{tool_id}.rss` |
+| Atom 1.0 | `https://tmyymmt.github.io/sca-tools-feed/feeds/{tool_id}.atom` |
+| JSON Feed 1.1 | `https://tmyymmt.github.io/sca-tools-feed/feeds/{tool_id}.json` |
+
+## Pages
+
+- **Comparison**: [English](https://tmyymmt.github.io/sca-tools-feed/comparison.html) / [Japanese](https://tmyymmt.github.io/sca-tools-feed/comparison_ja.html)
+- **Per-tool summaries**: `https://tmyymmt.github.io/sca-tools-feed/{tool_id}.html`
+
+## Release Categories
+
+Releases are categorized for easy filtering:
+
+| Category | Description |
+|----------|-------------|
+| `feature` | Feature additions and changes |
+| `bugfix` | Bug fixes |
+| `security` | Security fixes and hotfixes |
+| `pricing` | Pricing changes |
+| `announcement` | Announcements, events, awards |
+| `other` | Other |
+
+## Repository Structure
 
 ### Spec Template
 - GitHub Spec Kit style feature spec template: `.specify/templates/spec-template.md`
