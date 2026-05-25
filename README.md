@@ -96,6 +96,9 @@ Releases are categorized for easy filtering:
 ├── public/                 # Generated output (gitignored, deployed to GitHub Pages)
 ├── tests/                  # Test suite
 └── docs/                   # Specifications
+    └── full-specs/         # Full specifications
+        ├── spec.md         # Full specification (English)
+        └── spec_ja.md      # Full specification (Japanese)
 ```
 
 ## Rules
