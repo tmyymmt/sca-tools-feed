@@ -77,12 +77,26 @@ Releases are categorized for easy filtering:
 
 ## Repository Structure
 
-### Spec Template
-- GitHub Spec Kit style feature spec template: `.specify/templates/spec-template.md`
-
-### Full Specification
-- docs/full-specs/spec.md
-- The full specification always reflects the latest spec
+```text
+.
+├── scripts/                # Python scripts
+│   ├── main.py             # Entry point
+│   ├── models.py           # Data models
+│   ├── categorize.py       # Release categorization
+│   ├── storage.py          # JSON storage
+│   ├── feed_generator.py   # RSS/Atom/JSON Feed generation
+│   ├── markdown_generator.py  # HTML page generation
+│   └── collectors/         # Data collectors per source
+│       ├── github.py       # GitHub Releases/API collector
+│       ├── futurevuls.py   # FutureVuls collector
+│       └── yamory.py       # Yamory collector
+├── tools/
+│   └── tools.yml           # Tool configuration
+├── data/                   # Persisted release data (JSON)
+├── public/                 # Generated output (gitignored, deployed to GitHub Pages)
+├── tests/                  # Test suite
+└── docs/                   # Specifications
+```
 
 ## Rules
 
