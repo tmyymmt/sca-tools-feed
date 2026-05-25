@@ -1,7 +1,7 @@
 # SCA Tools Feed
 A repository that aggregates release information from security and vulnerability-scanning tools, generates per-tool summary pages and comparison pages as HTML, and publishes them as feeds.
 
-Updated weekly via GitHub Actions. Subscribe with any RSS reader.
+Updated weekly via GitHub Actions. Subscribe to the generated feeds with any RSS reader.
 
 🌐 **Live site**: https://tmyymmt.github.io/sca-tools-feed/
 
