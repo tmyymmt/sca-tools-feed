@@ -2,6 +2,16 @@
   {
     "tool_id": "yamory",
     "tool_name": "Yamory",
+    "version": "2026-05-25",
+    "published_at": "2026-05-25T00:00:00Z",
+    "url": "https://yamory.io/news/emergency-response-plan-for-financial-institutions",
+    "summary": "脆弱性管理クラウド「yamory」、 金融庁・日本銀行の「フロンティア AIによる脅威変化を踏まえた短期的な対応」要請を受け、「金融機関向け緊急対応プラン」の提供開始",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
     "version": "2026-05-19",
     "published_at": "2026-05-19T00:00:00Z",
     "url": "https://yamory.io/news/InteropTokyo2026",
