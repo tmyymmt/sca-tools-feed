@@ -2,6 +2,26 @@
   {
     "tool_id": "grype",
     "tool_name": "Grype",
+    "version": "v0.114.0",
+    "published_at": "2026-06-05T16:17:05Z",
+    "url": "https://github.com/anchore/grype/releases/tag/v0.114.0",
+    "summary": "v0.114.0",
+    "body": "### Added Features\n\n- Add ability to scan zarf packages [[#3329](https://github.com/anchore/grype/issues/3329) [#3366](https://github.com/anchore/grype/pull/3366) @brandtkeller]\n\n### Additional Changes\n\n- respect withdrawn status of Go Vuln DB OSV records [[#3495](https://github.com/anchore/grype/pull/3495) @willmurphyscode]\n- Govulndb OSV transformer [[#3485](https://github.com/anchore/grype/pull/3485) @willmurphyscode]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.113.0...v0.114.0)**\n\n",
+    "category": "feature"
+  },
+  {
+    "tool_id": "grype",
+    "tool_name": "Grype",
+    "version": "v0.113.0",
+    "published_at": "2026-06-03T14:19:21Z",
+    "url": "https://github.com/anchore/grype/releases/tag/v0.113.0",
+    "summary": "v0.113.0",
+    "body": "### Added Features\n\n- Include Ubuntu 26.04 \"resolute\" in distro codenames [[#3397](https://github.com/anchore/grype/pull/3397) @anchore-oss-update-bot]\n- source RPM filtering on Hummingbird [[#3410](https://github.com/anchore/grype/pull/3410) @willmurphyscode]\n\n### Bug Fixes\n\n- use relatedVulnerabilities description as fallback in SARIF output [[#3271](https://github.com/anchore/grype/pull/3271) @axidex]\n- improve platform CPE determination logic [[#3470](https://github.com/anchore/grype/pull/3470) @westonsteimel]\n- normalize uppercase V in semantic version comparison [[#3461](https://github.com/anchore/grype/pull/3461) @immanuwell]\n- purl handling in cgr maven libs [[#3420](https://github.com/anchore/grype/pull/3420) @willmurphyscode]\n- Treat uppercase V prefixes the same as lowercase v prefixes in fuzzy version comparison [[#3037](https://github.com/anchore/grype/issues/3037) [#3089](https://github.com/anchore/grype/pull/3089) @wasup-yash]\n- Add Runtime Warnings When TLS Verification Is Disabled or HTTP Is Enabled [[#3101](https://github.com/anchore/grype/issues/3101) [#3396](https://github.com/anchore/grype/pull/3396) @Dashtid]\n- Add support for the aarch64 architecture when parsing the version of Ruby gems in lockfiles [[#3442](https://github.com/anchore/grype/issues/3442) [#3475](https://github.com/anchore/grype/pull/3475) @msnandhis]\n- zsh completion fails [[#2933](https://github.com/anchore/grype/issues/2933) [#3433](https://github.com/anchore/grype/pull/3433) @brandtkeller]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.112.0...v0.113.0)**\n\n",
+    "category": "bugfix"
+  },
+  {
+    "tool_id": "grype",
+    "tool_name": "Grype",
     "version": "v0.112.0",
     "published_at": "2026-05-01T19:12:37Z",
     "url": "https://github.com/anchore/grype/releases/tag/v0.112.0",

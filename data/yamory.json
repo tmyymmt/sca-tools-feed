@@ -2,6 +2,16 @@
   {
     "tool_id": "yamory",
     "tool_name": "Yamory",
+    "version": "2026-06-02",
+    "published_at": "2026-06-02T00:00:00Z",
+    "url": "https://yamory.io/it-assets-renewal",
+    "summary": "脆弱性管理クラウド「yamory」、IT資産登録機能をリニューアル",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
     "version": "2026-05-25",
     "published_at": "2026-05-25T00:00:00Z",
     "url": "https://yamory.io/news/emergency-response-plan-for-financial-institutions",
