@@ -2,6 +2,16 @@
   {
     "tool_id": "vuls",
     "tool_name": "Vuls",
+    "version": "v0.39.3",
+    "published_at": "2026-06-09T09:13:59Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.39.3",
+    "summary": "v0.39.3",
+    "body": "## Changelog\n* 5ce56238223d505e7f99ab70c25644c6c39b620b fix!(scanner): treat AnalyzeLibrary failures as warnings instead of errors (#2574)\n* 75fc521c2a4a53643b2bdb1addbb66d6fdc2bfc6 chore(deps): bump the all group across 1 directory with 3 updates (#2572)\n* 30ed4d422f4469e5da4c444af3d5160309df5ec1 feat(config): update GetEOL with newly released OS versions (#2570)\n* 2b360462c9f8de911ddf6916daae16d3efa96fe4 chore(deps): bump the go_modules group across 1 directory with 2 updates (#2566)\n* 6ef6ba4078abb8bbfe1aad7ddd972db8a15d0dc8 feat!(detector): detect windows with vuls2 (#2499)\n* 259e69444d66cc695ad0ce5e76425148970ada48 fix(detector/vuls2): normalize Amazon Linux release in preConvert (#2562)\n\n",
+    "category": "feature"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
     "version": "v0.39.2",
     "published_at": "2026-05-20T02:36:14Z",
     "url": "https://github.com/future-architect/vuls/releases/tag/v0.39.2",
