@@ -2,6 +2,16 @@
   {
     "tool_id": "yamory",
     "tool_name": "Yamory",
+    "version": "2026-06-25",
+    "published_at": "2026-06-25T00:00:00Z",
+    "url": "https://yamory.io/news/first-half-2026-security-report",
+    "summary": "脆弱性管理クラウド「yamory」、2026年上期セキュリティレポートを公開",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
     "version": "2026-06-02",
     "published_at": "2026-06-02T00:00:00Z",
     "url": "https://yamory.io/it-assets-renewal",
