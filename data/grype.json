@@ -2,6 +2,16 @@
   {
     "tool_id": "grype",
     "tool_name": "Grype",
+    "version": "v0.116.0",
+    "published_at": "2026-07-16T16:52:20Z",
+    "url": "https://github.com/anchore/grype/releases/tag/v0.116.0",
+    "summary": "v0.116.0",
+    "body": "### Added Features\n\n- duplicate RHSAs to all applicable RHEL minor versions [PR [#3542](https://github.com/anchore/grype/pull/3542) @willmurphyscode]\n- add chainguard osv transformer [PR [#3474](https://github.com/anchore/grype/pull/3474) @crosleyzack]\n- populate package architecture for matching [PR [#3504](https://github.com/anchore/grype/pull/3504) @willmurphyscode]\n- lightweight reachability analysis to reduce Golang false positives [Issue [#2960](https://github.com/anchore/grype/issues/2960)] [PR [#3509](https://github.com/anchore/grype/pull/3509) @spiffcs]\n- Deduplicate Go matches that are aliases of each other (same CVE reported under both a `govulndb` GO-* ID and its GHSA) [Issue [#3511](https://github.com/anchore/grype/issues/3511)] [PR [#3509](https://github.com/anchore/grype/pull/3509) @spiffcs]\n- Support Ubuntu ESM [Issue [#3544](https://github.com/anchore/grype/issues/3544)] [PR [#3546](https://github.com/anchore/grype/pull/3546) @wagoodman]\n\n### Bug Fixes\n\n- regenerate v6.1.8 blob and sql schemas [PR [#3574](https://github.com/anchore/grype/pull/3574) @spiffcs]\n- rhel version streams [PR [#3572](https://github.com/anchore/grype/pull/3572) @kzantow]\n- Grype doesn't match u-boot in SBOM if type is set to firmware [Issue [#2537](https://github.com/anchore/grype/issues/2537)]\n- Ignore Go compiler affecting CVE when Docker image only contains a binary compiled with Go [Issue [#1782](https://github.com/anchore/grype/issues/1782)]\n- Zarf scans emit warnings for consistently unreadable files (i.e., included non-SBOMs) [Issue [#3516](https://github.com/anchore/grype/issues/3516)] [PR [#3545](https://github.com/anchore/grype/pull/3545) @brandtkeller]\n- Fail parsing github actions [Issue [#3220](https://github.com/anchore/grype/issues/3220)]\n- Go vulnerability returned when installed version is greater than fixed version [Issue [#3520](https://github.com/anchore/grype/issues/3520)]\n\n### Dependencies\n\n14 dependency changes (11 updated, 3 added).\n\n<details>\n<summary>Updated (11 packages)</summary>\n\n- github.com/anchore/go-rpmdb `v0.1.0` → `v0.2.0`\n- github.com/anchore/syft `v1.46.0` → `v1.48.0`\n- github.com/klauspost/compress `v1.18.6` → `v1.19.0`\n- golang.org/x/text `v0.38.0` → `v0.39.0`\n- golang.org/x/tools `v0.46.0` → `v0.47.0`\n- gorm.io/gorm `v1.31.1` → `v1.31.2`\n- modernc.org/cc/v4 `v4.28.2` → `v4.28.4`\n- modernc.org/ccgo/v4 `v4.34.0` → `v4.34.4`\n- modernc.org/gc/v3 `v3.1.2` → `v3.1.3`\n- modernc.org/libc `v1.72.3` → `v1.73.4`\n- modernc.org/sqlite `v1.51.0` → `v1.53.0`\n</details>\n\n<details>\n<summary>Added (3 packages)</summary>\n\n- github.com/mattn/go-sqlite3 `v1.14.23`\n- gorm.io/driver/sqlite `v1.6.0`\n- howett.net/plist `v1.0.1`\n</details>\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.115.0...v0.116.0)**\n\n",
+    "category": "security"
+  },
+  {
+    "tool_id": "grype",
+    "tool_name": "Grype",
     "version": "v0.115.0",
     "published_at": "2026-06-26T11:42:04Z",
     "url": "https://github.com/anchore/grype/releases/tag/v0.115.0",
