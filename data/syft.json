@@ -2,6 +2,16 @@
   {
     "tool_id": "syft",
     "tool_name": "Syft",
+    "version": "v1.49.0",
+    "published_at": "2026-07-21T13:16:54Z",
+    "url": "https://github.com/anchore/syft/releases/tag/v1.49.0",
+    "summary": "v1.49.0",
+    "body": "### Added Features\n\n- Support for `application/vnd.oci.image.index.v1+json` manifests in root OCI layout [Issue [#1545](https://github.com/anchore/syft/issues/1545)] [PR [#5074](https://github.com/anchore/syft/pull/5074) @jasonpaulos]\n\n### Bug Fixes\n\n- Misinterpretation of Multiple replace Directives in Golang [Issue [#2721](https://github.com/anchore/syft/issues/2721)] [PR [#5069](https://github.com/anchore/syft/pull/5069) @ychampion]\n\n### Dependencies\n\n16 dependency changes (16 updated).\n\n<details>\n<summary>Updated (16 packages)</summary>\n\n- github.com/anchore/go-rpmdb `v0.1.0` → `v0.2.0`\n- github.com/anchore/stereoscope `v0.2.2` → `v0.3.0`\n- github.com/containerd/containerd/v2 `v2.3.2` → `v2.3.3`\n- github.com/docker/cli `v29.5.3+incompatible` → `v29.6.1+incompatible`\n- github.com/gkampitakis/go-snaps `v0.5.22` → `v0.5.23`\n- github.com/moby/moby/api `v1.54.2` → `v1.55.0`\n- github.com/moby/moby/client `v0.4.1` → `v0.5.0`\n- github.com/pelletier/go-toml/v2 `v2.3.1` → `v2.4.3`\n- golang.org/x/crypto `v0.53.0` → `v0.54.0`\n- golang.org/x/mod `v0.37.0` → `v0.38.0`\n- golang.org/x/net `v0.56.0` → `v0.57.0`\n- golang.org/x/sync `v0.21.0` → `v0.22.0`\n- golang.org/x/sys `v0.46.0` → `v0.47.0`\n- golang.org/x/term `v0.44.0` → `v0.45.0`\n- golang.org/x/text `v0.38.0` → `v0.40.0`\n- golang.org/x/tools `v0.47.0` → `v0.48.0`\n</details>\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.48.0...v1.49.0)**\n\n",
+    "category": "bugfix"
+  },
+  {
+    "tool_id": "syft",
+    "tool_name": "Syft",
     "version": "v1.48.0",
     "published_at": "2026-07-16T14:47:52Z",
     "url": "https://github.com/anchore/syft/releases/tag/v1.48.0",
