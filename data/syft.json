@@ -2,6 +2,16 @@
   {
     "tool_id": "syft",
     "tool_name": "Syft",
+    "version": "v1.50.0",
+    "published_at": "2026-07-28T17:44:08Z",
+    "url": "https://github.com/anchore/syft/releases/tag/v1.50.0",
+    "summary": "v1.50.0",
+    "body": "### Added Features\n\n- Add bun binary classifier [PR [#5103](https://github.com/anchore/syft/pull/5103) @rezmoss]\n\n### Bug Fixes\n\n- Fix Cargo PURLs for local workspace packages [PR [#5105](https://github.com/anchore/syft/pull/5105) @3nesdeniz]\n- Decode golang symbols [PR [#5089](https://github.com/anchore/syft/pull/5089) @wagoodman]\n- CPE vendor field incorrectly includes publisher URL for SUSE RPM packages [Issue [#5073](https://github.com/anchore/syft/issues/5073)] [PR [#5081](https://github.com/anchore/syft/pull/5081) @Eljees]\n- apk-db-cataloger silently drops the entire APK catalog when one installed-DB field exceeds 64 KB [Issue [#5094](https://github.com/anchore/syft/issues/5094)] [PR [#5100](https://github.com/anchore/syft/pull/5100) @cyphercodes]\n\n### Additional Changes\n\n- package-lock.json v1: nested dependencies entries are never cataloged (flat top-level iteration only) [Issue [#5101](https://github.com/anchore/syft/issues/5101)] [PR [#5108](https://github.com/anchore/syft/pull/5108) @Eljees]\n- consider vendored golang packages in module attribution [PR [#5093](https://github.com/anchore/syft/pull/5093) @kzantow]\n- Fix inverted bounds check dropping every Erlang string with a backslash [PR [#5110](https://github.com/anchore/syft/pull/5110) @arpitjain099]\n\n### Dependencies\n\n14 dependency changes (14 updated). 1 vulnerability remediated.\n\n**🟢 Remediated (1)**\n\n- [GHSA-hrxh-6v49-42gf](https://github.com/advisories/GHSA-hrxh-6v49-42gf) (High) — google.golang.org/grpc\n\n<details>\n<summary>Updated (14 packages)</summary>\n\n- github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp `v1.31.0` → `v1.32.0`\n- github.com/cncf/xds/go `v0.0.0-ee656c7` → `v0.0.0-dba9d58`\n- github.com/envoyproxy/go-control-plane/envoy `v1.36.0` → `v1.37.0`\n- github.com/envoyproxy/protoc-gen-validate `v1.3.0` → `v1.3.3`\n- github.com/gpustack/gguf-parser-go `v0.24.1` → `v0.25.0`\n- go.opentelemetry.io/contrib/detectors/gcp `v1.39.0` → `v1.43.0`\n- google.golang.org/genproto/googleapis/api `v0.0.0-9d38bb4` → `v0.0.0-afd174a`\n- google.golang.org/genproto/googleapis/rpc `v0.0.0-6f92a3b` → `v0.0.0-afd174a`\n- google.golang.org/grpc `v1.80.0` → `v1.82.1` **(🟢 remediated [GHSA-hrxh-6v49-42gf](https://github.com/advisories/GHSA-hrxh-6v49-42gf))**\n- modernc.org/cc/v4 `v4.28.4` → `v4.29.0`\n- modernc.org/ccgo/v4 `v4.34.4` → `v4.34.6`\n- modernc.org/gc/v3 `v3.1.3` → `v3.1.4`\n- modernc.org/libc `v1.73.4` → `v1.74.1`\n- modernc.org/sqlite `v1.53.0` → `v1.54.0`\n</details>\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.49.0...v1.50.0)**\n\n",
+    "category": "security"
+  },
+  {
+    "tool_id": "syft",
+    "tool_name": "Syft",
     "version": "v1.49.0",
     "published_at": "2026-07-21T13:16:54Z",
     "url": "https://github.com/anchore/syft/releases/tag/v1.49.0",

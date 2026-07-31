@@ -2,6 +2,36 @@
   {
     "tool_id": "vuls",
     "tool_name": "Vuls",
+    "version": "v0.40.1",
+    "published_at": "2026-07-30T02:15:04Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.40.1",
+    "summary": "v0.40.1",
+    "body": "## Changelog\n* e6624e99e67e727472bc7f2c482902ffa630d587 fix(release): resolve the pushed tag when multiple tags point at HEAD (#2616)\n\n",
+    "category": "feature"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
+    "version": "v0.40.1-rc.1",
+    "published_at": "2026-07-30T01:42:40Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.40.1-rc.1",
+    "summary": "v0.40.1-rc.1",
+    "body": "## Changelog\r\n* e6624e99e67e727472bc7f2c482902ffa630d587 fix(release): resolve the pushed tag when multiple tags point at HEAD (#2616)\r\n\r\n",
+    "category": "feature"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
+    "version": "v0.40.0-rc.1",
+    "published_at": "2026-07-29T06:29:52Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.40.0-rc.1",
+    "summary": "v0.40.0-rc.1",
+    "body": "## Changelog\r\n* 25d03d68a19b6d3e653e11640adb7aff62eb2862 feat(detector/vuls2): adopt forward-compatible enum serde and surface evaluation warnings (#2609)\r\n* 00508025157ac5a6d01d11fa757268a93b3d3e9e chore(deps): bump the go_modules group across 1 directory with 2 updates (#2611)\r\n* 7cc6c213900c0eb2a00db1d1b07e1de51e6a7b82 chore(deps): bump the trivy group across 1 directory with 2 updates (#2597)\r\n* 0b04ace5a71cdd2c9e8bf260041b542b3f6e0097 chore(deps): bump the others group across 1 directory with 8 updates (#2608)\r\n* 8b2f7c480892c6ecac2d496900a75bf9e4d27b54 feat(detector/vuls2): use JPCERT-AT reference_titles for JVN alert title (#2610)\r\n* 45714b6ff6e4ff3f8bd63a834309d80f063a2adf feat(detector/vuls2): flatten CPE AND conjunctions to OR in vuls0 (#2606)\r\n* 76c616f33f8d33dd46ab66ad8e9920e75f7e212a feat(detector/vuls2): ignore rejected/withdrawn CPE vulnerabilities (#2603)\r\n* c4611e38f7bcc6772afe9cd0784636f80b1e42ef chore(deps): bump vuls-data-update and vuls2 to latest (#2602)\r\n* cf9e99e3c39ee7ac638d307b140b6df340737f9d perf(detector): share one vuls2 db session across a server's detect and enrich (#2600)\r\n* b03f24ecdcea7fc2fc2bbe0d7454975e625065d2 feat(detector): detect Seal Security patched library packages (#2596)\r\n* 77a2bfc754e3ac5cbb4617e49fa9e8c628ae31b3 perf(detector): derive verified-product suppression from the detection result (#2592)\r\n* 0d41be0e9068a039aa53236dcbfe603e7835184f chore(deps): bump github.com/aquasecurity/trivy (#2573)\r\n* 698946aa7f30ad39a25c2d95b6031eb06d6fbb68 chore(deps): bump the others group across 1 directory with 10 updates (#2595)\r\n* 33eb69964809bcce70f4a1a896681210ff0b00c3 chore(deps): bump the all group across 1 directory with 11 updates (#2593)\r\n* 89a602cc1474d17eeda3e2a6ed81f8016cf608a6 chore(deps): bump github.com/CycloneDX/cyclonedx-go from 0.10.0 to 0.11.0 (#2594)\r\n* 7ea4a1e04347499132a2707c9c62b53a1e3b6c44 chore(deps): bump the all group across 1 directory with 2 updates (#2565)\r\n* f6214772f48c2012ea2294b5fbb9bb6b57c665bc feat!(detector): route VulnCheck and JVN to vuls2 (#2590)\r\n* 1297680e682f778fc67c639514267679c98a1c30 feat(detector): route Fortinet to vuls2 (#2591)\r\n* 2d8075108c38ba36be6b10e4f5bc1bdffac2de63 feat(detector): route Palo Alto to vuls2 (#2589)\r\n* c6b9778d0964a87b6cf4937df10a35765ccc0061 feat!(detector): route Cisco to vuls2 (#2581)\r\n* 61f32a4e483530fd11ccb1fa8af07b6666278a76 feat(detector): enrich MITRE CVE v5 via vuls2 (#2586)\r\n* 92e1e56266e644a5df7b4c32df0c7529bea1ebb6 chore(deps): bump github.com/containerd/containerd (#2583)\r\n* 635222e1551b1661f28512ea289b4cc74126ad97 feat!(detector): replace go-cti with vuls2 (#2530)\r\n* 9d8465a817666a21d0eb594633ed9a81e7235284 feat(detector/vuls2): enrich ENISA EUVD List via vuls2 (#2585)\r\n* 024b0e261beaa4781a25601b4eb599de403b59e7 feat!(detector): route NVD to vuls2 (#2575)\r\n* e6acd26d513fd696cba9020e1a805a7ed004a4fb test(detector/vuls2): rename enrich fixture mitre-v5 to mitre-cve-v5 (#2576)\r\n\r\n",
+    "category": "security"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
     "version": "v0.39.3",
     "published_at": "2026-06-09T09:13:59Z",
     "url": "https://github.com/future-architect/vuls/releases/tag/v0.39.3",
