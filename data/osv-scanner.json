@@ -2,6 +2,16 @@
   {
     "tool_id": "osv-scanner",
     "tool_name": "OSV-Scanner",
+    "version": "v2.5.0",
+    "published_at": "2026-08-07T05:23:52Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.5.0",
+    "summary": "v2.5.0",
+    "body": "## What's Changed\r\n### Features & Refactors:\r\n\r\n- **Full OSV-Scalibr pipeline**: Migrated scanning, filtering, and matching in `osv-scanner` to use `osv-scalibr` end-to-end, so most plugins that's supported in osv-scalibr should be supported via the `--experimental-plugins` flag ([#2935](https://github.com/google/osv-scanner/pull/2935)).\r\n- **New extractors and ecosystem support via `osv-scalibr`**:\r\n  - Add `javascript/vsix` extractor to support scanning VS Code extension (`.vsix`) packages.\r\n  - Extend ecosystem mapping for:\r\n    - SUSE\r\n    - Azure Linux / Mariner\r\n    - Alpaquita\r\n    - Mageia\r\n    - openSUSE Leap\r\n    - Debian and Ubuntu PURL\r\n- **PURL Type Resolution**: Updated `osvscannerjson` extractor to map ecosystem names to valid PURL types (golang, gem, cargo, npm, etc.).\r\n\r\n### Fixes:\r\n\r\n- [Bug #2915](https://github.com/google/osv-scanner/pull/2915) Fix issue where osv-scanner reported already-fixed advisories as unfixed for RHEL-family RPM packages (Red Hat, AlmaLinux, Rocky Linux) with epochs by sending epoch-qualified versions.\r\n- Fix Python requirements.txt extractor in `osv-scalibr`, specifically regular expressions used to extract package names and per-requirement options (Fixes #2940, #2931)\r\n- Fix NPM and Composer PURL generation in `osv-scalibr`, separating package namespace (scope) from package name\r\n\r\n## New Contributors\r\n* @Korulag made their first contribution in https://github.com/google/osv-scanner/pull/2915\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.4.0...v2.5.0",
+    "category": "bugfix"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
     "version": "v2.4.0",
     "published_at": "2026-06-18T13:35:18Z",
     "url": "https://github.com/google/osv-scanner/releases/tag/v2.4.0",
