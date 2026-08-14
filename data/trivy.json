@@ -2,6 +2,16 @@
   {
     "tool_id": "trivy",
     "tool_name": "Trivy",
+    "version": "v0.74.0",
+    "published_at": "2026-08-14T11:29:11Z",
+    "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.74.0",
+    "summary": "v0.74.0",
+    "body": "## ⚡ Highlights ⚡\n👉 https://github.com/aquasecurity/trivy/discussions/11096\n\n## Changelog\nhttps://github.com/aquasecurity/trivy/blob/main/CHANGELOG.md#0740-2026-08-14",
+    "category": "other"
+  },
+  {
+    "tool_id": "trivy",
+    "tool_name": "Trivy",
     "version": "v0.73.0",
     "published_at": "2026-08-03T10:47:14Z",
     "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.73.0",
