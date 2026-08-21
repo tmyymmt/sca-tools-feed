@@ -2,6 +2,16 @@
   {
     "tool_id": "osv-scanner",
     "tool_name": "OSV-Scanner",
+    "version": "v2.5.1",
+    "published_at": "2026-08-17T04:29:53Z",
+    "url": "https://github.com/google/osv-scanner/releases/tag/v2.5.1",
+    "summary": "v2.5.1",
+    "body": "## What's Changed\r\n### Fixes:\r\n\r\n- Preserve package namespaces when querying osv.dev API (fixes [#2978](https://github.com/google/osv-scanner/issues/2978)).\r\n- Re-add support for the `OSV_SCANNER_LOCAL_DB_CACHE_DIRECTORY` environment variable (fixes [#2983](https://github.com/google/osv-scanner/issues/2983)).\r\n- Fix local vulnerability matching (`--offline-vulnerabilities`) not working when network capability is `NetworkOnline`.\r\n\r\n**Full Changelog**: https://github.com/google/osv-scanner/compare/v2.5.0...v2.5.1",
+    "category": "security"
+  },
+  {
+    "tool_id": "osv-scanner",
+    "tool_name": "OSV-Scanner",
     "version": "v2.5.0",
     "published_at": "2026-08-07T05:23:52Z",
     "url": "https://github.com/google/osv-scanner/releases/tag/v2.5.0",
