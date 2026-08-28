@@ -2,6 +2,86 @@
   {
     "tool_id": "yamory",
     "tool_name": "Yamory",
+    "version": "2026-08-27",
+    "published_at": "2026-08-27T00:00:00Z",
+    "url": "https://yamory.io/news/Windows-Update",
+    "summary": "Windows Update対象外となる脆弱性検知に対応",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-08-25",
+    "published_at": "2026-08-25T00:00:00Z",
+    "url": "https://yamory.io/news/dowa-semiconductor-akita",
+    "summary": "DOWAセミコンダクター秋田株式会社様がyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-08-20",
+    "published_at": "2026-08-20T00:00:00Z",
+    "url": "https://yamory.io/news/AWS-Lambda",
+    "summary": "クラウドアセットスキャン機能、AWS Lambdaに対応",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-08-19",
+    "published_at": "2026-08-19T00:00:00Z",
+    "url": "https://yamory.io/news/photo-create",
+    "summary": "株式会社フォトクリエイト様がyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-07-24",
+    "published_at": "2026-07-24T00:00:00Z",
+    "url": "https://yamory.io/news/Google-Cloud-Next-Tokyo",
+    "summary": "「Google Cloud Next Tokyo」出展および登壇お知らせ",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-07-23",
+    "published_at": "2026-07-23T00:00:00Z",
+    "url": "https://yamory.io/news/riskmonster",
+    "summary": "リスクモンスター株式会社様がyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-07-14",
+    "published_at": "2026-07-14T00:00:00Z",
+    "url": "https://yamory.io/news/algomatic",
+    "summary": "株式会社Algomatic様がyamoryを導入",
+    "body": "",
+    "category": "announcement"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-07-06",
+    "published_at": "2026-07-06T00:00:00Z",
+    "url": "https://yamory.io/Third-Party_Security-Summit",
+    "summary": "「金融サードパーティ セキュリティサミット2026」開催のお知らせ",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
     "version": "2026-06-25",
     "published_at": "2026-06-25T00:00:00Z",
     "url": "https://yamory.io/news/first-half-2026-security-report",
