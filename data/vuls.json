@@ -2,6 +2,16 @@
   {
     "tool_id": "vuls",
     "tool_name": "Vuls",
+    "version": "v0.41.0-rc.1",
+    "published_at": "2026-09-24T03:36:55Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.41.0-rc.1",
+    "summary": "v0.41.0-rc.1",
+    "body": "## Changelog\r\n* cf2dbba8a6c9dcaa4db6c604ef098f33823b6657 feat(contrib/trivy): pass through Trivy's repository class to models.Package (#2662)\r\n* f0b10870b1ac855f593f66dfa1869090b78029fb fix(scanner): add missing separator between rpm -qf query format and paths in getOwnerPkgs (#2657)\r\n* 5dd453fba35863f792528cb139c280386cbeaf9a perf(detector/vuls2): fold vuls2 detections from the streaming Detect (#2648)\r\n* 6499d0e9ce823eeefa51876550efcb4e5fe95334 fix(detector/vuls2): break CVSS merge score ties deterministically (#2649)\r\n* e901c00fb0fc1cca5a03dd9efc9f76ee5cf7e600 fix(models): map trivy-db julia, seal, and redhat-csaf-vex sources (#2646)\r\n* 8547d1a127f77d638a001b1e24fd7cc2888109bd chore(deps): bump the trivy group across 1 directory with 2 updates (#2640)\r\n* 94f7c315c95b3ede1838d13caf23bd6f92696c0c chore(deps): bump golang in the all group across 1 directory (#2624)\r\n* 383e246869698338e7cae58135c8e31b394ba573 chore(deps): bump github.com/moby/buildkit (#2644)\r\n* 03f1c5d13c0af2d5463c4d15fcfeaea54b83bbdf chore(deps): bump the others group across 1 directory with 8 updates (#2641)\r\n* 8879b734c8294871d2237994b95eda056ec8d60a chore(deps): bump the all group across 1 directory with 13 updates (#2625)\r\n* 386ec57759ddee33a67b7f0c4f704aa111ce4adf feat(detector/vuls2): detect OpenSSH security advisories (#2636)\r\n* cb6d2e3fda576ce9f5f2ff1f6c5678100d1c9b71 feat(detector/vuls2): detect Apple security releases (#2635)\r\n* 39f6cf1c71c7dfaa36b6274ad7f9ca244170a23f chore(deps): bump vuls2 and vuls-data-update for fortinet cvrf RangeTypes (#2633)\r\n* 86d476cfab4c02d09fb4048c20cbb226e17a73b5 feat(scanner/windows): update windowsReleases through 2026-07 (#2630)\r\n* 95e4c7fc7e8814c73219ae673d60a8a25f33c7d8 chore(deps): bump vuls-data-update to latest (#2626)\r\n* 63cf6b1d44e8ac687e468f66b521ed7d4f2aa9b3 ci(check-enums): include a remediation playbook in drift issues (#2627)\r\n* b7691ee93bf34fa68641779fce133eecfd02a5bb fix(detector/vuls2): report NVD and VulnCheck CVSS per source, not whichever sorts first (#2621)\r\n\r\n",
+    "category": "feature"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
     "version": "v0.40.1",
     "published_at": "2026-07-30T02:15:04Z",
     "url": "https://github.com/future-architect/vuls/releases/tag/v0.40.1",
