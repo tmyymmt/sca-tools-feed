@@ -2,6 +2,36 @@
   {
     "tool_id": "vuls",
     "tool_name": "Vuls",
+    "version": "v0.41.0",
+    "published_at": "2026-09-30T03:23:32Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.41.0",
+    "summary": "v0.41.0",
+    "body": "## Changelog\n* f7331a921fd3237bca383d28a241c03c085301de fix(release): mark releases for pre-release tags as pre-release (#2669)\n\n",
+    "category": "feature"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
+    "version": "v0.41.0-rc.3",
+    "published_at": "2026-09-30T02:04:07Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.41.0-rc.3",
+    "summary": "v0.41.0-rc.3",
+    "body": "## Changelog\n* f7331a921fd3237bca383d28a241c03c085301de fix(release): mark releases for pre-release tags as pre-release (#2669)\n\n",
+    "category": "feature"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
+    "version": "v0.41.0-rc.2",
+    "published_at": "2026-09-29T12:12:19Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.41.0-rc.2",
+    "summary": "v0.41.0-rc.2",
+    "body": "## Changelog\r\n* a49018b743cf4c4550cc0c5186ab702edc037ee9 chore(deps): bump the others group across 1 directory with 14 updates (#2668)\r\n* 52f9b6b5e19925c94fb13be0c166dd9bf6a795ac feat(detector): detect the Oracle Solaris family through vuls2 (#2659)\r\n* 0756e5fb5800a083f0c34c9e20558db94d607d85 chore(deps): bump github.com/package-url/packageurl-go from 0.1.6 to 0.1.7 (#2666)\r\n* 2e498dd53ca8f5798d569099c3114849409afd57 chore(deps): bump go.opentelemetry.io/otel/sdk (#2664)\r\n* c53c91883fa215621acf5de1f17bb59e915875a5 chore(deps): bump google.golang.org/grpc (#2655)\r\n* 48c4e763e09fa1f6e7df8ec5715bad6099595325 chore(deps): bump the all group across 1 directory with 8 updates (#2663)\r\n\r\n",
+    "category": "other"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
     "version": "v0.41.0-rc.1",
     "published_at": "2026-09-24T03:36:55Z",
     "url": "https://github.com/future-architect/vuls/releases/tag/v0.41.0-rc.1",
