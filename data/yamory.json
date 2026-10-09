@@ -2,6 +2,16 @@
   {
     "tool_id": "yamory",
     "tool_name": "Yamory",
+    "version": "2026-10-09",
+    "published_at": "2026-10-09T00:00:00Z",
+    "url": "https://yamory.io/news/emergency-data-leak-prevention-plan",
+    "summary": "政府による「不正アクセスによる情報漏えい」に関する注意喚起を受け、「情報漏えい対策向け緊急対応プラン」の提供を開始",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
     "version": "2026-09-17",
     "published_at": "2026-09-17T00:00:00Z",
     "url": "https://yamory.io/SecurityDaysFall-2026",
