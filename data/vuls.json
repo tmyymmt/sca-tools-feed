@@ -2,6 +2,26 @@
   {
     "tool_id": "vuls",
     "tool_name": "Vuls",
+    "version": "v0.42.0",
+    "published_at": "2026-10-15T05:32:40Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.42.0",
+    "summary": "v0.42.0",
+    "body": "## Changelog\n* 6e793313da5cd3af89e2eae95e8778de472c92b7 feat(scanner/windows): add Windows 11 26H2 (#2682)\n* a756f25df96cb3a6341ec24e6e3bea793ca97dc5 chore(deps): bump vuls2 and vuls-data-update for fortinet csaf RangeTypes (#2680)\n* 321a8060b11280c33d6bb443509ca3f5b3d12ac4 chore(deps): bump the others group across 1 directory with 2 updates (#2675)\n* 4a3a6b4618a1115dbfb5c6a8f899e67010797175 chore(deps): bump the all group with 3 updates (#2672)\n\n",
+    "category": "other"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
+    "version": "v0.42.0-rc.1",
+    "published_at": "2026-10-15T03:52:33Z",
+    "url": "https://github.com/future-architect/vuls/releases/tag/v0.42.0-rc.1",
+    "summary": "v0.42.0-rc.1",
+    "body": "## Changelog\n* 6e793313da5cd3af89e2eae95e8778de472c92b7 feat(scanner/windows): add Windows 11 26H2 (#2682)\n* a756f25df96cb3a6341ec24e6e3bea793ca97dc5 chore(deps): bump vuls2 and vuls-data-update for fortinet csaf RangeTypes (#2680)\n* 321a8060b11280c33d6bb443509ca3f5b3d12ac4 chore(deps): bump the others group across 1 directory with 2 updates (#2675)\n* 4a3a6b4618a1115dbfb5c6a8f899e67010797175 chore(deps): bump the all group with 3 updates (#2672)\n\n",
+    "category": "other"
+  },
+  {
+    "tool_id": "vuls",
+    "tool_name": "Vuls",
     "version": "v0.41.0",
     "published_at": "2026-09-30T03:23:32Z",
     "url": "https://github.com/future-architect/vuls/releases/tag/v0.41.0",
