@@ -2,6 +2,16 @@
   {
     "tool_id": "yamory",
     "tool_name": "Yamory",
+    "version": "2026-10-23",
+    "published_at": "2026-10-23T00:00:00Z",
+    "url": "https://yamory.io/news/php",
+    "summary": "脆弱性管理クラウド「yamory」、PHPの重大な脆弱性に関する【速報】調査レポートを公開",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
     "version": "2026-10-09",
     "published_at": "2026-10-09T00:00:00Z",
     "url": "https://yamory.io/news/emergency-data-leak-prevention-plan",

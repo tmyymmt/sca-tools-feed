@@ -2,6 +2,16 @@
   {
     "tool_id": "trivy",
     "tool_name": "Trivy",
+    "version": "v0.76.1",
+    "published_at": "2026-10-21T11:18:34Z",
+    "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.76.1",
+    "summary": "v0.76.1",
+    "body": "## 🔐 Security update: eMudhra CA incident 🛡️\n\nTrivy v0.76.1 includes mitigations for the [eMudhra intermediate CA key compromise](https://blog.cloudflare.com/emudhra-certificate-compromise/).\n\n- Official binaries are built with Go 1.27.3, which includes the certificate distrust mitigation tracked as [CVE-2026-111943](https://go.dev/issue/82345).\n- Official container images include an updated Alpine CA trust store that rejects the affected certificate chains.\n\nWe recommend upgrading to v0.76.1 and redeploying container images to apply these updates. If you build Trivy from source, use Go 1.27.3 or later and keep your runtime CA trust store up to date.\n\n## Changelog\n* e713f67f7d54decdcd9b3132c9751833dcced698 release: v0.76.1 [release/v0.76] (#11445)\n* 6647bd6ec5924087956285b773b8cae10508736e fix(deps): bump the aws group across 1 directory with 6 updates [backport: release/v0.76] (#11446)\n* e0964c97819b1d6a45b7e0426803745f173fc550 fix(deps): bump the docker group with 3 updates [backport: release/v0.76] (#11443)\n* 992c360c33d9f9627bb24c1fe3f20815110c88e5 fix(deps): bump the common group with 3 updates [backport: release/v0.76] (#11442)\n\n",
+    "category": "security"
+  },
+  {
+    "tool_id": "trivy",
+    "tool_name": "Trivy",
     "version": "v0.76.0",
     "published_at": "2026-10-14T11:45:44Z",
     "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.76.0",
