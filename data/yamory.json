@@ -2,6 +2,36 @@
   {
     "tool_id": "yamory",
     "tool_name": "Yamory",
+    "version": "2026-10-30",
+    "published_at": "2026-10-30T00:00:00Z",
+    "url": "https://yamory.io/news_PHP_report",
+    "summary": "脆弱性管理クラウド「yamory」、PHPの重大な脆弱性問題の対応状況を振り返るレポートを公開",
+    "body": "",
+    "category": "security"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-10-26",
+    "published_at": "2026-10-26T00:00:00Z",
+    "url": "https://yamory.io/news/nikkei-20261025",
+    "summary": "「日経新聞（2026年10月25日朝刊）」に掲載されました",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
+    "version": "2026-10-26",
+    "published_at": "2026-10-26T00:00:00Z",
+    "url": "https://yamory.io/news/nikkei-20261024",
+    "summary": "「日経新聞（2026年10月24日朝刊）」に掲載されました",
+    "body": "",
+    "category": "feature"
+  },
+  {
+    "tool_id": "yamory",
+    "tool_name": "Yamory",
     "version": "2026-10-23",
     "published_at": "2026-10-23T00:00:00Z",
     "url": "https://yamory.io/news/php",
